@@ -1,0 +1,690 @@
+knewstuff (5.90.0-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 24 Apr 2022 18:38:23 +0800
+
+knewstuff (5.90.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.89.0).
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.90.0).
+  * Added myself to the uploaders.
+  * Source ships new library libKF5NewStuffWidgets.so.5.
+  * Update symbols from build for 5.90.0.
+  * Update copyright information.
+  * Backport upstream patches to fix requests overload of clients to the KDE
+    New Stuff server.
+  * Add build dependencies on kirigami2-dev and libkf5syndication-dev, update
+    symbols accordingly.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 11 Feb 2022 23:46:44 +0100
+
+knewstuff (5.88.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.87.0).
+  * Drop upstream patches.
+  * New upstream release (5.88.0).
+  * Force-bump frameworks internal b-d to 5.88.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 17 Nov 2021 06:07:41 +0900
+
+knewstuff (5.86.0-3) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * Cherry-pick upstream fix: include useragent on kns request.
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 01 Oct 2021 23:40:58 +0900
+
+knewstuff (5.86.0-2) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * Cherry-pick upstream fix for crashes in DownloadWidget.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 28 Sep 2021 04:45:50 +0900
+
+knewstuff (5.86.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.86.0).
+  * Bump Standards-Version to 4.6.0, no change required.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 13 Sep 2021 10:58:14 +0900
+
+knewstuff (5.85.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 28 Aug 2021 23:42:48 +0900
+
+knewstuff (5.85.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.85.0).
+  * Disable built time tests.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 09:57:48 +0900
+
+knewstuff (5.83.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 11:53:07 +0900
+
+knewstuff (5.83.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.83.0).
+  * Update symbols.
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 13 Jun 2021 13:25:32 +0900
+
+knewstuff (5.82.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.82.0).
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 08 May 2021 21:16:19 +0900
+
+knewstuff (5.81.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream version (5.81.0)
+  * Bump inter-frameworks dependencies.
+  * Disable flaky test.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 12 Apr 2021 19:06:41 +0900
+
+knewstuff (5.80.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream version (5.80.0)
+  * Bump inter-frameworks dependencies.
+  * Update symbols.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 15 Mar 2021 15:10:35 +0900
+
+knewstuff (5.79.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * Update symbols.
+  * Remove graphviz from build depends.
+  * New upstream release (5.79.0).
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 16 Feb 2021 06:45:29 +0900
+
+knewstuff (5.78.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 17 Jan 2021 21:05:07 +0900
+
+knewstuff (5.78.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.78.0).
+  * Update build-deps and deps with the info from cmake.
+  * Drop upstream included patch.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 13 Jan 2021 10:32:43 +0900
+
+knewstuff (5.77.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * Drop the 'testsuite' autopkgtest, as it does not test the installed
+    packages
+  * Explicitly add the gettext build dependency.
+  * Drop breaks/replaces for versions older than Stretch.
+  * Run the test suite at build time, since it seems to work fine:
+    - add the xauth, and xvfb build dependencies
+    - run dh_auto_test using xvfb-run
+    - disable the fixfilepath reproducibility feature, as it breaks
+      QFINDTESTDATA
+  * Tighten the inter-library dependencies.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 17 Jan 2021 10:41:48 +0100
+
+knewstuff (5.77.0-3) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 22 Dec 2020 10:33:35 +0900
+
+knewstuff (5.77.0-2) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * Cherry-pick upstream commit to add dptr to Cache
+    (d/patches/upstream-243ea6155b28-add-dptr-to-cache.patch)
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 20 Dec 2020 09:05:03 +0900
+
+knewstuff (5.77.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * Bump Standards-Version to 4.5.1 (No changes needed).
+  * New upstream release (5.77.0).
+  * Update build-deps and deps with the info from cmake.
+  * Add myself to Uploaders.
+  * Update maintainer to Debian Qt/KDE Maintainers.
+  * Update symbols.
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 18 Dec 2020 10:03:54 +0900
+
+knewstuff (5.74.0-2) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 19 Oct 2020 23:18:31 +0200
+
+knewstuff (5.74.0-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (5.74.0).
+  * Update build-deps and deps with the info from cmake.
+  * Add renamecategories file to libkf5newstuff-data.
+  * Add knewstuff-dialog package.
+  * Update Homepage link to point to new invent.kde.org
+  * Update repository related entries to metadata file.
+  * Update field Source in debian/copyright to invent.kde.org move.
+  * Add Bug-* entries to metadata file.
+  * Update symbols from build for 5.74.0.
+
+ -- Sandro Knauß <hefee@debian.org>  Sun, 27 Sep 2020 17:46:23 +0200
+
+knewstuff (5.70.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump compat level to 13.
+  * New upstream release (5.70.0).
+  * Update build-deps and deps with the info from cmake.
+  * Wrap long lines in changelog entries: 5.22.0-1.
+  * Set field Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update symbols from build for 5.70.0.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 26 May 2020 23:57:59 +0200
+
+knewstuff (5.69.0-3) experimental; urgency=medium
+
+  * Team upload.
+  * Update symbols file from the logs of buildds.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 01 May 2020 16:02:43 +0200
+
+knewstuff (5.69.0-2) experimental; urgency=medium
+
+  * Team upload.
+  * Update symbols file from the logs of buildds.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 01 May 2020 12:26:00 +0200
+
+knewstuff (5.69.0-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump compat level to 12.
+  * Bump Standards-Version to 4.5.0 (No changes needed).
+  * Get rid of debug-symbol-migration package.
+  * Add Rules-Requires-Root field to control.
+  * New upstream release (5.69.0).
+  * Update build-deps and deps with the info from cmake.
+  * Add Build-Depends-Package to symbols file.
+  * Update symbols from build for 5.69.0.
+  * Cleanup Build-Depends.
+  * Remove not needed injection of linker flags.
+  * Enable hardening all.
+  * Cleanup copyright file.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 30 Apr 2020 17:57:04 +0200
+
+knewstuff (5.62.0-1) unstable; urgency=medium
+
+  * Update reprotest args variable
+  * New upstream release (5.62.0).
+  * Update build-deps and deps with the info from cmake
+  * Update symbols file
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 20 Sep 2019 10:13:07 -0700
+
+knewstuff (5.61.0-1) experimental; urgency=medium
+
+  [ Scarlett Moore ]
+  * Build-Depend on qttools5-dev to fix a cross build failure
+    (see #915122 for more info) (Closes: 930943).
+
+  [ Maximiliano Curia ]
+  * Salsa CI automatic initialization by Tuco
+  * New upstream release (5.61.0).
+  * Update build-deps and deps with the info from cmake
+  * Add missing version to maintscript
+  * Update symbols file
+  * Ignore reprotest build path variations
+  * Release to experimental
+
+  [ Jonathan Riddell ]
+  * moved qdebug files
+
+  [ Rik Mills ]
+  * update install files
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Sep 2019 21:10:45 +0100
+
+knewstuff (5.54.0-2) unstable; urgency=medium
+
+  * New revision
+  * Add core version dependency (Closes: 919966)
+  * Add symbols file for libkf5newstuffcore5
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 22 Jan 2019 09:59:33 -0300
+
+knewstuff (5.54.0-1) unstable; urgency=medium
+
+  * New upstream release (5.52.0).
+  * Update build-deps and deps with the info from cmake
+  * Rediff patches
+  * New upstream release (5.53.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.54.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.54)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 17 Jan 2019 19:27:07 -0300
+
+knewstuff (5.51.0-1) unstable; urgency=medium
+
+  * New upstream release (5.50.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.50)
+  * New upstream release (5.51.0).
+  * Update build-deps and deps with the info from cmake
+  * Run auto tests with no parallel
+  * Disable failing test
+  * Rediff patches
+  * Rediff patches
+  * Bump group breaks (5.51)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 07 Nov 2018 17:17:06 +0100
+
+knewstuff (5.49.0-1) unstable; urgency=medium
+
+  * New upstream release (5.48.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.49.0).
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+  * Bump group breaks (5.49)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 17 Aug 2018 16:18:46 +0200
+
+knewstuff (5.47.0-1) unstable; urgency=medium
+
+  * New upstream release (5.47.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.47)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 15 Jun 2018 12:09:52 +0200
+
+knewstuff (5.46.0-1) unstable; urgency=medium
+
+  * Update symbols files
+  * New upstream release (5.46.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump Standards-Version to 4.1.4.
+  * Use https for the debian/copyright
+  * Bump group breaks (5.46)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 17 May 2018 22:15:17 +0200
+
+knewstuff (5.45.0-1) unstable; urgency=medium
+
+  * New upstream release (5.45.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.45)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 05 May 2018 08:10:42 +0200
+
+knewstuff (5.44.0-1) sid; urgency=medium
+
+  * New upstream release (5.44.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.44)
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 21 Mar 2018 14:41:03 +0100
+
+knewstuff (5.43.0-1) experimental; urgency=medium
+
+  * Use the salsa canonical urls
+  * New upstream release (5.43.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.43)
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 26 Feb 2018 11:43:51 +0100
+
+knewstuff (5.42.0-2) sid; urgency=medium
+
+  * New revision
+  * Depend on kirigami2 qml module.
+    Thanks to Zhang Jingqiang (Closes: 889692)
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 10 Feb 2018 11:29:02 +0100
+
+knewstuff (5.42.0-1) experimental; urgency=medium
+
+  * New upstream release (5.42.0).
+  * Add link options as-needed
+  * Bump debhelper build-dep and compat to 11.
+  * Build without build_stamp
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.42)
+  * Bump Standards-Version to 4.1.3.
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 02 Feb 2018 12:05:33 +0100
+
+knewstuff (5.41.0-1) experimental; urgency=medium
+
+  * New upstream release (5.38.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.41.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump Standards-Version to 4.1.2.
+  * Bump group breaks (5.41)
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 15 Dec 2017 10:42:52 -0300
+
+knewstuff (5.37.0-2) sid; urgency=medium
+
+  * New revision
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 03 Sep 2017 09:58:32 +0200
+
+knewstuff (5.37.0-1) experimental; urgency=medium
+
+  * New upstream release (5.37.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.37)
+  * Update symbols files.
+  * Add a libkf5newstuff-doc package for the qch files
+  * Bump Standards-Version to 4.0.1.
+  * Set section for the doc package
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 16 Aug 2017 10:43:37 +0200
+
+knewstuff (5.36.0-1) experimental; urgency=medium
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.35.0).
+  * Bump Standards-Version to 4.0.0.
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.35)
+  * Add qtdeclarative5-dev missing build dep
+  * Update symbols files
+  * watch: Use https uris
+  * New upstream release (5.36.0).
+  * Bump group breaks (5.36)
+  * Update build-deps and deps with the info from cmake
+
+  [ Raymond Wooninck ]
+  * Add signing key
+  * also include signing-key
+  * Fix install list
+  * Fix build
+  * Fix install
+
+  [ Harald Sitter ]
+  * install new file
+  * fix qml deps
+
+  [ Rik Mills ]
+  * Install /etc/xdg/knewstuff.categories
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 09 Jul 2017 23:42:28 +0200
+
+knewstuff (5.28.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files from buildds logs (5.27.0-1).
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.28)
+  * Bump group breaks (5.28)
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 18 Nov 2016 16:06:21 +0100
+
+knewstuff (5.27.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.27)
+  * Bump group breaks (5.27)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 15 Oct 2016 17:06:39 +0200
+
+knewstuff (5.26.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * Bump group breaks (5.26)
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 29 Sep 2016 12:02:01 +0200
+
+knewstuff (5.25.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * Bump group breaks (5.25)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 20 Aug 2016 16:51:07 +0200
+
+knewstuff (5.23.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 22 Jun 2016 17:58:06 +0200
+
+knewstuff (5.22.0-1) unstable; urgency=medium
+
+  [ Maximiliano Curia ]
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer"
+    replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * Update acc test script
+  * uscan no longer supports more than one main upstream tarball being listed
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Bump Standards-Version to 3.9.8
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 25 May 2016 12:00:51 +0200
+
+knewstuff (5.19.0-1) experimental; urgency=medium
+
+  * New upstream release (5.19.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 13 Feb 2016 15:16:09 +0100
+
+knewstuff (5.18.0-1) experimental; urgency=medium
+
+  * New upstream release (5.17.0).
+  * New upstream release (5.18.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 27 Jan 2016 13:33:48 +0100
+
+knewstuff (5.16.0-1) unstable; urgency=medium
+
+  * New upstream release (5.16.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 30 Nov 2015 12:12:53 +0100
+
+knewstuff (5.15.0-1) unstable; urgency=medium
+
+  * New upstream release (5.15.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 09 Oct 2015 19:16:18 +0200
+
+knewstuff (5.14.0-1) unstable; urgency=medium
+
+  * New upstream release (5.14.0).
+  * Removed private classes from exported symbols.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 15 Sep 2015 13:48:54 +0200
+
+knewstuff (5.13.0-1) unstable; urgency=medium
+
+  * New upstream release (5.13.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Sep 2015 00:17:21 +0200
+
+knewstuff (5.12.0-1) unstable; urgency=medium
+
+  * New upstream release (5.12.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 09 Jul 2015 12:43:26 +0200
+
+knewstuff (5.11.0-1) unstable; urgency=medium
+
+  * New upstream release (5.10.0).
+  * Update symbols files.
+  * New upstream release (5.11.0).
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 29 Jun 2015 10:55:42 +0200
+
+knewstuff (5.9.0-1) experimental; urgency=medium
+
+  * New upstream release (5.9.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 23 Apr 2015 08:25:41 +0200
+
+knewstuff (5.9.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 13 Apr 2015 22:31:50 +0200
+
+knewstuff (5.8.0-1) experimental; urgency=medium
+
+  * New upstream release (5.8.0).
+  * Update copyright information.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 22 Mar 2015 11:39:08 +0100
+
+knewstuff (5.8.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 17 Mar 2015 15:42:07 +0100
+
+knewstuff (5.7.0-1) experimental; urgency=medium
+
+  * New upstream release (5.7.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 06 Mar 2015 22:57:39 +0100
+
+knewstuff (5.7.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Harald Sitter <sitter@kde.org>  Tue, 10 Feb 2015 16:14:03 +0100
+
+knewstuff (5.6.0-1) experimental; urgency=medium
+
+  * Prepare initial Debian release.
+  * Update build dependencies to build against experimental and to
+    follow cmake.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Add basic autopkgtests support.
+  * Update copyright information.
+  * Update install files.
+  * Update watch file.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 30 Jan 2015 16:06:52 +0100
+
+knewstuff (5.6.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 06 Jan 2015 19:45:11 +0100
+
+knewstuff (5.5.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 11:20:28 +0100
+
+knewstuff (5.4.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 07 Nov 2014 15:14:25 +0100
+
+knewstuff (5.3.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 07 Oct 2014 11:27:04 +0100
+
+knewstuff (5.2.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+  * Use pkg-kde-tools version 3 scripts
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 22 Sep 2014 19:48:40 +0200
+
+knewstuff (5.1.0a-0ubuntu1) utopic; urgency=medium
+
+  [ Scarlett Clark ]
+  * Update copyright to match licensing to source
+
+  [ José Manuel Santamaría Lema ]
+  * Update libraries *.install paths so a soname bump doesn't go
+    unnoticed.
+
+  [ Scarlett Clark ]
+  * New upstream release
+  * New upstream tar - initial was broken.
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Tue, 05 Aug 2014 17:17:25 +0200
+
+knewstuff (5.0.0-0ubuntu1) utopic; urgency=medium
+
+  * Initial stable upstream release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Tue, 15 Jul 2014 16:22:19 +0200

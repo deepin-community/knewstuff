@@ -1,0 +1,134 @@
+Source: knewstuff
+Section: libs
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Aurélien COUDERC <coucouf@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               doxygen,
+               extra-cmake-modules (>= 5.90.0~),
+               gettext,
+               kirigami2-dev,
+               libkf5archive-dev (>= 5.90.0~),
+               libkf5attica-dev (>= 5.90.0~),
+               libkf5completion-dev (>= 5.90.0~),
+               libkf5config-dev (>= 5.90.0~),
+               libkf5coreaddons-dev (>= 5.90.0~),
+               libkf5i18n-dev (>= 5.90.0~),
+               libkf5iconthemes-dev (>= 5.90.0~),
+               libkf5itemviews-dev (>= 5.90.0~),
+               libkf5kio-dev (>= 5.90.0~),
+               libkf5package-dev (>= 5.90.0~),
+               libkf5service-dev (>= 5.90.0~),
+               libkf5syndication-dev (>= 5.90.0~),
+               libkf5textwidgets-dev (>= 5.90.0~),
+               libkf5widgetsaddons-dev (>= 5.90.0~),
+               libkf5xmlgui-dev (>= 5.90.0~),
+               libqt5sql5-sqlite,
+               pkg-kde-tools (>= 0.15.15ubuntu1~),
+               qtbase5-dev (>= 5.15.2~),
+               qtdeclarative5-dev (>= 5.15.2~),
+               qttools5-dev,
+               qttools5-dev-tools,
+               xauth,
+               xvfb,
+Standards-Version: 4.6.0
+Homepage: https://invent.kde.org/frameworks/knewstuff
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/knewstuff
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/knewstuff.git
+Rules-Requires-Root: no
+
+Package: knewstuff-dialog
+Architecture: any
+Depends: libkf5newstuff-data (= ${source:Version}),
+         qml-module-org-kde-newstuff (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Support for downloading application assets from the network.
+ Framework for downloading and sharing additional
+ application data.
+ .
+ This package contains standalone tool for use by apps which don't
+ want a hard dependency.
+
+Package: libkf5newstuff-data
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Support for downloading application assets from the network.
+ Framework for downloading and sharing additional
+ application data.
+ .
+ This package contains the data files.
+
+Package: libkf5newstuff-dev
+Section: libdevel
+Architecture: any
+Depends: libkf5archive-dev (>= 5.90.0~),
+         libkf5attica-dev (>= 5.90.0~),
+         libkf5kio-dev (>= 5.90.0~),
+         libkf5newstuff5 (= ${binary:Version}),
+         libkf5newstuffcore5 (= ${binary:Version}),
+         libkf5newstuffwidgets5 (= ${binary:Version}),
+         libkf5xmlgui-dev (>= 5.90.0~),
+         qtbase5-dev (>= 5.15.2~),
+         ${misc:Depends},
+Recommends: libkf5newstuff-doc (= ${source:Version})
+Description: development files for knewstuff
+ Framework for downloading and sharing additional
+ application data.
+ .
+ Contains development files for knewstuff.
+Breaks: libkf5kdelibs4support-dev (<< 5.54)
+
+Package: libkf5newstuff-doc
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Support for downloading application assets from the network (documentation)
+ Framework for downloading and sharing additional
+ application data.
+ .
+ This package contains the qch documentation files.
+Section: doc
+
+Package: libkf5newstuff5
+Architecture: any
+Multi-Arch: same
+Depends: libkf5newstuff-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Support for downloading application assets from the network.
+ Framework for downloading and sharing additional
+ application data.
+
+Package: libkf5newstuffcore5
+Architecture: any
+Multi-Arch: same
+Recommends: qml-module-org-kde-newstuff (= ${binary:Version})
+Depends: kio (>= 5.54), ${misc:Depends}, ${shlibs:Depends}
+Description: Support for downloading application assets from the network.
+ Framework for idownloading and sharing additional
+ application data.
+Breaks: frameworkintegration (<< 5.54)
+
+Package: libkf5newstuffwidgets5
+Architecture: any
+Multi-Arch: same
+#Recommends: qml-module-org-kde-newstuff (= ${binary:Version})
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Support for downloading application assets from the network.
+ Framework for idownloading and sharing additional
+ application data.
+
+Package: qml-module-org-kde-newstuff
+Architecture: any
+Depends: qml-module-org-kde-kirigami2 (>= 5.54),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Support for downloading application assets from the network.
+ Framework for downloading and sharing additional
+ application data.
+ .
+ This package contains the runtime files
