@@ -1,30 +1,30 @@
 # Korean messages for kdelibs.
 # Copyright (C) Free Software Foundation, Inc.
 # Cho Sung Jae <cho.sungjae@gmail.com>, 2007.
-# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
+# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 # JungHee Lee (이정희) <daemul72@gmail.com>, 2019, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-27 00:40+0000\n"
-"PO-Revision-Date: 2021-11-12 00:21+0100\n"
+"POT-Creation-Date: 2022-12-15 00:44+0000\n"
+"PO-Revision-Date: 2022-10-03 15:51+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
-"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language-Team: Korean <kde-i18n-doc@kde.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #: attica/atticaprovider.cpp:167
 #, kde-format
 msgid "All categories are missing"
 msgstr "모든 분류가 누락되었습니다"
 
-#: attica/atticaprovider.cpp:479
+#: attica/atticaprovider.cpp:480
 #, kde-format
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
@@ -35,7 +35,7 @@ msgstr ""
 "이 항목의 가격은 %1 %2입니다.\n"
 "구매하시겠습니까?"
 
-#: attica/atticaprovider.cpp:493
+#: attica/atticaprovider.cpp:494
 #, kde-format
 msgid ""
 "Your account balance is too low:\n"
@@ -46,35 +46,35 @@ msgstr ""
 "계정 잔액: %1\n"
 "가격: %2"
 
-#: attica/atticaprovider.cpp:536
+#: attica/atticaprovider.cpp:537
 #, kde-format
 msgctxt "voting for an item (good/bad)"
 msgid "Your vote was recorded."
 msgstr "투표가 기록되었습니다."
 
-#: attica/atticaprovider.cpp:551
+#: attica/atticaprovider.cpp:552
 #, kde-format
 msgid "You are now a fan."
 msgstr "팬으로 등록되었습니다."
 
-#: attica/atticaprovider.cpp:579 core/engine.cpp:388 opds/opdsprovider.cpp:288
+#: attica/atticaprovider.cpp:580 core/engine.cpp:394 opds/opdsprovider.cpp:288
 #, kde-format
 msgid ""
 "The service is currently undergoing maintenance and is expected to be back "
 "in %1."
 msgstr "서비스가 현재 유지 보수 중이며 %1에 정상화될 예정입니다."
 
-#: attica/atticaprovider.cpp:584
+#: attica/atticaprovider.cpp:585
 #, kde-format
 msgid "Network error %1: %2"
 msgstr "네트워크 오류 %1: %2"
 
-#: attica/atticaprovider.cpp:590
+#: attica/atticaprovider.cpp:591
 #, kde-format
 msgid "Too many requests to server. Please try again in a few minutes."
 msgstr "서버에 너무 많은 요청을 보냈습니다. 잠시 후 다시 시도하십시오."
 
-#: attica/atticaprovider.cpp:593
+#: attica/atticaprovider.cpp:594
 #, kde-format
 msgid ""
 "The Open Collaboration Services instance %1 does not support the attempted "
@@ -82,12 +82,12 @@ msgid ""
 msgstr ""
 "Open Collaboration Services 인스턴스 %1에서 시도한 기능을 지원하지 않습니다."
 
-#: attica/atticaprovider.cpp:597
+#: attica/atticaprovider.cpp:598
 #, kde-format
 msgid "Unknown Open Collaboration Service API error. (%1)"
 msgstr "알 수 없는 Open Collaboration Service API 오류. (%1)"
 
-#: button.cpp:41 widgets/action.cpp:34
+#: button.cpp:43 widgets/action.cpp:34 widgets/button.cpp:58
 #, kde-format
 msgid "Download New Stuff..."
 msgstr "새로운 항목 다운로드..."
@@ -113,22 +113,22 @@ msgstr ""
 msgid "Initializing"
 msgstr "초기화 중"
 
-#: core/engine.cpp:239
+#: core/engine.cpp:241
 #, kde-format
 msgid "Configuration file exists, but cannot be opened: \"%1\""
 msgstr "설정 파일이 있지만 열 수 없음: \"%1\""
 
-#: core/engine.cpp:252
+#: core/engine.cpp:254
 #, kde-format
 msgid "Configuration file is invalid: \"%1\""
 msgstr "설정 파일이 잘못됨: \"%1\""
 
-#: core/engine.cpp:261
+#: core/engine.cpp:263
 #, kde-format
 msgid "Use"
 msgstr "사용"
 
-#: core/engine.cpp:278
+#: core/engine.cpp:284
 #, kde-format
 msgid ""
 "Could not initialise the installation handler for %1\n"
@@ -137,37 +137,37 @@ msgstr ""
 "%1의 설치 핸들러를 초기화할 수 없음\n"
 "치명적인 오류입니다.프로그램 개발자에게 보고해 주십시오"
 
-#: core/engine.cpp:353
+#: core/engine.cpp:359
 #, kde-format
 msgid "Loading provider information"
 msgstr "공급자 정보 가져오는 중"
 
-#: core/engine.cpp:414
+#: core/engine.cpp:420
 #, kde-format
 msgid "Could not load get hot new stuff providers from file: %1"
 msgstr "파일에서 새로운 항목 다운로드 공급자를 불러올 수 없음: %1"
 
-#: core/engine.cpp:444
+#: core/engine.cpp:450
 #, kde-format
 msgid "Error initializing provider."
 msgstr "공급자를 초기화하는 중 오류가 발생했습니다."
 
-#: core/engine.cpp:448 core/engine.cpp:1016
+#: core/engine.cpp:454 core/engine.cpp:1022
 #, kde-format
 msgid "Loading data"
 msgstr "데이터 불러오는 중"
 
-#: core/engine.cpp:490
+#: core/engine.cpp:496
 #, kde-format
 msgid "Loading data from provider"
 msgstr "공급자로부터 데이터 불러오는 중"
 
-#: core/engine.cpp:495
+#: core/engine.cpp:501
 #, kde-format
 msgid "Loading of providers from file: %1 failed"
 msgstr "파일에서 공급자 목록을 불러오는 중: %1 실패"
 
-#: core/engine.cpp:743
+#: core/engine.cpp:749
 #, kde-format
 msgid ""
 "Could not perform an installation of the entry %1 as it does not have any "
@@ -176,12 +176,12 @@ msgstr ""
 "다운로드할 수 있는 항목이 정의되어 있지 않아서 항목 %1을(를) 설치할 수 없습니"
 "다. 항목 작성자에게 연락하여 수정을 요청하십시오."
 
-#: core/engine.cpp:866
+#: core/engine.cpp:872
 #, kde-format
 msgid "Pick Update Item"
 msgstr "업데이트 항목 선택"
 
-#: core/engine.cpp:868
+#: core/engine.cpp:874
 #, kde-format
 msgid ""
 "Please pick the item from the list below which should be used to apply this "
@@ -191,31 +191,31 @@ msgstr ""
 "이 업데이트를 적용할 때 사용할 항목을 아래 목록에서 선택하십시오. 이름이 %1"
 "인 원래 항목에서 선택할 항목을 식별할 수 없었습니다"
 
-#: core/engine.cpp:887
+#: core/engine.cpp:893
 #, kde-format
 msgid ""
 "We failed to identify a good link for updating %1, and are unable to perform "
 "the update"
 msgstr "%1을(를) 업데이트할 수 있는 링크를 찾지 못해서 업데이트할 수 없음"
 
-#: core/engine.cpp:966
+#: core/engine.cpp:972
 #, kde-format
 msgid "Re: %1"
 msgstr "Re: %1"
 
-#: core/engine.cpp:1008 ui/itemsgridviewdelegate.cpp:329
+#: core/engine.cpp:1014 ui/itemsgridviewdelegate.cpp:329
 #: ui/itemsviewdelegate.cpp:117
 #, kde-format
 msgid "Installing"
 msgstr "설치 중"
 
-#: core/engine.cpp:1012
+#: core/engine.cpp:1018
 #, kde-format
 msgid "Loading one preview"
 msgid_plural "Loading %1 previews"
 msgstr[0] "미리 보기 %1개 불러오는 중"
 
-#: core/engine.cpp:1214
+#: core/engine.cpp:1225
 #, kde-format
 msgid ""
 "Failed to adopt '%1'\n"
@@ -234,47 +234,34 @@ msgstr "항목이 잘못되었습니다."
 msgid "Download of item failed: no download URL for \"%1\"."
 msgstr "항목 다운로드 실패: \"%1\"의 다운로드 URL이 없습니다."
 
-#: core/installation.cpp:245
+#: core/installation.cpp:249
 #, kde-format
 msgid "Download of \"%1\" failed, error: %2"
 msgstr "\"%1\" 다운로드 실패. 오류: %2"
 
-#: core/installation.cpp:259
+#: core/installation.cpp:262
 #, kde-format
 msgid ""
-"The downloaded file is a html file. This indicates a link to a website "
-"instead of the actual download. Would you like to open the site with a "
-"browser instead?"
+"Cannot install '%1' because it points to a web page. Click <a "
+"href='%2'>here</a> to finish the installation."
 msgstr ""
-"다운로드한 파일은 HTML 파일입니다. 이것은 실제 다운로드 대신 웹사이트에 대한 "
-"링크를 나타냅니다. 대신 브라우저를 사용하여 사이트를 열겠습니까?"
 
-#: core/installation.cpp:261
-#, kde-format
-msgid "Possibly bad download link"
-msgstr "잘못된 다운로드 링크일 수 있음"
-
-#: core/installation.cpp:264
-#, kde-format
-msgid "Downloaded file was a HTML file. Opened in browser."
-msgstr "다운로드한 파일은 HTML 파일입니다. 브라우저에서 열립니다."
-
-#: core/installation.cpp:302
+#: core/installation.cpp:303
 #, kde-format
 msgid "Could not install \"%1\": file not found."
 msgstr "\"%1\"(을)를 설치할 수 없음: 파일을 찾을 수 없습니다."
 
-#: core/installation.cpp:489
+#: core/installation.cpp:493
 #, kde-format
 msgid "The installation of %1 failed to create the expected new directory %2"
 msgstr "%1 설치 실패. 필요한 새 디렉터리 %2을(를) 만들 수 없음"
 
-#: core/installation.cpp:512 core/installation.cpp:827
+#: core/installation.cpp:516 core/installation.cpp:841
 #, kde-format
 msgid "Installation of %1 failed: %2"
 msgstr "%1 설치 실패: %2"
 
-#: core/installation.cpp:521
+#: core/installation.cpp:525
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the service type %2 was not accepted by "
@@ -284,7 +271,7 @@ msgstr ""
 "%1 설치가 실패했습니다. 시스템에서 서비스 형식 %2을(를) 수락하지 않았습니다"
 "(이 패키지 형식에 대한 KPackage 지원이 설치되어 있습니까?)"
 
-#: core/installation.cpp:531
+#: core/installation.cpp:535
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain a "
@@ -292,7 +279,7 @@ msgid ""
 msgstr ""
 "%1 설치가 실패했습니다. 다운로드한 패키지에 올바른 KPackage 구조가 없습니다."
 
-#: core/installation.cpp:537
+#: core/installation.cpp:541
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not list a "
@@ -300,7 +287,7 @@ msgid ""
 msgstr ""
 "%1 설치가 실패했습니다. 다운로드한 패키지에 서비스 형식 목록이 없습니다."
 
-#: core/installation.cpp:544
+#: core/installation.cpp:548
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain "
@@ -309,17 +296,17 @@ msgstr ""
 "%1 설치가 실패했습니다. 다운로드한 패키지에 올바른 메타데이터 정보가 없습니"
 "다. 올바른 KPackage가 아닙니다."
 
-#: core/installation.cpp:577
+#: core/installation.cpp:582
 #, kde-format
 msgid "Could not determine the type of archive of the downloaded file %1"
 msgstr "다운로드한 파일 %1의 압축 형식을 결정할 수 없음"
 
-#: core/installation.cpp:589
+#: core/installation.cpp:594
 #, kde-format
 msgid "Failed to open the archive file %1. The reported error was: %2"
 msgstr "압축 파일 %1을(를) 열 수 없습니다. 오류: %2"
 
-#: core/installation.cpp:672
+#: core/installation.cpp:678
 #, kde-format
 msgid ""
 "This file already exists on disk (possibly due to an earlier failed download "
@@ -329,17 +316,17 @@ msgstr ""
 "파일이 이미 디스크에 존재합니다(이전에 실패한 다운로드 시도 때문일 수 있음). "
 "계속 진행하면 덮어씁니다. 기존 파일을 덮어쓰시겠습니까?"
 
-#: core/installation.cpp:675
+#: core/installation.cpp:681
 #, kde-format
 msgid "Overwrite File"
 msgstr "파일 덮어쓰기"
 
-#: core/installation.cpp:691
+#: core/installation.cpp:700
 #, kde-format
 msgid "Unable to move the file %1 to the intended destination %2"
 msgstr "파일 %1을(를) 대상 %2(으)로 이동할 수 없음"
 
-#: core/installation.cpp:714
+#: core/installation.cpp:723
 #, kde-format
 msgid ""
 "The installation failed while attempting to run the command:\n"
@@ -354,7 +341,7 @@ msgstr ""
 "출력은 다음과 같습니다:\n"
 "%2"
 
-#: core/installation.cpp:724
+#: core/installation.cpp:733
 #, kde-format
 msgid ""
 "The installation failed with code %1 while attempting to run the command:\n"
@@ -369,7 +356,7 @@ msgstr ""
 "출력은 다음과 같습니다:\n"
 "%3"
 
-#: core/installation.cpp:766
+#: core/installation.cpp:775
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed file %2 could not be "
@@ -379,7 +366,7 @@ msgstr ""
 "%1 삭제가 실패했습니다. 설치한 파일 %2을(를) 자동으로 삭제할 수 없습니다. 오"
 "류가 발생한 것 같으면 직접 파일 삭제를 시도해 보십시오."
 
-#: core/installation.cpp:834
+#: core/installation.cpp:848
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain a "
@@ -387,7 +374,7 @@ msgid ""
 msgstr ""
 "%1 삭제가 실패했습니다. 설치한 패키지에 올바른 KPackage 구조가 없습니다."
 
-#: core/installation.cpp:839
+#: core/installation.cpp:853
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package is not a supported type "
@@ -397,7 +384,7 @@ msgstr ""
 "%1 삭제가 실패했습니다. 설치한 패키지가 지원하는 형식이 아닙니다(이 패키지 형"
 "식에 대한 KPackage 지원이 설치되어 있습니까?)"
 
-#: core/installation.cpp:846
+#: core/installation.cpp:860
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain any "
@@ -406,7 +393,7 @@ msgstr ""
 "%1 삭제가 실패했습니다. 설치한 패키지에 올바른 메타데이터 정보가 없습니다. 올"
 "바른 KPackage가 아닙니다."
 
-#: core/installation.cpp:886
+#: core/installation.cpp:900
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the downloaded file %2 could not be "
@@ -414,7 +401,7 @@ msgid ""
 msgstr ""
 "%1 삭제가 실패했습니다. 다운로드한 파일 %2을(를) 자동으로 삭제할 수 없습니다."
 
-#: core/installation.cpp:891
+#: core/installation.cpp:905
 #, kde-format
 msgid ""
 "The removal of %1 failed, due to the installed file not being a KPackage. "
@@ -424,7 +411,7 @@ msgstr ""
 "%1 삭제가 실패했습니다. 설치한 파일이 KPackage가 아닙니다. 해당 파일은 %2이"
 "며, 필요하지 않다면 직접 삭제하십시오."
 
-#: core/installation.cpp:899
+#: core/installation.cpp:913
 #, kde-format
 msgid ""
 "The removal of %1 failed, as there seems to somehow be more than one thing "
@@ -433,7 +420,7 @@ msgstr ""
 "%1 삭제가 실패했습니다. 하나 이상이 설치되어 있는 것 같습니다. KPackage 기반 "
 "항목에서는 발생하면 안 됩니다."
 
-#: core/installation.cpp:932
+#: core/installation.cpp:946
 #, kde-format
 msgid ""
 "The uninstallation process failed to successfully run the command %1\n"
@@ -604,7 +591,7 @@ msgid "Provider:"
 msgstr "제공자:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
-#: downloadwidget.ui:71 qtquick/qml/Page.qml:424
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:426
 #, kde-format
 msgid "Category:"
 msgstr "분류:"
@@ -709,19 +696,19 @@ msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "설정..."
 
-#: kmoretools/kmoretools_p.h:376
+#: kmoretools/kmoretools_p.h:373
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Visit homepage"
 msgstr "홈페이지 보기"
 
-#: kmoretools/kmoretools_p.h:388
+#: kmoretools/kmoretools_p.h:386
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Install"
 msgstr "설치"
 
-#: kmoretools/kmoretools_p.h:396
+#: kmoretools/kmoretools_p.h:395
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "No further information available."
@@ -737,19 +724,19 @@ msgstr "메뉴 설정"
 msgid "Configure menu - %1"
 msgstr "메뉴 설정 - %1"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:176
+#: kmoretools/kmoretoolsmenufactory.cpp:173
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current folder"
 msgstr "%1 - 현재 폴더"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:183
+#: kmoretools/kmoretoolsmenufactory.cpp:182
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current device"
 msgstr "%1 - 현재 장치"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:197
+#: kmoretools/kmoretoolsmenufactory.cpp:195
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - all devices"
@@ -842,24 +829,19 @@ msgstr "항목"
 msgid "Download New %1..."
 msgstr "새 %1 다운로드..."
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt "The dialog title when we know which type of stuff is being requested"
 msgid "Download New %1"
 msgstr "새 %1 다운로드"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt ""
 "A placeholder title used in the dialog when there is no better title "
 "available"
 msgid "Download New Stuff"
 msgstr "새로운 항목 다운로드"
-
-#: qtquick/qml/Dialog.qml:127
-#, kde-format
-msgid "Contribute your own..."
-msgstr "내 항목 기여..."
 
 #: qtquick/qml/DownloadItemsSheet.qml:30
 #, kde-format
@@ -1199,20 +1181,17 @@ msgstr "내가 만든 항목을 목록에 추가하는 방법 알아보기"
 msgid "Go to..."
 msgstr "다음으로 이동..."
 
-#: qtquick/qml/Page.qml:510
+#: qtquick/qml/Page.qml:442
+#, kde-format
+msgid "Contribute your own…"
+msgstr "내 항목 기여..."
+
+#: qtquick/qml/Page.qml:508
 #, kde-format
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
-msgid "Loading more..."
-msgstr "더 불러오는 중..."
-
-#: qtquick/qml/Page.qml:521
-#, kde-format
-msgctxt ""
-"A message shown when there are no entries in the list, and when it is not "
-"trying to load anything"
-msgid "There is no hot new stuff to get here"
-msgstr "다운로드할 새로운 항목이 없습니다"
+msgid "Loading more…"
+msgstr "더 불러오는 중…"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:110
 #, kde-format
@@ -1313,6 +1292,11 @@ msgstr "설치 중..."
 msgctxt "Title for a dialog box which shows error messages"
 msgid "An Error Occurred"
 msgstr "오류 발생"
+
+#: qtquick/qml/private/ErrorDisplayer.qml:51
+#, kde-format
+msgid "Please try again later."
+msgstr "나중에 다시 시도하십시오."
 
 #: qtquick/qml/private/GridTileDelegate.qml:113
 #, kde-format
@@ -1610,3 +1594,279 @@ msgstr "다시 설치"
 msgctxt "Show the size of the file in a list"
 msgid "<p>Size: %1</p>"
 msgstr "<p>크기: %1</p>"
+
+#: ui/widgetquestionlistener.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Yes"
+msgstr ""
+
+#: ui/widgetquestionlistener.cpp:90
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "@action:button"
+msgid "No"
+msgstr "없음"
+
+#~ msgid ""
+#~ "The downloaded file is a html file. This indicates a link to a website "
+#~ "instead of the actual download. Would you like to open the site with a "
+#~ "browser instead?"
+#~ msgstr ""
+#~ "다운로드한 파일은 HTML 파일입니다. 이것은 실제 다운로드 대신 웹사이트에 대"
+#~ "한 링크를 나타냅니다. 대신 브라우저를 사용하여 사이트를 열겠습니까?"
+
+#~ msgid "Possibly bad download link"
+#~ msgstr "잘못된 다운로드 링크일 수 있음"
+
+#~ msgid "Downloaded file was a HTML file. Opened in browser."
+#~ msgstr "다운로드한 파일은 HTML 파일입니다. 브라우저에서 열립니다."
+
+#~ msgctxt ""
+#~ "A message shown when there are no entries in the list, and when it is not "
+#~ "trying to load anything"
+#~ msgid "There is no hot new stuff to get here"
+#~ msgstr "다운로드할 새로운 항목이 없습니다"
+
+#~ msgctxt "Opposite to Back"
+#~ msgid "Next"
+#~ msgstr "다음"
+
+#~ msgid "Finish"
+#~ msgstr "완료"
+
+#~ msgid "Fetching license data from server..."
+#~ msgstr "서버에서 라이선스 데이터 가져오는 중..."
+
+#~ msgid "Fetching content data from server..."
+#~ msgstr "서버에서 내용 데이터 가져오는 중..."
+
+#~ msgid "Could not fetch provider information."
+#~ msgstr "제공자 정보를 가져올 수 없습니다."
+
+#~ msgid "Register a new account"
+#~ msgstr "새 계정 등록"
+
+#~ msgid "Checking login..."
+#~ msgstr "로그인 확인 중..."
+
+#~ msgid "Fetching your previously updated content..."
+#~ msgstr "이전에 업데이트한 콘텐츠를 가져오는 중..."
+
+#~ msgid "Could not verify login, please try again."
+#~ msgstr "로그인 정보를 확인할 수 없습니다. 다시 시도하십시오."
+
+#~ msgid "Fetching your previously updated content finished."
+#~ msgstr "이전에 업데이트한 콘텐츠를 가져왔습니다."
+
+#~ msgid "Fetching content data from server finished."
+#~ msgstr "서버에서 콘텐츠 데이터를 가져왔습니다."
+
+#~ msgctxt ""
+#~ "A link to the website where the get hot new stuff upload can be seen"
+#~ msgid "Visit website"
+#~ msgstr "웹사이트 방문"
+
+#~ msgid "Share Hot New Stuff"
+#~ msgstr "새로운 항목 공유"
+
+#~ msgctxt "Program name followed by 'Add On Uploader'"
+#~ msgid "%1 Add-On Uploader"
+#~ msgstr "%1 추가 기능 업로드 도구"
+
+#~ msgid "File not found: %1"
+#~ msgstr "파일을 찾을 수 없음: %1"
+
+#~ msgid "Upload Failed"
+#~ msgstr "업로드 실패"
+
+#~ msgid ""
+#~ "The server does not recognize the category %2 to which you are trying to "
+#~ "upload."
+#~ msgid_plural ""
+#~ "The server does not recognize any of the categories to which you are "
+#~ "trying to upload: %2"
+#~ msgstr[0] "서버에서 업로드하려는 분류를 인식하지 못했습니다: %2"
+
+#~ msgid "Error"
+#~ msgstr "오류"
+
+#~ msgid "The selected category \"%1\" is invalid."
+#~ msgstr "선택한 \"%1\" 분류가 올바르지 않습니다."
+
+#~ msgid "Select preview image"
+#~ msgstr "미리 보기 그림 선택"
+
+#~ msgid "There was a network error."
+#~ msgstr "네트워크 오류가 발생했습니다."
+
+#~ msgid "Uploading Failed"
+#~ msgstr "업로드 실패"
+
+#~ msgid "Authentication error."
+#~ msgstr "인증 오류입니다."
+
+#~ msgid "Upload failed: %1"
+#~ msgstr "업로드 실패: %1"
+
+#~ msgid "Password:"
+#~ msgstr "암호:"
+
+#~ msgid "Username:"
+#~ msgstr "사용자 이름:"
+
+#~ msgid "File to upload:"
+#~ msgstr "업로드할 파일:"
+
+#~ msgid "GPL"
+#~ msgstr "GPL"
+
+#~ msgid "LGPL"
+#~ msgstr "LGPL"
+
+#~ msgid "BSD"
+#~ msgstr "BSD"
+
+#~ msgid "Description:"
+#~ msgstr "설명:"
+
+#~ msgid "Version:"
+#~ msgstr "버전:"
+
+#~ msgid "License:"
+#~ msgstr "라이선스:"
+
+#~ msgid "Please fill out the information about your upload in English."
+#~ msgstr "업로드한 항목의 정보를 영어로 입력하십시오."
+
+#~ msgid "Title:"
+#~ msgstr "제목:"
+
+#~ msgid "Name of the file as it will appear on the website"
+#~ msgstr "웹사이트에 표시할 파일 이름"
+
+#~ msgid ""
+#~ "This should clearly describe the file content. It can be the same text as "
+#~ "the title of the kvtml file."
+#~ msgstr ""
+#~ "파일 내용을 명확하게 설명해야 합니다. kvtml 파일의 제목과 같아도 됩니다."
+
+#~ msgid "Preview Images"
+#~ msgstr "미리 보기 그림"
+
+#~ msgid "Select Preview..."
+#~ msgstr "미리 보기 선택..."
+
+#~ msgid "Set a price for this item"
+#~ msgstr "이 항목의 가격 설정"
+
+#~ msgid "Price"
+#~ msgstr "가격"
+
+#~ msgid "Price:"
+#~ msgstr "가격:"
+
+#~ msgid "Reason for price:"
+#~ msgstr "가격을 매긴 이유:"
+
+#~ msgid "Fetch content link from server"
+#~ msgstr "서버에서 콘텐츠 링크 가져오기"
+
+#~ msgid "Create content on server"
+#~ msgstr "서버에서 콘텐츠 만들기"
+
+#~ msgid "Upload content"
+#~ msgstr "콘텐츠 업로드"
+
+#~ msgid "Upload first preview"
+#~ msgstr "첫 번째 미리 보기 업로드"
+
+#~ msgid "Note: You can edit, update and delete your content on the website."
+#~ msgstr "메모: 웹사이트에서 콘텐츠를 편집, 업데이트 및 삭제할 수 있습니다."
+
+#~ msgid "Upload second preview"
+#~ msgstr "두 번째 미리 보기 업로드"
+
+#~ msgid "Upload third preview"
+#~ msgstr "세 번째 미리 보기 업로드"
+
+#~ msgid ""
+#~ "I ensure that this content does not violate any existing copyright, law "
+#~ "or trademark. I agree for my IP address to be logged. (Distributing "
+#~ "content without the permission of the copyright holder is illegal.)"
+#~ msgstr ""
+#~ "본인은 이 콘텐츠가 기존의 저작권, 법률 또는 상표를 위반하지 않음을 확인합"
+#~ "니다. IP 주소가 기록되는 데 동의합니다.(저작권자의 허락 없이 콘텐츠를 배포"
+#~ "하는 것은 불법입니다.)"
+
+#~ msgid "Start Upload"
+#~ msgstr "업로드 시작"
+
+#~ msgid "Failed to execute install script"
+#~ msgstr "설치 스크립트를 실행할 수 없음"
+
+#~ msgctxt ""
+#~ "Status message to be shown when the entry is in the process of being "
+#~ "installed"
+#~ msgid "Currently installing the item %1 by %2. Please wait..."
+#~ msgstr "현재 %1(%2 제작) 항목을 설치하고 있습니다. 기다려 주십시오..."
+
+#~ msgctxt "Label for the busy indicator showing an item is being installed"
+#~ msgid "Installing..."
+#~ msgstr "설치 중..."
+
+#~ msgid "Tiles view mode"
+#~ msgstr "바둑판식 보기 모드"
+
+#~ msgid "Show:"
+#~ msgstr "표시:"
+
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on when items were "
+#~ "most recently updated"
+#~ msgid "Most recent first"
+#~ msgstr "최근 항목부터"
+
+#~ msgctxt ""
+#~ "List option which will set the sort order to be alphabetical based on the "
+#~ "name"
+#~ msgid "A-Z"
+#~ msgstr "가-힣"
+
+#~ msgctxt "List option which will set the sort order to based on user ratings"
+#~ msgid "Highest rated first"
+#~ msgstr "별점이 높은 항목부터"
+
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on number of downloads"
+#~ msgid "Most downloaded first"
+#~ msgstr "최다 다운로드 항목부터"
+
+#~ msgctxt ""
+#~ "If a knsrc file defines an adoption command, the option to run this "
+#~ "command and 'use' an item becomes available. This is the text for an "
+#~ "action to do so."
+#~ msgid "Use"
+#~ msgstr "사용"
+
+#~ msgid "Using %1"
+#~ msgstr "%1 사용 중"
+
+#~ msgctxt "Show a page with details for this item"
+#~ msgid "Details..."
+#~ msgstr "자세히..."
+
+#~ msgid "Enter search phrase here"
+#~ msgstr "여기에 검색어를 입력하십시오"
+
+#~ msgid "The uninstallation process failed to successfully run the command %1"
+#~ msgstr "삭제 작업 중 %1 명령을 실행할 수 없음"
+
+#~ msgid "Close"
+#~ msgstr "닫기"
+
+#~ msgid "Download File"
+#~ msgstr "파일 다운로드"
+
+#~ msgid "Configuration file not found: \"%1\""
+#~ msgstr "설정 파일을 찾을 수 없음: \"%1\""

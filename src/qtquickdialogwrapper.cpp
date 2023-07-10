@@ -7,10 +7,12 @@
 #include "qtquickdialogwrapper.h"
 
 #include <QEventLoop>
+#include <QGuiApplication>
 #include <QQmlComponent>
 #include <QQmlContext>
 #include <QQmlEngine>
 #include <QTimer>
+#include <QWindow>
 
 #include <KLocalizedContext>
 
@@ -50,6 +52,8 @@ QtQuickDialogWrapper::QtQuickDialogWrapper(const QString &configFile, QObject *p
     d->item = component.create();
     // If there is an error on the QML side of things we get a nullptr
     if (d->item) {
+        d->item->setParent(this);
+
         QObject *qtquickEngine = d->item->property("engine").value<QObject *>();
         Q_ASSERT(qtquickEngine);
         d->coreEngine = qtquickEngine->property("engine").value<KNSCore::Engine *>();
@@ -68,6 +72,20 @@ QtQuickDialogWrapper::QtQuickDialogWrapper(const QString &configFile, QObject *p
 
         // Forward relevant signals
         connect(d->item, SIGNAL(closed()), this, SIGNAL(closed()));
+
+        // Otherwise, the dialog is not in front of other popups, BUG: 452593
+        auto window = qobject_cast<QWindow *>(d->item);
+        Q_ASSERT(window);
+        auto transientParent = QGuiApplication::focusWindow();
+
+        // TODO KF6: only use focusWindow as transientParent
+        // BUG 454895: If transientParent is a menu/popup, don't use it as a parent
+        // Instead follow its parent until we get a "real" window
+        while (transientParent && transientParent->flags().testFlag(Qt::Popup)) {
+            transientParent = transientParent->transientParent();
+        }
+
+        window->setTransientParent(transientParent);
     }
 }
 
@@ -89,6 +107,12 @@ KNSCore::Engine *QtQuickDialogWrapper::engine()
     return d->coreEngine;
 }
 
+QList<KNSCore::Entry> QtQuickDialogWrapper::changedEntries() const
+{
+    return d->changedEntries;
+}
+
+#if KNEWSTUFF_BUILD_DEPRECATED_SINCE(5, 94)
 QList<KNSCore::EntryInternal> QtQuickDialogWrapper::exec()
 {
     open();
@@ -97,3 +121,4 @@ QList<KNSCore::EntryInternal> QtQuickDialogWrapper::exec()
     loop.exec();
     return d->changedEntries;
 }
+#endif

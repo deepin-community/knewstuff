@@ -1,20 +1,21 @@
 # Translation of knewstuff5.po to Catalan
-# Copyright (C) 1998-2021 This_file_is_part_of_KDE
+# Copyright (C) 1998-2022 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Sebastià Pla i Sanz <sps@sastia.com>, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007.
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2003, 2006, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2020, 2021.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2003, 2006, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2020, 2021, 2022.
 # Albert Astals Cid <aacid@kde.org>, 2004, 2005, 2007.
-# Josep M. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
+# Josep M. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 # Robert Millan <rmh@aybabtu.com>, 2009.
 # Orestes Mas <orestes@tsc.upc.edu>, 2010.
+# Empar Montoro Martín <montoro_mde@gva.es>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: knewstuff\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-27 00:40+0000\n"
-"PO-Revision-Date: 2021-10-31 23:33+0100\n"
+"POT-Creation-Date: 2022-12-15 00:44+0000\n"
+"PO-Revision-Date: 2022-12-15 14:13+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -30,7 +31,7 @@ msgstr ""
 msgid "All categories are missing"
 msgstr "Manquen totes les categories"
 
-#: attica/atticaprovider.cpp:479
+#: attica/atticaprovider.cpp:480
 #, kde-format
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
@@ -41,7 +42,7 @@ msgstr ""
 "Aquest element val %1 %2.\n"
 "El voleu comprar?"
 
-#: attica/atticaprovider.cpp:493
+#: attica/atticaprovider.cpp:494
 #, kde-format
 msgid ""
 "Your account balance is too low:\n"
@@ -52,18 +53,18 @@ msgstr ""
 "Saldo: %1\n"
 "Preu: %2"
 
-#: attica/atticaprovider.cpp:536
+#: attica/atticaprovider.cpp:537
 #, kde-format
 msgctxt "voting for an item (good/bad)"
 msgid "Your vote was recorded."
 msgstr "El vostre vot s'ha enregistrat."
 
-#: attica/atticaprovider.cpp:551
+#: attica/atticaprovider.cpp:552
 #, kde-format
 msgid "You are now a fan."
 msgstr "Ara sou un fan."
 
-#: attica/atticaprovider.cpp:579 core/engine.cpp:388 opds/opdsprovider.cpp:288
+#: attica/atticaprovider.cpp:580 core/engine.cpp:394 opds/opdsprovider.cpp:288
 #, kde-format
 msgid ""
 "The service is currently undergoing maintenance and is expected to be back "
@@ -72,32 +73,32 @@ msgstr ""
 "El servei es troba actualment en manteniment i s'espera que torni a "
 "funcionar el %1."
 
-#: attica/atticaprovider.cpp:584
+#: attica/atticaprovider.cpp:585
 #, kde-format
 msgid "Network error %1: %2"
 msgstr "Error de la xarxa %1: %2"
 
-#: attica/atticaprovider.cpp:590
+#: attica/atticaprovider.cpp:591
 #, kde-format
 msgid "Too many requests to server. Please try again in a few minutes."
 msgstr ""
 "Hi ha massa peticions al servidor. Torneu-ho a provar en uns quants minuts."
 
-#: attica/atticaprovider.cpp:593
+#: attica/atticaprovider.cpp:594
 #, kde-format
 msgid ""
 "The Open Collaboration Services instance %1 does not support the attempted "
 "function."
 msgstr ""
 "La instància %1 dels Open Collaboration Services no permet la funció que "
-"s'intenta."
+"s'ha intentat."
 
-#: attica/atticaprovider.cpp:597
+#: attica/atticaprovider.cpp:598
 #, kde-format
 msgid "Unknown Open Collaboration Service API error. (%1)"
 msgstr "Error desconegut de l'API dels serveis «Open Collaboration». (%1)"
 
-#: button.cpp:41 widgets/action.cpp:34
+#: button.cpp:43 widgets/action.cpp:34 widgets/button.cpp:58
 #, kde-format
 msgid "Download New Stuff..."
 msgstr "Baixa les novetats..."
@@ -123,22 +124,22 @@ msgstr ""
 msgid "Initializing"
 msgstr "S'està inicialitzant"
 
-#: core/engine.cpp:239
+#: core/engine.cpp:241
 #, kde-format
 msgid "Configuration file exists, but cannot be opened: \"%1\""
 msgstr "El fitxer de configuració ja existeix, però no es pot obrir: «%1»"
 
-#: core/engine.cpp:252
+#: core/engine.cpp:254
 #, kde-format
 msgid "Configuration file is invalid: \"%1\""
 msgstr "El fitxer de configuració no és vàlid: «%1»"
 
-#: core/engine.cpp:261
+#: core/engine.cpp:263
 #, kde-format
 msgid "Use"
 msgstr "Usa"
 
-#: core/engine.cpp:278
+#: core/engine.cpp:284
 #, kde-format
 msgid ""
 "Could not initialise the installation handler for %1\n"
@@ -147,37 +148,37 @@ msgstr ""
 "No s'ha pogut inicialitzar el gestor d'instal·lació per a %1\n"
 "Aquest és un error crític i s'hauria d'informar a l'autor de l'aplicació"
 
-#: core/engine.cpp:353
+#: core/engine.cpp:359
 #, kde-format
 msgid "Loading provider information"
 msgstr "S'està carregant la informació del proveïdor"
 
-#: core/engine.cpp:414
+#: core/engine.cpp:420
 #, kde-format
 msgid "Could not load get hot new stuff providers from file: %1"
 msgstr "No s'ha pogut carregar cap proveïdor de novetats des del fitxer: %1"
 
-#: core/engine.cpp:444
+#: core/engine.cpp:450
 #, kde-format
 msgid "Error initializing provider."
 msgstr "Error en inicialitzar el proveïdor."
 
-#: core/engine.cpp:448 core/engine.cpp:1016
+#: core/engine.cpp:454 core/engine.cpp:1022
 #, kde-format
 msgid "Loading data"
 msgstr "S'estan carregant les dades"
 
-#: core/engine.cpp:490
+#: core/engine.cpp:496
 #, kde-format
 msgid "Loading data from provider"
 msgstr "S'estan carregant les dades des del proveïdor"
 
-#: core/engine.cpp:495
+#: core/engine.cpp:501
 #, kde-format
 msgid "Loading of providers from file: %1 failed"
 msgstr "Ha fallat la càrrega de proveïdors des del fitxer: %1"
 
-#: core/engine.cpp:743
+#: core/engine.cpp:749
 #, kde-format
 msgid ""
 "Could not perform an installation of the entry %1 as it does not have any "
@@ -187,12 +188,12 @@ msgstr ""
 "definit cap element descarregable. Contacteu amb l'autor perquè puguin "
 "solucionar aquest problema."
 
-#: core/engine.cpp:866
+#: core/engine.cpp:872
 #, kde-format
 msgid "Pick Update Item"
 msgstr "Trieu l'element d'actualització"
 
-#: core/engine.cpp:868
+#: core/engine.cpp:874
 #, kde-format
 msgid ""
 "Please pick the item from the list below which should be used to apply this "
@@ -203,7 +204,7 @@ msgstr ""
 "aquesta actualització. No es pot identificar l'element a seleccionar, basant-"
 "se en l'element original, el qual s'anomenava %1"
 
-#: core/engine.cpp:887
+#: core/engine.cpp:893
 #, kde-format
 msgid ""
 "We failed to identify a good link for updating %1, and are unable to perform "
@@ -212,25 +213,25 @@ msgstr ""
 "S'ha fallat en identificar un bon enllaç per a actualitzar %1 i no es pot "
 "realitzar l'actualització"
 
-#: core/engine.cpp:966
+#: core/engine.cpp:972
 #, kde-format
 msgid "Re: %1"
 msgstr "Re: %1"
 
-#: core/engine.cpp:1008 ui/itemsgridviewdelegate.cpp:329
+#: core/engine.cpp:1014 ui/itemsgridviewdelegate.cpp:329
 #: ui/itemsviewdelegate.cpp:117
 #, kde-format
 msgid "Installing"
 msgstr "S'està instal·lant"
 
-#: core/engine.cpp:1012
+#: core/engine.cpp:1018
 #, kde-format
 msgid "Loading one preview"
 msgid_plural "Loading %1 previews"
 msgstr[0] "S'està carregant una vista prèvia"
 msgstr[1] "S'estan carregant %1 vistes prèvies"
 
-#: core/engine.cpp:1214
+#: core/engine.cpp:1225
 #, kde-format
 msgid ""
 "Failed to adopt '%1'\n"
@@ -250,47 +251,36 @@ msgid "Download of item failed: no download URL for \"%1\"."
 msgstr ""
 "La baixada de l'element ha fallat: no hi ha cap URL de baixada per a «%1»."
 
-#: core/installation.cpp:245
+#: core/installation.cpp:249
 #, kde-format
 msgid "Download of \"%1\" failed, error: %2"
 msgstr "La baixada de «%1» ha fallat. Error: %2"
 
-#: core/installation.cpp:259
+#: core/installation.cpp:262
 #, kde-format
 msgid ""
-"The downloaded file is a html file. This indicates a link to a website "
-"instead of the actual download. Would you like to open the site with a "
-"browser instead?"
+"Cannot install '%1' because it points to a web page. Click <a "
+"href='%2'>here</a> to finish the installation."
 msgstr ""
-"El fitxer baixat és un fitxer HTML. Això indica un enllaç a un lloc web en "
-"lloc de la baixada real. Voleu obrir el lloc amb un navegador?"
+"No s'ha pogut instal·lar «%1» perquè apunta a una pàgina web. Feu clic <a "
+"href='%2'>aquí</a> per a finalitzar la instal·lació."
 
-#: core/installation.cpp:261
-#, kde-format
-msgid "Possibly bad download link"
-msgstr "Possiblement l'enllaç de baixada és incorrecte"
-
-#: core/installation.cpp:264
-#, kde-format
-msgid "Downloaded file was a HTML file. Opened in browser."
-msgstr "El fitxer baixat és un fitxer HTML. S'ha obert en un navegador."
-
-#: core/installation.cpp:302
+#: core/installation.cpp:303
 #, kde-format
 msgid "Could not install \"%1\": file not found."
 msgstr "No s'ha pogut instal·lar «%1»: no s'ha trobat el fitxer."
 
-#: core/installation.cpp:489
+#: core/installation.cpp:493
 #, kde-format
 msgid "The installation of %1 failed to create the expected new directory %2"
 msgstr "La instal·lació de %1 ha fallat en crear el directori nou esperat %2"
 
-#: core/installation.cpp:512 core/installation.cpp:827
+#: core/installation.cpp:516 core/installation.cpp:841
 #, kde-format
 msgid "Installation of %1 failed: %2"
 msgstr "La instal·lació de %1 ha fallat: %2"
 
-#: core/installation.cpp:521
+#: core/installation.cpp:525
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the service type %2 was not accepted by "
@@ -301,7 +291,7 @@ msgstr ""
 "de servei %2 (heu oblidat instal·lar el connector de suport del KPackage per "
 "a aquest tipus de paquet?)"
 
-#: core/installation.cpp:531
+#: core/installation.cpp:535
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain a "
@@ -310,7 +300,7 @@ msgstr ""
 "Ha fallat la instal·lació de %1, ja que el paquet baixat no conté cap "
 "estructura correcta del KPackage."
 
-#: core/installation.cpp:537
+#: core/installation.cpp:541
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not list a "
@@ -319,7 +309,7 @@ msgstr ""
 "Ha fallat la instal·lació de %1, ja que el paquet baixat no mostra cap tipus "
 "de servei."
 
-#: core/installation.cpp:544
+#: core/installation.cpp:548
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain "
@@ -328,17 +318,17 @@ msgstr ""
 "Ha fallat la instal·lació de %1, ja que el paquet baixat no conté cap "
 "metainformació útil, el qual vol dir que no és un KPackage vàlid."
 
-#: core/installation.cpp:577
+#: core/installation.cpp:582
 #, kde-format
 msgid "Could not determine the type of archive of the downloaded file %1"
 msgstr "No s'ha pogut determinar el tipus d'arxiu del fitxer baixat %1"
 
-#: core/installation.cpp:589
+#: core/installation.cpp:594
 #, kde-format
 msgid "Failed to open the archive file %1. The reported error was: %2"
 msgstr "Ha fallat en crear l'arxiu %1. L'error informat ha estat: %2"
 
-#: core/installation.cpp:672
+#: core/installation.cpp:678
 #, kde-format
 msgid ""
 "This file already exists on disk (possibly due to an earlier failed download "
@@ -349,17 +339,17 @@ msgstr ""
 "fallit de descàrrega). En continuar se sobreescriurà. Voleu sobreescriure el "
 "fitxer existent?"
 
-#: core/installation.cpp:675
+#: core/installation.cpp:681
 #, kde-format
 msgid "Overwrite File"
 msgstr "Sobreescriu el fitxer"
 
-#: core/installation.cpp:691
+#: core/installation.cpp:700
 #, kde-format
 msgid "Unable to move the file %1 to the intended destination %2"
 msgstr "No s'ha pogut moure el fitxer %1 a la destinació prevista %2"
 
-#: core/installation.cpp:714
+#: core/installation.cpp:723
 #, kde-format
 msgid ""
 "The installation failed while attempting to run the command:\n"
@@ -374,7 +364,7 @@ msgstr ""
 "La sortida retornada ha estat:\n"
 "%2"
 
-#: core/installation.cpp:724
+#: core/installation.cpp:733
 #, kde-format
 msgid ""
 "The installation failed with code %1 while attempting to run the command:\n"
@@ -389,7 +379,7 @@ msgstr ""
 "La sortida retornada ha estat:\n"
 "%3"
 
-#: core/installation.cpp:766
+#: core/installation.cpp:775
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed file %2 could not be "
@@ -400,7 +390,7 @@ msgstr ""
 "eliminar automàticament. Si creu que es tracta d'un error, podeu provar "
 "eliminant manualment aquest fitxer."
 
-#: core/installation.cpp:834
+#: core/installation.cpp:848
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain a "
@@ -409,7 +399,7 @@ msgstr ""
 "Ha fallat l'eliminació de %1, ja que el paquet instal·lat no conté cap "
 "estructura correcta del KPackage."
 
-#: core/installation.cpp:839
+#: core/installation.cpp:853
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package is not a supported type "
@@ -420,7 +410,7 @@ msgstr ""
 "admès (heu oblidat instal·lar el connector de suport del KPackage per a "
 "aquest tipus de paquet?)"
 
-#: core/installation.cpp:846
+#: core/installation.cpp:860
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain any "
@@ -429,7 +419,7 @@ msgstr ""
 "Ha fallat l'eliminació de %1, ja que el paquet instal·lat no conté cap "
 "metainformació útil, el qual vol dir que no és un KPackage vàlid."
 
-#: core/installation.cpp:886
+#: core/installation.cpp:900
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the downloaded file %2 could not be "
@@ -438,7 +428,7 @@ msgstr ""
 "Ha fallat l'eliminació de %1, ja que el fitxer baixat %2 no es pot eliminar "
 "automàticament."
 
-#: core/installation.cpp:891
+#: core/installation.cpp:905
 #, kde-format
 msgid ""
 "The removal of %1 failed, due to the installed file not being a KPackage. "
@@ -449,7 +439,7 @@ msgstr ""
 "El fitxer en qüestió era %2, i el podeu intentar suprimir vós mateix, si "
 "esteu segur que ja no és necessari."
 
-#: core/installation.cpp:899
+#: core/installation.cpp:913
 #, kde-format
 msgid ""
 "The removal of %1 failed, as there seems to somehow be more than one thing "
@@ -459,7 +449,7 @@ msgstr ""
 "instal·lat més d'un objecte, el qual se suposa que no és possible per a les "
 "entrades basades en el KPackage."
 
-#: core/installation.cpp:932
+#: core/installation.cpp:946
 #, kde-format
 msgid ""
 "The uninstallation process failed to successfully run the command %1\n"
@@ -491,7 +481,7 @@ msgid ""
 "because the package is invalid. We attempted to operate on the package %1"
 msgstr ""
 "Ha fallat en crear un treball per a la tasca de gestió de paquets. "
-"Normalment això és perquè el paquet no és vàlid. S'intentarà operar amb el "
+"Normalment, això és perquè el paquet no és vàlid. S'intentarà operar amb el "
 "paquet %1"
 
 #: core/jobs/kpackagejob.cpp:121
@@ -515,7 +505,7 @@ msgid ""
 "<i>gpg</i> is installed, otherwise verification of downloaded resources will "
 "not be possible.</qt>"
 msgstr ""
-"<qt>No s'ha pogut iniciar <i>gpg</i> i recuperar les claus disponibles. "
+"<qt>No s'ha pogut iniciar <i>gpg</i> ni recuperar les claus disponibles. "
 "Assegureu-vos que <i>gpg</i> està instal·lat, altrament la verificació dels "
 "recursos baixats no serà possible.</qt>"
 
@@ -535,7 +525,7 @@ msgid ""
 "that <i>gpg</i> is installed, otherwise verification of downloaded resources "
 "will not be possible.</qt>"
 msgstr ""
-"<qt>No s'ha pogut iniciar <i>gpg</i> i comprovar la validesa del fitxer. "
+"<qt>No s'ha pogut iniciar <i>gpg</i> ni comprovar la validesa del fitxer. "
 "Assegureu-vos que <i>gpg</i> està instal·lat, altrament la verificació dels "
 "recursos baixats no serà possible.</qt>"
 
@@ -555,7 +545,7 @@ msgid ""
 "<qt>Cannot start <i>gpg</i> and sign the file. Make sure that <i>gpg</i> is "
 "installed, otherwise signing of the resources will not be possible.</qt>"
 msgstr ""
-"<qt>No es pot engegar <i>gpg</i> i signar el fitxer. Assegureu-vos que "
+"<qt>No s'ha pogut iniciar <i>gpg</i> ni signar el fitxer. Assegureu-vos que "
 "<i>gpg</i> està instal·lat, altrament no serà possible signar els recursos.</"
 "qt>"
 
@@ -632,7 +622,7 @@ msgid "Provider:"
 msgstr "Proveïdor:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
-#: downloadwidget.ui:71 qtquick/qml/Page.qml:424
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:426
 #, kde-format
 msgid "Category:"
 msgstr "Categoria:"
@@ -737,19 +727,19 @@ msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "Configura..."
 
-#: kmoretools/kmoretools_p.h:376
+#: kmoretools/kmoretools_p.h:373
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Visit homepage"
 msgstr "Visita la pàgina web"
 
-#: kmoretools/kmoretools_p.h:388
+#: kmoretools/kmoretools_p.h:386
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Install"
 msgstr "Instal·la"
 
-#: kmoretools/kmoretools_p.h:396
+#: kmoretools/kmoretools_p.h:395
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "No further information available."
@@ -765,19 +755,19 @@ msgstr "Configura el menú"
 msgid "Configure menu - %1"
 msgstr "Configura el menú - %1"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:176
+#: kmoretools/kmoretoolsmenufactory.cpp:173
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current folder"
 msgstr "%1 - Carpeta actual"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:183
+#: kmoretools/kmoretoolsmenufactory.cpp:182
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current device"
 msgstr "%1 - Dispositiu actual"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:197
+#: kmoretools/kmoretoolsmenufactory.cpp:195
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - all devices"
@@ -872,24 +862,19 @@ msgstr "novetats"
 msgid "Download New %1..."
 msgstr "Baixa %1..."
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt "The dialog title when we know which type of stuff is being requested"
 msgid "Download New %1"
 msgstr "Baixa %1"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt ""
 "A placeholder title used in the dialog when there is no better title "
 "available"
 msgid "Download New Stuff"
 msgstr "Baixa les novetats"
-
-#: qtquick/qml/Dialog.qml:127
-#, kde-format
-msgid "Contribute your own..."
-msgstr "Contribuïu amb les vostres..."
 
 #: qtquick/qml/DownloadItemsSheet.qml:30
 #, kde-format
@@ -922,14 +907,14 @@ msgctxt ""
 "Status message to be shown when the entry is in the process of being "
 "installed OR uninstalled"
 msgid "Currently working on the item %1 by %2. Please wait..."
-msgstr "Actualment s'està treballant sobre l'element %1 per a %2. Espereu..."
+msgstr "Actualment, s'està treballant sobre l'element %1 per a %2. Espereu..."
 
 #: qtquick/qml/EntryDetails.qml:67
 #, kde-format
 msgctxt ""
 "Status message to be shown when the entry is in the process of being updated"
 msgid "Currently updating the item %1 by %2. Please wait..."
-msgstr "Actualment s'està actualitzant l'element %1 per a %2. Espereu..."
+msgstr "Actualment, s'està actualitzant l'element %1 per a %2. Espereu..."
 
 #: qtquick/qml/EntryDetails.qml:69
 #, kde-format
@@ -941,7 +926,7 @@ msgid ""
 "bugs.kde.org/enter_bug.cgi?product=frameworks-knewstuff\">Please report this "
 "to the KDE Community in a bug report</a>."
 msgstr ""
-"Actualment aquest element està en un estat no vàlid o desconegut. <a href="
+"Actualment, aquest element està en un estat no vàlid o desconegut. <a href="
 "\"https://bugs.kde.org/enter_bug.cgi?product=frameworks-knewstuff\">Informeu-"
 "ho a la comunitat KDE amb un informe d'error</a>."
 
@@ -1234,20 +1219,17 @@ msgstr ""
 msgid "Go to..."
 msgstr "Ves a..."
 
-#: qtquick/qml/Page.qml:510
+#: qtquick/qml/Page.qml:442
+#, kde-format
+msgid "Contribute your own…"
+msgstr "Col·laboreu-hi amb…"
+
+#: qtquick/qml/Page.qml:508
 #, kde-format
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
-msgid "Loading more..."
-msgstr "S'està carregant més..."
-
-#: qtquick/qml/Page.qml:521
-#, kde-format
-msgctxt ""
-"A message shown when there are no entries in the list, and when it is not "
-"trying to load anything"
-msgid "There is no hot new stuff to get here"
-msgstr "Aquí no hi ha cap novetat"
+msgid "Loading more…"
+msgstr "S'està carregant més…"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:110
 #, kde-format
@@ -1349,6 +1331,11 @@ msgstr "S'està instal·lant..."
 msgctxt "Title for a dialog box which shows error messages"
 msgid "An Error Occurred"
 msgstr "S'ha produït un error"
+
+#: qtquick/qml/private/ErrorDisplayer.qml:51
+#, kde-format
+msgid "Please try again later."
+msgstr "Torneu-ho a intentar més tard."
 
 #: qtquick/qml/private/GridTileDelegate.qml:113
 #, kde-format
@@ -1565,7 +1552,7 @@ msgstr ""
 #: ui/entrydetailsdialog.cpp:84
 #, kde-format
 msgid "Details for %1"
-msgstr "Detalls per a %1"
+msgstr "Detalls de %1"
 
 #: ui/entrydetailsdialog.cpp:100
 #, kde-format
@@ -1658,3 +1645,29 @@ msgstr "Instal·la una altra vegada"
 msgctxt "Show the size of the file in a list"
 msgid "<p>Size: %1</p>"
 msgstr "<p>Mida: %1</p>"
+
+#: ui/widgetquestionlistener.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Yes"
+msgstr "Sí"
+
+#: ui/widgetquestionlistener.cpp:90
+#, kde-format
+msgctxt "@action:button"
+msgid "No"
+msgstr "No"
+
+#~ msgid ""
+#~ "The downloaded file is a html file. This indicates a link to a website "
+#~ "instead of the actual download. Would you like to open the site with a "
+#~ "browser instead?"
+#~ msgstr ""
+#~ "El fitxer baixat és un fitxer HTML. Això indica un enllaç a un lloc web "
+#~ "en lloc de la baixada real. Voleu obrir el lloc amb un navegador?"
+
+#~ msgid "Possibly bad download link"
+#~ msgstr "Possiblement, l'enllaç de baixada és incorrecte"
+
+#~ msgid "Downloaded file was a HTML file. Opened in browser."
+#~ msgstr "El fitxer baixat és un fitxer HTML. S'ha obert en un navegador."

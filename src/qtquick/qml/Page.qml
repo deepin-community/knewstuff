@@ -18,7 +18,7 @@ import QtQuick.Layouts 1.11 as QtLayouts
 import QtGraphicalEffects 1.11 as QtEffects
 
 import org.kde.kcm 1.2 as KCM
-import org.kde.kirigami 2.14 as Kirigami
+import org.kde.kirigami 2.19 as Kirigami
 
 import org.kde.newstuff 1.85 as NewStuff
 
@@ -176,7 +176,7 @@ KCM.GridViewKCM {
             anchors.fill: parent
             anchors.margins: Kirigami.Units.smallSpacing
             visible: true
-            text: i18n("The content available here has been uploaded by users like you, and has not been reviewed by your distributor for functionality or stability.")
+            text: i18nd("knewstuff5", "The content available here has been uploaded by users like you, and has not been reviewed by your distributor for functionality or stability.")
         }
     }
 
@@ -366,7 +366,7 @@ KCM.GridViewKCM {
                 text: i18nd("knewstuff5", "Upload...")
                 tooltip: i18nd("knewstuff5", "Learn how to add your own hot new stuff to this list")
                 iconName: "upload-media"
-                visible: root.showUploadAction && newStuffEngine.engine.uploadEnabled
+                visible: newStuffEngine.engine.uploadEnabled
                 onTriggered: {
                     pageStack.push(uploadPage);
                 }
@@ -386,7 +386,11 @@ KCM.GridViewKCM {
                     id: searchField
                     focusSequence: "Ctrl+F"
                     placeholderText: i18nd("knewstuff5", "Search...")
+                    text: newStuffEngine.searchTerm
                     onAccepted: { newStuffEngine.searchTerm = searchField.text; }
+                    Component.onCompleted: if (!Kirigami.InputMethod.willShowOnActive) {
+                        forceActiveFocus();
+                    }
                 }
             }
         ]
@@ -412,24 +416,34 @@ KCM.GridViewKCM {
         function onModelReset() { searchModelActions.children = []; }
     }
 
+    extraFooterTopPadding: false
+    footer: QtLayouts.RowLayout {
+        visible: visibleChildren.length > 0
+        height: visible ? implicitHeight : 0
 
-    // Only show this footer when there are multiple categories
-    // nb: This would be more sensibly done by just setting the footer item visibility,
-    // but that causes holes in the layout. This works, however, so we'll just deal with that.
-    footer: categoriesCombo.count > 2 ? categoriesFooter : null
-    readonly property Item categoriesFooter: QtLayouts.RowLayout {
-        width: parent ? parent.width - Kirigami.Units.smallSpacing * 2 : 0
-        x: Kirigami.Units.smallSpacing // Not super keen on this, but it's what the Page does for moving stuff around internally, so let's be consistent...
         QtControls.Label {
+            visible: categoriesCombo.count > 2
             text: i18nd("knewstuff5", "Category:")
         }
+
         QtControls.ComboBox {
             id: categoriesCombo
             QtLayouts.Layout.fillWidth: true
+            visible: count > 2
             model: newStuffEngine.categories
             textRole: "displayName"
             onCurrentIndexChanged: {
                 newStuffEngine.categoriesFilter = model.data(model.index(currentIndex, 0), NewStuff.CategoriesModel.NameRole);
+            }
+        }
+
+        QtControls.Button {
+            QtLayouts.Layout.alignment: Qt.AlignRight
+            text: i18nd("knewstuff5", "Contribute your own…")
+            icon.name: "upload-media"
+            visible: newStuffEngine.engine.uploadEnabled && !uploadAction.visible
+            onClicked: {
+                pageStack.push(uploadPage);
             }
         }
     }
@@ -488,36 +502,10 @@ KCM.GridViewKCM {
         Rectangle {
             anchors.fill: parent
             color: Kirigami.Theme.backgroundColor
-            opacity: 0.7
         }
-        QtControls.BusyIndicator {
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                bottom: parent.verticalCenter
-                bottomMargin: Kirigami.Units.largeSpacing
-            }
-            running: (newStuffEngine.isLoading || newStuffModel.isLoadingData)  && newStuffEngine.isValid
-        }
-        QtControls.Label {
-            anchors {
-                top: parent.verticalCenter
-                left: parent.left
-                right: parent.right
-                margins: Kirigami.Units.largeSpacing
-            }
-            horizontalAlignment: Text.AlignHCenter
-            text: newStuffEngine.isLoading ? newStuffEngine.statusMessage :
-            i18ndc("knewstuff5", "A text shown beside a busy indicator suggesting that data is being fetched", "Loading more...")
+        Kirigami.LoadingPlaceholder {
+            anchors.centerIn: parent
+            text: i18ndc("knewstuff5", "A text shown beside a busy indicator suggesting that data is being fetched", "Loading more…")
         }
     }
-    Kirigami.PlaceholderMessage {
-         anchors.centerIn: parent
-         anchors.left: parent.left
-         anchors.right: parent.right
-         anchors.margins: Kirigami.Units.largeSpacing
-
-         visible: newStuffEngine.isLoading === false && newStuffModel.isLoadingData === false && view.count === 0
-
-         text: i18ndc("knewstuff5", "A message shown when there are no entries in the list, and when it is not trying to load anything", "There is no hot new stuff to get here")
-     }
 }

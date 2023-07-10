@@ -24,7 +24,6 @@
 #include <KShell>
 #include <QDesktopServices>
 #include <knewstuffcore_debug.h>
-#include <memory>
 
 #include <QDir>
 #include <QDirIterator>
@@ -145,6 +144,7 @@ public:
     QString busyMessage;
     QString useLabel;
     bool uploadEnabled = false;
+    QString configFileName;
 };
 
 Engine::Engine(QObject *parent)
@@ -224,6 +224,7 @@ bool Engine::init(const QString &configfile)
         conf.reset(new KConfig(configfile));
         qCWarning(KNEWSTUFFCORE) << "Using a deprecated location for the knsrc file" << configfile
                                  << " - please contact the author of the software which provides this file to get it updated to use the new location";
+        configFileName = QFileInfo(configfile).baseName();
     } else if (isRelativeConfig && actualConfig.isEmpty()) {
         configFileName = QFileInfo(QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("knsrcfiles/%1").arg(configfile))).baseName();
         conf.reset(new KConfig(QStringLiteral("knsrcfiles/%1").arg(configfile), KConfig::FullConfig, QStandardPaths::GenericDataLocation));
@@ -234,6 +235,7 @@ bool Engine::init(const QString &configfile)
         configFileName = configFileInfo.baseName();
         conf.reset(new KConfig(configfile));
     }
+    d->configFileName = configFileName;
 
     if (conf->accessMode() == KConfig::NoAccess) {
         Q_EMIT signalErrorCode(KNSCore::ConfigFileError, i18n("Configuration file exists, but cannot be opened: \"%1\"", configfile), configfile);
@@ -263,7 +265,11 @@ bool Engine::init(const QString &configfile)
     d->uploadEnabled = group.readEntry("UploadEnabled", true);
     Q_EMIT uploadEnabledChanged();
 
-    m_providerFileUrl = group.readEntry("ProvidersUrl");
+    m_providerFileUrl = group.readEntry("ProvidersUrl", QStringLiteral("https://autoconfig.kde.org/ocs/providers.xml"));
+    if (m_providerFileUrl == QLatin1String("https://download.kde.org/ocs/providers.xml")) {
+        m_providerFileUrl = QStringLiteral("https://autoconfig.kde.org/ocs/providers.xml");
+        qCWarning(KNEWSTUFFCORE) << "Please make sure" << configfile << "has ProvidersUrl=https://autoconfig.kde.org/ocs/providers.xml";
+    }
     if (group.readEntry("UseLocalProvidersFile", "false").toLower() == QLatin1String{"true"}) {
         // The local providers file is called "appname.providers", to match "appname.knsrc"
         m_providerFileUrl = QUrl::fromLocalFile(QLatin1String("%1.providers").arg(configFullPath.left(configFullPath.length() - 6))).toString();
@@ -421,7 +427,7 @@ void Engine::slotProviderFileLoaded(const QDomDocument &doc)
 
         QSharedPointer<KNSCore::Provider> provider;
         if (isAtticaProviderFile || n.attribute(QStringLiteral("type")).toLower() == QLatin1String("rest")) {
-            provider.reset(new AtticaProvider(m_categories, d->name));
+            provider.reset(new AtticaProvider(m_categories, d->configFileName));
             connect(provider.data(), &Provider::categoriesMetadataLoded, this, [this](const QList<Provider::CategoryMetadata> &categories) {
                 d->categoriesMetadata = categories;
                 Q_EMIT signalCategoriesMetadataLoded(categories);
@@ -455,7 +461,7 @@ void Engine::atticaProviderLoaded(const Attica::Provider &atticaProvider)
         qCDebug(KNEWSTUFFCORE) << "Found provider: " << atticaProvider.baseUrl() << " but it does not support content";
         return;
     }
-    QSharedPointer<KNSCore::Provider> provider = QSharedPointer<KNSCore::Provider>(new AtticaProvider(atticaProvider, m_categories, d->name));
+    QSharedPointer<KNSCore::Provider> provider = QSharedPointer<KNSCore::Provider>(new AtticaProvider(atticaProvider, m_categories, d->configFileName));
     connect(provider.data(), &Provider::categoriesMetadataLoded, this, [this](const QList<Provider::CategoryMetadata> &categories) {
         d->categoriesMetadata = categories;
         Q_EMIT signalCategoriesMetadataLoded(categories);
@@ -1053,6 +1059,11 @@ void KNSCore::Engine::setPageSize(int pageSize)
     m_pageSize = pageSize;
 }
 
+int KNSCore::Engine::pageSize() const
+{
+    return m_pageSize;
+}
+
 #if KNEWSTUFFCORE_BUILD_DEPRECATED_SINCE(5, 83)
 QStringList KNSCore::Engine::configSearchLocations(bool includeFallbackLocations)
 {
@@ -1201,7 +1212,7 @@ void Engine::adoptEntry(const EntryInternal &entry)
 
     process->start();
 
-    connect(process, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, [this, process, entry, command](int exitCode, QProcess::ExitStatus) {
+    connect(process, &QProcess::finished, this, [this, process, entry, command](int exitCode) {
         if (exitCode == 0) {
             Q_EMIT signalEntryEvent(entry, EntryInternal::EntryEvent::AdoptedEvent);
 
@@ -1225,4 +1236,17 @@ QString Engine::useLabel() const
 bool KNSCore::Engine::uploadEnabled() const
 {
     return d->uploadEnabled;
+}
+
+QVector<Attica::Provider *> Engine::atticaProviders() const
+{
+    QVector<Attica::Provider *> ret;
+    ret.reserve(m_providers.size());
+    for (const auto &p : m_providers) {
+        const auto atticaProvider = p.dynamicCast<AtticaProvider>();
+        if (atticaProvider) {
+            ret += atticaProvider->provider();
+        }
+    }
+    return ret;
 }

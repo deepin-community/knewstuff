@@ -112,6 +112,7 @@ libKF5NewStuffCore.so.5 libkf5newstuffcore5 #MINVER#
  _ZN7KNSCore13EntryInternal15setShortSummaryERK7QString@Base 5.54.0
  _ZN7KNSCore13EntryInternal16setDownloadCountEi@Base 5.54.0
  _ZN7KNSCore13EntryInternal16setUpdateVersionERK7QString@Base 5.54.0
+ _ZN7KNSCore13EntryInternal16staticMetaObjectE@Base 5.93.0
  _ZN7KNSCore13EntryInternal17setInstalledFilesERK11QStringList@Base 5.54.0
  _ZN7KNSCore13EntryInternal19setNumberOfCommentsEi@Base 5.54.0
  _ZN7KNSCore13EntryInternal19setUnInstalledFilesERK11QStringList@Base 5.54.0
@@ -348,6 +349,7 @@ libKF5NewStuffCore.so.5 libkf5newstuffcore5 #MINVER#
  _ZN7KNSCore8Question16staticMetaObjectE@Base 5.54.0
  _ZN7KNSCore8Question3askEv@Base 5.54.0
  _ZN7KNSCore8Question7setListERK11QStringList@Base 5.54.0
+ _ZN7KNSCore8Question8setEntryERKNS_13EntryInternalE@Base 5.102.0
  _ZN7KNSCore8Question8setTitleERK7QString@Base 5.54.0
  _ZN7KNSCore8QuestionC1ENS0_12QuestionTypeEP7QObject@Base 5.54.0
  _ZN7KNSCore8QuestionC2ENS0_12QuestionTypeEP7QObject@Base 5.54.0
@@ -468,6 +470,7 @@ libKF5NewStuffCore.so.5 libkf5newstuffcore5 #MINVER#
  _ZNK7KNSCore6Engine11providerIDsEv@Base 5.90.0
  _ZNK7KNSCore6Engine13uploadEnabledEv@Base 5.90.0
  _ZNK7KNSCore6Engine15adoptionCommandERKNS_13EntryInternalE@Base 5.54.0
+ _ZNK7KNSCore6Engine15atticaProvidersEv@Base 5.93.0
  _ZNK7KNSCore6Engine15defaultProviderEv@Base 5.69.0
  _ZNK7KNSCore6Engine16categoriesFilterEv@Base 5.54.0
  _ZNK7KNSCore6Engine17downloadTagFilterEv@Base 5.54.0
@@ -475,6 +478,7 @@ libKF5NewStuffCore.so.5 libkf5newstuffcore5 #MINVER#
  _ZNK7KNSCore6Engine4nameEv@Base 5.69.0
  _ZNK7KNSCore6Engine5cacheEv@Base 5.74.0
  _ZNK7KNSCore6Engine6filterEv@Base 5.69.0
+ _ZNK7KNSCore6Engine8pageSizeEv@Base 5.96.0
  _ZNK7KNSCore6Engine8providerERK7QString@Base 5.69.0
  _ZNK7KNSCore6Engine8sortModeEv@Base 5.69.0
  _ZNK7KNSCore6Engine8useLabelEv@Base 5.77.0
@@ -498,6 +502,7 @@ libKF5NewStuffCore.so.5 libkf5newstuffcore5 #MINVER#
  _ZNK7KNSCore8Question10metaObjectEv@Base 5.54.0
  _ZNK7KNSCore8Question12questionTypeEv@Base 5.54.0
  _ZNK7KNSCore8Question4listEv@Base 5.54.0
+ _ZNK7KNSCore8Question5entryEv@Base 5.102.0
  _ZNK7KNSCore8Question5titleEv@Base 5.54.0
  _ZNK7KNSCore8Question8questionEv@Base 5.54.0
  _ZNK7KNSCore8Question8responseEv@Base 5.54.0
@@ -528,8 +533,8 @@ libKF5NewStuffCore.so.5 libkf5newstuffcore5 #MINVER#
  (optional=templinst|arch=armel riscv64)_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE@Base 5.69.0
  (optional=templinst|arch=!armel !riscv64)_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 5.69.0
  (optional=templinst|arch=!alpha !amd64 !arm64 !hurd-i386 !i386 !mips64el !mipsel !powerpc !ppc64 !ppc64el !riscv64 !s390x !x32)_ZTISt19_Sp_make_shared_tag@Base 5.69.0
- (optional=templinst|arch=armel riscv64)_ZTISt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIS1_ELN9__gnu_cxx12_Lock_policyE1EE@Base 5.69.0
- (optional=templinst|arch=!armel !riscv64)_ZTISt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE@Base 5.69.0
+ (optional=templinst|arch=armel riscv64)_ZTISt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIvELN9__gnu_cxx12_Lock_policyE1EE@Base 5.69.0
+ (optional=templinst|arch=!armel !riscv64)_ZTISt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIvELN9__gnu_cxx12_Lock_policyE2EE@Base 5.69.0
  _ZTSN11Syndication4Atom4LinkE@Base 5.90.0
  _ZTSN11Syndication4Atom6PersonE@Base 5.90.0
  _ZTSN7KNSCore10ItemsModelE@Base 5.54.0
@@ -553,8 +558,8 @@ libKF5NewStuffCore.so.5 libkf5newstuffcore5 #MINVER#
  (optional=templinst|arch=armel riscv64)_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE@Base 5.69.0
  (optional=templinst|arch=!armel !riscv64)_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 5.69.0
  (optional=templinst)_ZTSSt19_Sp_make_shared_tag@Base 5.69.0
- (optional=templinst|arch=armel riscv64)_ZTSSt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIS1_ELN9__gnu_cxx12_Lock_policyE1EE@Base 5.69.0
- (optional=templinst|arch=!armel !riscv64)_ZTSSt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE@Base 5.69.0
+ (optional=templinst|arch=armel riscv64)_ZTSSt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIvELN9__gnu_cxx12_Lock_policyE1EE@Base 5.69.0
+ (optional=templinst|arch=!armel !riscv64)_ZTSSt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIvELN9__gnu_cxx12_Lock_policyE2EE@Base 5.69.0
  _ZTVN11Syndication4Atom4LinkE@Base 5.90.0
  _ZTVN11Syndication4Atom6PersonE@Base 5.90.0
  _ZTVN7KNSCore10ItemsModelE@Base 5.54.0
@@ -572,6 +577,6 @@ libKF5NewStuffCore.so.5 libkf5newstuffcore5 #MINVER#
  _ZTVN7KNSCore8QuestionE@Base 5.54.0
  _ZTVN7KNSCore8SecurityE@Base 5.54.0
  _ZTVN7KNSCore9XmlLoaderE@Base 5.54.0
- (optional=templinst|arch=armel riscv64)_ZTVSt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIS1_ELN9__gnu_cxx12_Lock_policyE1EE@Base 5.69.0
- (optional=templinst|arch=!armel !riscv64)_ZTVSt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE@Base 5.69.0
+ (optional=templinst|arch=armel riscv64)_ZTVSt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIvELN9__gnu_cxx12_Lock_policyE1EE@Base 5.69.0
+ (optional=templinst|arch=!armel !riscv64)_ZTVSt23_Sp_counted_ptr_inplaceIN7KNSCore6AuthorESaIvELN9__gnu_cxx12_Lock_policyE2EE@Base 5.69.0
  _ZZNSt19_Sp_make_shared_tag5_S_tiEvE5__tag@Base 5.69.0

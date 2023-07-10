@@ -8,15 +8,13 @@ libpkgs_gen_strict_local_shlibs = $(libpkgs_all_packages)
 include /usr/share/pkg-kde-tools/qt-kde-team/2/library-packages.mk
 
 %:
-	dh $@ --with kf5,pkgkde_symbolshelper --buildsystem kf5 --without build_stamp
+	dh $@ --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
 	dh_auto_configure -- -DBUILD_QCH=ON
 
 override_dh_auto_test:
-	# disable autotests at build time
-	# xvfb-run -a dh_auto_test
-	:
+	xvfb-run -a dh_auto_test
 
 override_dh_gencontrol-arch: libpkgs_gen_strict_local_shlibs
 	dh_gencontrol -a

@@ -17,13 +17,15 @@
 import QtQuick 2.11
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.5 as QtControls
-import QtQuick.Dialogs 1.3 as QtDialogs
+import QtQuick.Layouts 1.13 as QtLayouts
 
 import org.kde.kirigami 2.7 as Kirigami
 import org.kde.newstuff 1.85 as NewStuff
 
-QtDialogs.Dialog {
+Window {
     id: component
+    width: Math.min(Kirigami.Units.gridUnit * 44, Screen.width)
+    height: Math.min(Kirigami.Units.gridUnit * 30, Screen.height)
 
     /**
      * The configuration file to use for this button
@@ -92,6 +94,10 @@ QtDialogs.Dialog {
         newStuffPage.showEntryDetails(providerId, entryId);
     }
 
+    function open() {
+        component.visible = true;
+    }
+
     onVisibleChanged: {
         if (visible === true) {
             newStuffPage.engine.engine.revalidateCacheEntries();
@@ -99,42 +105,15 @@ QtDialogs.Dialog {
         }
     }
 
-    contentItem: Rectangle {
-        color: Kirigami.Theme.backgroundColor
-        implicitWidth: Math.min(Kirigami.Units.gridUnit * 44, Screen.width)
-        implicitHeight: Math.min(Kirigami.Units.gridUnit * 30, Screen.height)
+    color: Kirigami.Theme.backgroundColor
+
+    NewStuff.DialogContent {
+        anchors.fill: parent
+        id: newStuffPage
+        downloadNewWhat: component.downloadNewWhat
         Keys.onEscapePressed: component.close()
-        NewStuff.DialogContent {
-            id: newStuffPage
-            anchors {
-                top: parent.top
-                left: parent.left
-                right: parent.right
-                bottom: buttonBox.top
-            }
-            downloadNewWhat: component.downloadNewWhat
-        }
-        QtControls.DialogButtonBox {
-            id: buttonBox
-            anchors {
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
-            standardButtons: QtControls.DialogButtonBox.Close
-            onRejected: component.close()
-            QtControls.Button {
-                text: i18nd("knewstuff5", "Contribute your own...")
-                icon.name: "upload-media"
-                visible: newStuffPage.engine.engine.uploadEnabled
-                enabled: !(newStuffPage.pageStack.currentItem instanceof NewStuff.UploadPage)
-                onClicked: {
-                    newStuffPage.pageStack.push(uploadPage);
-                }
-                QtControls.DialogButtonBox.buttonRole: QtControls.DialogButtonBox.HelpRole
-            }
-        }
     }
+
     Component {
         id: uploadPage
         NewStuff.UploadPage {

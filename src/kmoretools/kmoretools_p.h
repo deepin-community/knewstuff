@@ -10,14 +10,14 @@
 #include "kmoretools.h"
 
 #include <QDebug>
-#include <QDesktopServices>
 #include <QDir>
 #include <QJsonArray>
 #include <QJsonDocument>
+#include <QJsonObject>
 #include <QRegularExpression>
-#include <QTextCodec>
 #include <QUrl>
 
+#include <KIO/OpenUrlJob>
 #include <KLocalizedString>
 
 #define _ QStringLiteral
@@ -156,10 +156,7 @@ public:
         jsonWrite(jObj);
         QJsonDocument doc(jObj);
         auto jByteArray = doc.toJson(QJsonDocument::Compact);
-        // http://stackoverflow.com/questions/14131127/qbytearray-to-qstring
-        // QJsonDocument uses UTF-8 => we use 106=UTF-8
-        // return QTextCodec::codecForMib(106)->toUnicode(jByteArray);
-        return QString::fromUtf8(jByteArray); // accidentally the ctor of QString takes an UTF-8 byte array
+        return QString::fromUtf8(jByteArray);
     }
 
     void deserialize(const QString &text)
@@ -378,7 +375,8 @@ public:
             auto url = homepageUrl;
             // todo/review: is it ok to have sender and receiver the same object?
             QObject::connect(websiteAction, &QAction::triggered, websiteAction, [url](bool) {
-                QDesktopServices::openUrl(url);
+                auto *job = new KIO::OpenUrlJob(url);
+                job->start();
             });
         }
 
@@ -388,7 +386,8 @@ public:
             auto installAction = submenuForNotInstalled->addAction(i18nc("@action:inmenu", "Install"));
             installAction->setIcon(QIcon::fromTheme(QStringLiteral("download")));
             QObject::connect(installAction, &QAction::triggered, installAction, [appstreamUrl](bool) {
-                QDesktopServices::openUrl(appstreamUrl);
+                auto *job = new KIO::OpenUrlJob(appstreamUrl);
+                job->start();
             });
         }
 

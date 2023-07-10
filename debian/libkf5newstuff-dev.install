@@ -1,10 +1,9 @@
+usr/include/KF5/KMoreTools/
 usr/include/KF5/KNewStuff3/
-usr/include/KF5/knewstuff_version.h
-usr/include/KF5/knewstuffcore_version.h
-usr/include/KF5/knewstuffquick_version.h
 usr/lib/*/cmake/KF5NewStuff/
 usr/lib/*/cmake/KF5NewStuffCore/
 usr/lib/*/cmake/KF5NewStuffQuick/
 usr/lib/*/libKF5NewStuff*.so
 usr/lib/*/qt5/mkspecs/modules/qt_KNewStuff.pri
 usr/lib/*/qt5/mkspecs/modules/qt_KNewStuffCore.pri
+usr/lib/*/qt5/plugins/designer/knewstuffwidgets.so

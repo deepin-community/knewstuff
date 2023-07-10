@@ -1,0 +1,22 @@
+Description: Don’t set executable bit for installed desktop files
+ Upstream added the executable bit to installed desktop file with
+ the justification that otherwise the files cannot be run when
+ not installed as root.
+ .
+ For the Debian package all files are installed as root so this
+ patch disables setting the executable flag for these desktop files.
+ .
+ See https://invent.kde.org/frameworks/knewstuff/-/commit/b74815f570eb93e93fe6aa4e930465c1b047b922
+Author: Aurélien COUDERC <coucouf@debian.org>
+
+--- a/data/CMakeLists.txt
++++ b/data/CMakeLists.txt
+@@ -6,7 +6,7 @@
+     kmoretools-desktopfiles/
+     DESTINATION ${KDE_INSTALL_DATADIR_KF}/kmoretools/presets-kmoretools
+     FILES_MATCHING PATTERN "*.desktop"
+-    PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
++    PERMISSIONS OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ
+     )
+ 
+ # install other files like icons, skip .sh helpers
