@@ -1,3 +1,1 @@
-disable-flaky-test
-ensure-use-of-correct-provider-url-c8165b7a.patch
-add-conditional-cache-preference-e1c6f2bf.patch
+remove-executable-flag-from-desktop-files

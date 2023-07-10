@@ -2,22 +2,22 @@
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2003, 2004, 2005, 2006.
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2003, 2005.
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008, 2009, 2010.
-# Oystein Steffensen-Alvaervik <ystein@posteo.net>, 2021.
+# Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-18 00:40+0000\n"
-"PO-Revision-Date: 2021-12-15 13:24+0100\n"
-"Last-Translator: Oystein Steffensen-Alvaervik <ystein@posteo.net>\n"
+"POT-Creation-Date: 2022-12-15 00:44+0000\n"
+"PO-Revision-Date: 2023-01-23 20:54+0100\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.12.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "All categories are missing"
 msgstr "Alle kategoriane manglar"
 
-#: attica/atticaprovider.cpp:479
+#: attica/atticaprovider.cpp:480
 #, kde-format
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
@@ -39,7 +39,7 @@ msgstr ""
 "Dette kostar %2 %1.\n"
 "Ønskjer du å kjøpa det?"
 
-#: attica/atticaprovider.cpp:493
+#: attica/atticaprovider.cpp:494
 #, kde-format
 msgid ""
 "Your account balance is too low:\n"
@@ -50,35 +50,35 @@ msgstr ""
 "Balanse: %1\n"
 "Pris: %2"
 
-#: attica/atticaprovider.cpp:536
+#: attica/atticaprovider.cpp:537
 #, kde-format
 msgctxt "voting for an item (good/bad)"
 msgid "Your vote was recorded."
 msgstr "Stemmen din er registrert."
 
-#: attica/atticaprovider.cpp:551
+#: attica/atticaprovider.cpp:552
 #, kde-format
 msgid "You are now a fan."
 msgstr "Du er no ein tilhengjar."
 
-#: attica/atticaprovider.cpp:579 core/engine.cpp:388 opds/opdsprovider.cpp:288
+#: attica/atticaprovider.cpp:580 core/engine.cpp:394 opds/opdsprovider.cpp:288
 #, kde-format
 msgid ""
 "The service is currently undergoing maintenance and is expected to be back "
 "in %1."
-msgstr ""
+msgstr "Tenesta er under vedlikehald. Me ventar at dette tek %1."
 
-#: attica/atticaprovider.cpp:584
+#: attica/atticaprovider.cpp:585
 #, kde-format
 msgid "Network error %1: %2"
 msgstr "Nettverksfeil %1: %2"
 
-#: attica/atticaprovider.cpp:590
+#: attica/atticaprovider.cpp:591
 #, kde-format
 msgid "Too many requests to server. Please try again in a few minutes."
 msgstr "For mange førespurnadar til tenaren. Prøv om att om nokre minutt."
 
-#: attica/atticaprovider.cpp:593
+#: attica/atticaprovider.cpp:594
 #, kde-format
 msgid ""
 "The Open Collaboration Services instance %1 does not support the attempted "
@@ -87,12 +87,12 @@ msgstr ""
 "Open Collaboration Services-instansen %1 støttar ikkje den førespurde "
 "funksjonen."
 
-#: attica/atticaprovider.cpp:597
+#: attica/atticaprovider.cpp:598
 #, kde-format
 msgid "Unknown Open Collaboration Service API error. (%1)"
 msgstr "Ukjend API-feil for Open Collaboration Service. (%1)"
 
-#: button.cpp:41 widgets/action.cpp:34
+#: button.cpp:43 widgets/action.cpp:34 widgets/button.cpp:58
 #, kde-format
 msgid "Download New Stuff..."
 msgstr "Last ned nye saker …"
@@ -118,22 +118,22 @@ msgstr ""
 msgid "Initializing"
 msgstr "Førebur"
 
-#: core/engine.cpp:239
+#: core/engine.cpp:241
 #, kde-format
 msgid "Configuration file exists, but cannot be opened: \"%1\""
 msgstr "Oppsettfila finst, men kunne ikkje opnast: «%1»"
 
-#: core/engine.cpp:252
+#: core/engine.cpp:254
 #, kde-format
 msgid "Configuration file is invalid: \"%1\""
 msgstr "Oppsettfila er ugyldig: «%1»"
 
-#: core/engine.cpp:261
+#: core/engine.cpp:263
 #, kde-format
 msgid "Use"
 msgstr "Bruk"
 
-#: core/engine.cpp:278
+#: core/engine.cpp:284
 #, kde-format
 msgid ""
 "Could not initialise the installation handler for %1\n"
@@ -143,49 +143,51 @@ msgstr ""
 "Dette er ein kritisk feil, som du bør melda frå om til utviklaren av "
 "programmet."
 
-#: core/engine.cpp:353
+#: core/engine.cpp:359
 #, kde-format
 msgid "Loading provider information"
 msgstr "Hentar leverandørinformasjon"
 
-#: core/engine.cpp:414
+#: core/engine.cpp:420
 #, kde-format
 msgid "Could not load get hot new stuff providers from file: %1"
 msgstr "Klarte ikkje henta nye godsaker frå fila: %1"
 
-#: core/engine.cpp:444
+#: core/engine.cpp:450
 #, kde-format
 msgid "Error initializing provider."
 msgstr "Feil ved klargjering av leverandør."
 
-#: core/engine.cpp:448 core/engine.cpp:1016
+#: core/engine.cpp:454 core/engine.cpp:1022
 #, kde-format
 msgid "Loading data"
 msgstr "Hentar data"
 
-#: core/engine.cpp:490
+#: core/engine.cpp:496
 #, kde-format
 msgid "Loading data from provider"
 msgstr "Hentar data frå leverandør"
 
-#: core/engine.cpp:495
+#: core/engine.cpp:501
 #, kde-format
 msgid "Loading of providers from file: %1 failed"
 msgstr "Klarte ikkje henta leverandørinfo frå fila: %1 mislukka"
 
-#: core/engine.cpp:743
+#: core/engine.cpp:749
 #, kde-format
 msgid ""
 "Could not perform an installation of the entry %1 as it does not have any "
 "downloadable items defined. Please contact the author so they can fix this."
 msgstr ""
+"Klarte ikkje installera oppføringa «%1» då ho ikkje inneheld filer som kan "
+"lastast ned. Kontakt utviklaren slik at dette kan rettast opp i."
 
-#: core/engine.cpp:866
+#: core/engine.cpp:872
 #, kde-format
 msgid "Pick Update Item"
 msgstr "Vel oppdateringselement"
 
-#: core/engine.cpp:868
+#: core/engine.cpp:874
 #, kde-format
 msgid ""
 "Please pick the item from the list below which should be used to apply this "
@@ -196,7 +198,7 @@ msgstr ""
 "ikkje automatisk velja rett element basert på namnet på det opphavlege "
 "elementet, %1."
 
-#: core/engine.cpp:887
+#: core/engine.cpp:893
 #, kde-format
 msgid ""
 "We failed to identify a good link for updating %1, and are unable to perform "
@@ -205,25 +207,25 @@ msgstr ""
 "Fann ikkje ei fungerande lenkje for oppdatering av %1, og kan derfor ikkje "
 "utføra oppdateringa."
 
-#: core/engine.cpp:966
+#: core/engine.cpp:972
 #, kde-format
 msgid "Re: %1"
 msgstr "Re: %1"
 
-#: core/engine.cpp:1008 ui/itemsgridviewdelegate.cpp:329
+#: core/engine.cpp:1014 ui/itemsgridviewdelegate.cpp:329
 #: ui/itemsviewdelegate.cpp:117
 #, kde-format
 msgid "Installing"
 msgstr "Installerer"
 
-#: core/engine.cpp:1012
+#: core/engine.cpp:1018
 #, kde-format
 msgid "Loading one preview"
 msgid_plural "Loading %1 previews"
 msgstr[0] "Lastar éi førehandsvising"
 msgstr[1] "Lastar %1 førehandsvisingar"
 
-#: core/engine.cpp:1214
+#: core/engine.cpp:1225
 #, kde-format
 msgid ""
 "Failed to adopt '%1'\n"
@@ -242,48 +244,34 @@ msgstr "Ugyldig element."
 msgid "Download of item failed: no download URL for \"%1\"."
 msgstr "Klarte ikkje lasta ned element: manglar adresse for «%1»."
 
-#: core/installation.cpp:245
+#: core/installation.cpp:249
 #, kde-format
 msgid "Download of \"%1\" failed, error: %2"
 msgstr "Klarte ikkje lasta ned «%1» – feil: %2"
 
-#: core/installation.cpp:259
+#: core/installation.cpp:262
 #, kde-format
 msgid ""
-"The downloaded file is a html file. This indicates a link to a website "
-"instead of the actual download. Would you like to open the site with a "
-"browser instead?"
+"Cannot install '%1' because it points to a web page. Click <a "
+"href='%2'>here</a> to finish the installation."
 msgstr ""
-"Den nedlasta fila er ei HTML-fil. Dette er truleg ei lenkje til ei nettside "
-"i staden for den verkelege fila. Ønskjer du å opna nettsida i ein nettlesar "
-"i staden for?"
 
-#: core/installation.cpp:261
-#, kde-format
-msgid "Possibly bad download link"
-msgstr "Mogleg ugyldig nedlastingslenkje"
-
-#: core/installation.cpp:264
-#, kde-format
-msgid "Downloaded file was a HTML file. Opened in browser."
-msgstr "Den nedlasta fila var ei HTML-fil. Vart opna i nettlesaren."
-
-#: core/installation.cpp:302
+#: core/installation.cpp:303
 #, kde-format
 msgid "Could not install \"%1\": file not found."
 msgstr "Klarte ikkje installera «%1»: fann ikkje fila."
 
-#: core/installation.cpp:484
+#: core/installation.cpp:493
 #, kde-format
 msgid "The installation of %1 failed to create the expected new directory %2"
 msgstr "Installeringa av %1 klarte ikkje oppretta den nye forventa mappa %2"
 
-#: core/installation.cpp:507 core/installation.cpp:817
+#: core/installation.cpp:516 core/installation.cpp:841
 #, kde-format
 msgid "Installation of %1 failed: %2"
 msgstr "Feil ved installering av %1: %2"
 
-#: core/installation.cpp:516
+#: core/installation.cpp:525
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the service type %2 was not accepted by "
@@ -294,7 +282,7 @@ msgstr ""
 "systemet. (Har du gløymt å installera KPackage-tillegget som gjev støtte for "
 "denne typen pakke?)"
 
-#: core/installation.cpp:526
+#: core/installation.cpp:535
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain a "
@@ -303,7 +291,7 @@ msgstr ""
 "Klarte ikkje installera %1, då den nedlasta pakken ikkje inneheld ein gyldig "
 "KPackage-struktur."
 
-#: core/installation.cpp:532
+#: core/installation.cpp:541
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not list a "
@@ -311,7 +299,7 @@ msgid ""
 msgstr ""
 "Klarte ikkje installera %1, då den nedlasta pakken ikkje oppgjev tenestetype."
 
-#: core/installation.cpp:539
+#: core/installation.cpp:548
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain "
@@ -321,17 +309,17 @@ msgstr ""
 "nyttig metadata­informasjon, noko som medfører at det ikkje er ein gyldig "
 "KPackage."
 
-#: core/installation.cpp:572
+#: core/installation.cpp:582
 #, kde-format
 msgid "Could not determine the type of archive of the downloaded file %1"
 msgstr "Klarte ikkje fastsetja kva type arkiv den nedlasta fila %1 er"
 
-#: core/installation.cpp:584
+#: core/installation.cpp:594
 #, kde-format
 msgid "Failed to open the archive file %1. The reported error was: %2"
 msgstr "Klarte ikkje opna arkivfila %1. Den rapporterte feilen var: %2"
 
-#: core/installation.cpp:667
+#: core/installation.cpp:678
 #, kde-format
 msgid ""
 "This file already exists on disk (possibly due to an earlier failed download "
@@ -342,17 +330,17 @@ msgstr ""
 "nedlastingsforsøk). Viss du held fram, vert fila overskriven. Ønskjer du å "
 "overskriva fila?"
 
-#: core/installation.cpp:670
+#: core/installation.cpp:681
 #, kde-format
 msgid "Overwrite File"
 msgstr "Overskriv fil"
 
-#: core/installation.cpp:686
+#: core/installation.cpp:700
 #, kde-format
 msgid "Unable to move the file %1 to the intended destination %2"
 msgstr "Klarte ikkje flytta fila %1 til %2"
 
-#: core/installation.cpp:709
+#: core/installation.cpp:723
 #, kde-format
 msgid ""
 "The installation failed while attempting to run the command:\n"
@@ -367,7 +355,7 @@ msgstr ""
 "Utdata frå kommandoen var:\n"
 "%2"
 
-#: core/installation.cpp:719
+#: core/installation.cpp:733
 #, kde-format
 msgid ""
 "The installation failed with code %1 while attempting to run the command:\n"
@@ -383,7 +371,7 @@ msgstr ""
 "Utdata frå kommandoen var:\n"
 "%3"
 
-#: core/installation.cpp:761
+#: core/installation.cpp:775
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed file %2 could not be "
@@ -394,7 +382,7 @@ msgstr ""
 "automatisk. Du kan prøva å sletta fila manuelt dersom du meiner dette er ein "
 "feil."
 
-#: core/installation.cpp:824
+#: core/installation.cpp:848
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain a "
@@ -403,7 +391,7 @@ msgstr ""
 "Klarte ikkje fjerna %1, då den installerte pakken ikkje inneheld ein gyldig "
 "KPackage-struktur."
 
-#: core/installation.cpp:829
+#: core/installation.cpp:853
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package is not a supported type "
@@ -414,7 +402,7 @@ msgstr ""
 "type. (Har du gløymt å installera KPackage-tillegget som gjev støtte for "
 "denne typen pakke?)"
 
-#: core/installation.cpp:836
+#: core/installation.cpp:860
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain any "
@@ -423,7 +411,7 @@ msgstr ""
 "Klarte ikkje fjerna %1, då den installerte pakken ikkje inneheld noko nyttig "
 "metadata­informasjon, noko som medfører at det ikkje er ein gyldig KPackage."
 
-#: core/installation.cpp:876
+#: core/installation.cpp:900
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the downloaded file %2 could not be "
@@ -432,7 +420,7 @@ msgstr ""
 "Klarte ikkje fjerna %1, då den nedlasta fila %2 ikkje kunne fjernast "
 "automatisk."
 
-#: core/installation.cpp:881
+#: core/installation.cpp:905
 #, kde-format
 msgid ""
 "The removal of %1 failed, due to the installed file not being a KPackage. "
@@ -443,7 +431,7 @@ msgstr ""
 "aktuelle fila var %2, og du kan prøva å sletta ho sjølv dersom du er trygg "
 "på at ho ikkje er nødvendig."
 
-#: core/installation.cpp:889
+#: core/installation.cpp:913
 #, kde-format
 msgid ""
 "The removal of %1 failed, as there seems to somehow be more than one thing "
@@ -452,7 +440,7 @@ msgstr ""
 "Klarte ikkje fjerna %1, då det ser ut til å vera meir enn éin ting som er "
 "installert, noko som ikkje skal vera mogleg for KPackage-baserte oppføringar."
 
-#: core/installation.cpp:922
+#: core/installation.cpp:946
 #, kde-format
 msgid ""
 "The uninstallation process failed to successfully run the command %1\n"
@@ -623,7 +611,7 @@ msgid "Provider:"
 msgstr "Leverandør:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
-#: downloadwidget.ui:71 qtquick/qml/Page.qml:424
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:426
 #, kde-format
 msgid "Category:"
 msgstr "Kategori:"
@@ -729,19 +717,19 @@ msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "Set opp …"
 
-#: kmoretools/kmoretools_p.h:376
+#: kmoretools/kmoretools_p.h:373
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Visit homepage"
 msgstr "Besøk heimesida"
 
-#: kmoretools/kmoretools_p.h:388
+#: kmoretools/kmoretools_p.h:386
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Install"
 msgstr "Installer"
 
-#: kmoretools/kmoretools_p.h:396
+#: kmoretools/kmoretools_p.h:395
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "No further information available."
@@ -757,19 +745,19 @@ msgstr "Set opp meny"
 msgid "Configure menu - %1"
 msgstr "Set opp meny – %1"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:176
+#: kmoretools/kmoretoolsmenufactory.cpp:173
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current folder"
 msgstr "%1 – gjeldande mappe"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:183
+#: kmoretools/kmoretoolsmenufactory.cpp:182
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current device"
 msgstr "%1 – gjeldande eining"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:197
+#: kmoretools/kmoretoolsmenufactory.cpp:195
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - all devices"
@@ -865,24 +853,19 @@ msgstr "ting"
 msgid "Download New %1..."
 msgstr "Last ned nye %1 …"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt "The dialog title when we know which type of stuff is being requested"
 msgid "Download New %1"
 msgstr "Last ned nye %1"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt ""
 "A placeholder title used in the dialog when there is no better title "
 "available"
 msgid "Download New Stuff"
 msgstr "Last ned nye ting"
-
-#: qtquick/qml/Dialog.qml:127
-#, kde-format
-msgid "Contribute your own..."
-msgstr "Bidra …"
 
 #: qtquick/qml/DownloadItemsSheet.qml:30
 #, kde-format
@@ -1095,12 +1078,15 @@ msgid ""
 msgstr ""
 "Fann ikkje oppføringa du prøvde å visa (identifisert med den unike ID-en %1)."
 
+# Sjå tilsvarande tekst i «plasma-welcome.po».
 #: qtquick/qml/Page.qml:179
 #, kde-format
 msgid ""
 "The content available here has been uploaded by users like you, and has not "
 "been reviewed by your distributor for functionality or stability."
 msgstr ""
+"Alt innhaldet her er lasta opp av andre brukarar. Leverandøren din har ikkje "
+"kvalitets­sikra at det verkar skikkeleg eller stabilt."
 
 #: qtquick/qml/Page.qml:214
 #, kde-format
@@ -1222,20 +1208,17 @@ msgstr "Les om korleis du kan bidra med kule, nye ting til lista"
 msgid "Go to..."
 msgstr "Gå til …"
 
-#: qtquick/qml/Page.qml:510
+#: qtquick/qml/Page.qml:442
+#, kde-format
+msgid "Contribute your own…"
+msgstr "Bidra med noko sjølv …"
+
+#: qtquick/qml/Page.qml:508
 #, kde-format
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
-msgid "Loading more..."
+msgid "Loading more…"
 msgstr "Hentar fleire …"
-
-#: qtquick/qml/Page.qml:521
-#, kde-format
-msgctxt ""
-"A message shown when there are no entries in the list, and when it is not "
-"trying to load anything"
-msgid "There is no hot new stuff to get here"
-msgstr "Det finst ingen kule, nye ting her"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:110
 #, kde-format
@@ -1338,6 +1321,11 @@ msgctxt "Title for a dialog box which shows error messages"
 msgid "An Error Occurred"
 msgstr "Det oppstod ein feil"
 
+#: qtquick/qml/private/ErrorDisplayer.qml:51
+#, kde-format
+msgid "Please try again later."
+msgstr "Prøv på nytt seinare."
+
 #: qtquick/qml/private/GridTileDelegate.qml:113
 #, kde-format
 msgid "None"
@@ -1367,7 +1355,7 @@ msgstr "Oppdaterer informasjon …"
 #, kde-format
 msgctxt "The name of the KDE Store"
 msgid "KDE Store"
-msgstr ""
+msgstr "KDE-nettbutikken"
 
 #: qtquick/qml/UploadPage.qml:101
 #, kde-format
@@ -1454,25 +1442,25 @@ msgstr "Start på nytt"
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "New"
-msgstr ""
+msgstr "Nye"
 
 #: qtquick/searchpresetmodel.cpp:70
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Home"
-msgstr ""
+msgstr "Heim"
 
 #: qtquick/searchpresetmodel.cpp:73
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Shelf"
-msgstr ""
+msgstr "Hylle"
 
 #: qtquick/searchpresetmodel.cpp:76
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Up"
-msgstr ""
+msgstr "Opp"
 
 #: qtquick/searchpresetmodel.cpp:79
 #, kde-format
@@ -1496,7 +1484,7 @@ msgstr "Alle oppføringar"
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Search Preset: %1"
-msgstr ""
+msgstr "Ferdigsøk: %1"
 
 #: tools/knewstuff-dialog/main.cpp:31
 #, kde-format
@@ -1632,3 +1620,15 @@ msgstr "Installer på nytt"
 msgctxt "Show the size of the file in a list"
 msgid "<p>Size: %1</p>"
 msgstr "<p>Storleik: %1</p>"
+
+#: ui/widgetquestionlistener.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Yes"
+msgstr "Ja"
+
+#: ui/widgetquestionlistener.cpp:90
+#, kde-format
+msgctxt "@action:button"
+msgid "No"
+msgstr "Nei"

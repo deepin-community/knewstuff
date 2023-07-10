@@ -6,14 +6,14 @@
 # Eugene Onischenko <oneugene@ukr.net>, 2002, 2003, 2004, 2005, 2006.
 # Andriy Rysin <arysin@bcsii.com>, 2002, 2003, 2006, 2007.
 # Ivan Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2005, 2006, 2007, 2008.
-# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: knewstuff5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-27 00:40+0000\n"
-"PO-Revision-Date: 2021-09-15 08:55+0300\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"POT-Creation-Date: 2022-12-15 00:44+0000\n"
+"PO-Revision-Date: 2022-12-15 09:11+0200\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "All categories are missing"
 msgstr "Усі категорії пропущено"
 
-#: attica/atticaprovider.cpp:479
+#: attica/atticaprovider.cpp:480
 #, kde-format
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
@@ -39,7 +39,7 @@ msgstr ""
 "Вартість позначеного складає %2 %1.\n"
 "Підтверджуєте купівлю?"
 
-#: attica/atticaprovider.cpp:493
+#: attica/atticaprovider.cpp:494
 #, kde-format
 msgid ""
 "Your account balance is too low:\n"
@@ -50,18 +50,18 @@ msgstr ""
 "На рахунку: %1\n"
 "Ціна: %2"
 
-#: attica/atticaprovider.cpp:536
+#: attica/atticaprovider.cpp:537
 #, kde-format
 msgctxt "voting for an item (good/bad)"
 msgid "Your vote was recorded."
 msgstr "Ваш голос враховано."
 
-#: attica/atticaprovider.cpp:551
+#: attica/atticaprovider.cpp:552
 #, kde-format
 msgid "You are now a fan."
 msgstr "Вас додано до списку прихильників."
 
-#: attica/atticaprovider.cpp:579 core/engine.cpp:388 opds/opdsprovider.cpp:288
+#: attica/atticaprovider.cpp:580 core/engine.cpp:394 opds/opdsprovider.cpp:288
 #, kde-format
 msgid ""
 "The service is currently undergoing maintenance and is expected to be back "
@@ -70,19 +70,19 @@ msgstr ""
 "Зараз служба перебуває на обслуговуванні. Відновлення повноцінної роботи "
 "очікуємо за %1."
 
-#: attica/atticaprovider.cpp:584
+#: attica/atticaprovider.cpp:585
 #, kde-format
 msgid "Network error %1: %2"
 msgstr "Помилка мережі %1: %2"
 
-#: attica/atticaprovider.cpp:590
+#: attica/atticaprovider.cpp:591
 #, kde-format
 msgid "Too many requests to server. Please try again in a few minutes."
 msgstr ""
 "Занадто багато запитів до сервера. Будь ласка, повторіть спробу за декілька "
 "хвилин."
 
-#: attica/atticaprovider.cpp:593
+#: attica/atticaprovider.cpp:594
 #, kde-format
 msgid ""
 "The Open Collaboration Services instance %1 does not support the attempted "
@@ -91,13 +91,13 @@ msgstr ""
 "У екземплярі Open Collaboration Services %1 не передбачено підтримки "
 "відповідної функції."
 
-#: attica/atticaprovider.cpp:597
+#: attica/atticaprovider.cpp:598
 #, kde-format
 msgid "Unknown Open Collaboration Service API error. (%1)"
 msgstr ""
 "Невідома помилка програмного інтерфейсу служби Open Collaboration. (%1)"
 
-#: button.cpp:41 widgets/action.cpp:34
+#: button.cpp:43 widgets/action.cpp:34 widgets/button.cpp:58
 #, kde-format
 msgid "Download New Stuff..."
 msgstr "Отримати нові матеріали..."
@@ -123,22 +123,22 @@ msgstr ""
 msgid "Initializing"
 msgstr "Ініціалізація"
 
-#: core/engine.cpp:239
+#: core/engine.cpp:241
 #, kde-format
 msgid "Configuration file exists, but cannot be opened: \"%1\""
 msgstr "Файл налаштувань знайдено, але його не вдалося відкрити: «%1»"
 
-#: core/engine.cpp:252
+#: core/engine.cpp:254
 #, kde-format
 msgid "Configuration file is invalid: \"%1\""
 msgstr "Некоректний файл налаштувань: «%1»"
 
-#: core/engine.cpp:261
+#: core/engine.cpp:263
 #, kde-format
 msgid "Use"
 msgstr "Використати"
 
-#: core/engine.cpp:278
+#: core/engine.cpp:284
 #, kde-format
 msgid ""
 "Could not initialise the installation handler for %1\n"
@@ -147,37 +147,37 @@ msgstr ""
 "Не вдалося ініціалізувати обробник встановлення для %1\n"
 "Це критична помилка, про яку слід повідомити автору програми"
 
-#: core/engine.cpp:353
+#: core/engine.cpp:359
 #, kde-format
 msgid "Loading provider information"
 msgstr "Завантаження відомостей про надавача"
 
-#: core/engine.cpp:414
+#: core/engine.cpp:420
 #, kde-format
 msgid "Could not load get hot new stuff providers from file: %1"
 msgstr "Не вдалося завантажити параметри надання нових даних з файла: %1"
 
-#: core/engine.cpp:444
+#: core/engine.cpp:450
 #, kde-format
 msgid "Error initializing provider."
 msgstr "Помилка під час спроби ініціалізація запису надавача послуг."
 
-#: core/engine.cpp:448 core/engine.cpp:1016
+#: core/engine.cpp:454 core/engine.cpp:1022
 #, kde-format
 msgid "Loading data"
 msgstr "Завантаження даних"
 
-#: core/engine.cpp:490
+#: core/engine.cpp:496
 #, kde-format
 msgid "Loading data from provider"
 msgstr "Завантаження даних постачальника послуг"
 
-#: core/engine.cpp:495
+#: core/engine.cpp:501
 #, kde-format
 msgid "Loading of providers from file: %1 failed"
 msgstr "Завантаження параметрів надання з файла: помилка %1"
 
-#: core/engine.cpp:743
+#: core/engine.cpp:749
 #, kde-format
 msgid ""
 "Could not perform an installation of the entry %1 as it does not have any "
@@ -187,12 +187,12 @@ msgstr ""
 "жодних придатних до отримання пунктів даних. Будь ласка, зв'яжіться із "
 "автором, щоб розв'язати цю проблему."
 
-#: core/engine.cpp:866
+#: core/engine.cpp:872
 #, kde-format
 msgid "Pick Update Item"
 msgstr "Виберіть запис для оновлення"
 
-#: core/engine.cpp:868
+#: core/engine.cpp:874
 #, kde-format
 msgid ""
 "Please pick the item from the list below which should be used to apply this "
@@ -203,7 +203,7 @@ msgstr ""
 "скористатися для застосування цього оновлення. Нам не вдалося визначити, "
 "який із записів слід вибрати на основі початкового запису, який мав назву %1"
 
-#: core/engine.cpp:887
+#: core/engine.cpp:893
 #, kde-format
 msgid ""
 "We failed to identify a good link for updating %1, and are unable to perform "
@@ -212,18 +212,18 @@ msgstr ""
 "Не вдалося визначити добре посилання для оновлення %1, тому оновлення є "
 "неможливим"
 
-#: core/engine.cpp:966
+#: core/engine.cpp:972
 #, kde-format
 msgid "Re: %1"
 msgstr "Відповідь: %1"
 
-#: core/engine.cpp:1008 ui/itemsgridviewdelegate.cpp:329
+#: core/engine.cpp:1014 ui/itemsgridviewdelegate.cpp:329
 #: ui/itemsviewdelegate.cpp:117
 #, kde-format
 msgid "Installing"
 msgstr "Встановлення"
 
-#: core/engine.cpp:1012
+#: core/engine.cpp:1018
 #, kde-format
 msgid "Loading one preview"
 msgid_plural "Loading %1 previews"
@@ -232,7 +232,7 @@ msgstr[1] "Завантаження %1 ескізів"
 msgstr[2] "Завантаження %1 ескізів"
 msgstr[3] "Завантаження ескізу"
 
-#: core/engine.cpp:1214
+#: core/engine.cpp:1225
 #, kde-format
 msgid ""
 "Failed to adopt '%1'\n"
@@ -253,49 +253,37 @@ msgstr ""
 "Спроба отримання елемента зазнала невдачі: для «%1» не вказано адреси "
 "отримання."
 
-#: core/installation.cpp:245
+#: core/installation.cpp:249
 #, kde-format
 msgid "Download of \"%1\" failed, error: %2"
 msgstr "Спроба отримання «%1» зазнала невдачі, помилка: %2"
 
-#: core/installation.cpp:259
+#: core/installation.cpp:262
 #, kde-format
 msgid ""
-"The downloaded file is a html file. This indicates a link to a website "
-"instead of the actual download. Would you like to open the site with a "
-"browser instead?"
+"Cannot install '%1' because it points to a web page. Click <a "
+"href='%2'>here</a> to finish the installation."
 msgstr ""
-"Отриманий файл є файлом у форматі HTML. Це означає, що отримано посилання на "
-"дані, а не самі дані. Бажаєте відкрити відповідну сторінку у переглядачі "
-"інтернету?"
+"Не вдалося встановити «%1», оскільки його адреса вказує на сторінку "
+"інтернету. Натисніть <a href='%2'>тут</a>, щоб завершити встановлення."
 
-#: core/installation.cpp:261
-#, kde-format
-msgid "Possibly bad download link"
-msgstr "Ймовірно, помилкове посилання на отримання"
-
-#: core/installation.cpp:264
-#, kde-format
-msgid "Downloaded file was a HTML file. Opened in browser."
-msgstr "Отримано файл HTML. Цей файл відкрито у переглядачі інтернету."
-
-#: core/installation.cpp:302
+#: core/installation.cpp:303
 #, kde-format
 msgid "Could not install \"%1\": file not found."
 msgstr "Не вдалося встановити «%1»: файл не знайдено."
 
-#: core/installation.cpp:489
+#: core/installation.cpp:493
 #, kde-format
 msgid "The installation of %1 failed to create the expected new directory %2"
 msgstr ""
 "Під час спроби встановити %1 не вдалося створити потрібний новий каталог %2"
 
-#: core/installation.cpp:512 core/installation.cpp:827
+#: core/installation.cpp:516 core/installation.cpp:841
 #, kde-format
 msgid "Installation of %1 failed: %2"
 msgstr "Не вдалося встановити %1: %2"
 
-#: core/installation.cpp:521
+#: core/installation.cpp:525
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the service type %2 was not accepted by "
@@ -306,7 +294,7 @@ msgstr ""
 "системи (чи не забули ви встановити додаток підтримки цього типу пакунків у "
 "KPackage?)"
 
-#: core/installation.cpp:531
+#: core/installation.cpp:535
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain a "
@@ -315,7 +303,7 @@ msgstr ""
 "Не вдалося встановити %1, оскільки отриманий пакунок не містить належної "
 "структури KPackage."
 
-#: core/installation.cpp:537
+#: core/installation.cpp:541
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not list a "
@@ -324,7 +312,7 @@ msgstr ""
 "Не вдалося встановити %1, оскільки отриманий пакунок не містить даних щодо "
 "типу служби."
 
-#: core/installation.cpp:544
+#: core/installation.cpp:548
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain "
@@ -333,17 +321,17 @@ msgstr ""
 "Не вдалося встановити %1, оскільки отриманий пакунок не містить корисних "
 "метаданих, отже не є коректним пакунком KPackage."
 
-#: core/installation.cpp:577
+#: core/installation.cpp:582
 #, kde-format
 msgid "Could not determine the type of archive of the downloaded file %1"
 msgstr "Не вдалося визначити тип архіву для отриманого файла %1"
 
-#: core/installation.cpp:589
+#: core/installation.cpp:594
 #, kde-format
 msgid "Failed to open the archive file %1. The reported error was: %2"
 msgstr "Не вдалося відкрити файл архіву %1. Повідомлення про помилку: %2"
 
-#: core/installation.cpp:672
+#: core/installation.cpp:678
 #, kde-format
 msgid ""
 "This file already exists on disk (possibly due to an earlier failed download "
@@ -354,17 +342,17 @@ msgstr ""
 "спроби отримання даних). Якщо ви накажете програмі продовжити виконання дії, "
 "файл буде перезаписано. Хочете перезаписати наявний файл?"
 
-#: core/installation.cpp:675
+#: core/installation.cpp:681
 #, kde-format
 msgid "Overwrite File"
 msgstr "Перезаписати файл"
 
-#: core/installation.cpp:691
+#: core/installation.cpp:700
 #, kde-format
 msgid "Unable to move the file %1 to the intended destination %2"
 msgstr "Не вдалося пересунути файл %1 до планованого призначення %2"
 
-#: core/installation.cpp:714
+#: core/installation.cpp:723
 #, kde-format
 msgid ""
 "The installation failed while attempting to run the command:\n"
@@ -379,7 +367,7 @@ msgstr ""
 "Повернуті повідомлення:\n"
 "%2"
 
-#: core/installation.cpp:724
+#: core/installation.cpp:733
 #, kde-format
 msgid ""
 "The installation failed with code %1 while attempting to run the command:\n"
@@ -394,7 +382,7 @@ msgstr ""
 "Повернуті повідомлення:\n"
 "%3"
 
-#: core/installation.cpp:766
+#: core/installation.cpp:775
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed file %2 could not be "
@@ -405,7 +393,7 @@ msgstr ""
 "встановлений файл %2. Ви можете спробувати вилучити цей файл автоматично, "
 "якщо вважаєте, що це помилка."
 
-#: core/installation.cpp:834
+#: core/installation.cpp:848
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain a "
@@ -414,7 +402,7 @@ msgstr ""
 "Не вдалося вилучити %1, оскільки встановлений пакунок не містить належної "
 "структури KPackage."
 
-#: core/installation.cpp:839
+#: core/installation.cpp:853
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package is not a supported type "
@@ -425,7 +413,7 @@ msgstr ""
 "підтримуваних (чи не забули ви встановити додаток підтримки цього типу "
 "пакунків у KPackage?)"
 
-#: core/installation.cpp:846
+#: core/installation.cpp:860
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain any "
@@ -434,7 +422,7 @@ msgstr ""
 "Не вдалося вилучити %1, оскільки встановлений пакунок не містить корисних "
 "метаданих, отже не є коректним пакунком KPackage."
 
-#: core/installation.cpp:886
+#: core/installation.cpp:900
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the downloaded file %2 could not be "
@@ -443,7 +431,7 @@ msgstr ""
 "Не вдалося вилучити %1, оскільки не вдалося автоматично вилучити отриманий "
 "файл %2."
 
-#: core/installation.cpp:891
+#: core/installation.cpp:905
 #, kde-format
 msgid ""
 "The removal of %1 failed, due to the installed file not being a KPackage. "
@@ -454,7 +442,7 @@ msgstr ""
 "Маємо файл %2, який ви можете вилучити власноруч, якщо певні, що він є "
 "непотрібним."
 
-#: core/installation.cpp:899
+#: core/installation.cpp:913
 #, kde-format
 msgid ""
 "The removal of %1 failed, as there seems to somehow be more than one thing "
@@ -464,7 +452,7 @@ msgstr ""
 "екземплярів. Підтримки таких варіантів вилучення для записів на основі "
 "KPackage не передбачено."
 
-#: core/installation.cpp:932
+#: core/installation.cpp:946
 #, kde-format
 msgid ""
 "The uninstallation process failed to successfully run the command %1\n"
@@ -635,7 +623,7 @@ msgid "Provider:"
 msgstr "Надавач послуг:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
-#: downloadwidget.ui:71 qtquick/qml/Page.qml:424
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:426
 #, kde-format
 msgid "Category:"
 msgstr "Категорія:"
@@ -740,19 +728,19 @@ msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "Налаштувати…"
 
-#: kmoretools/kmoretools_p.h:376
+#: kmoretools/kmoretools_p.h:373
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Visit homepage"
 msgstr "Відвідати сайт"
 
-#: kmoretools/kmoretools_p.h:388
+#: kmoretools/kmoretools_p.h:386
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Install"
 msgstr "Встановити"
 
-#: kmoretools/kmoretools_p.h:396
+#: kmoretools/kmoretools_p.h:395
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "No further information available."
@@ -768,19 +756,19 @@ msgstr "Налаштувати меню"
 msgid "Configure menu - %1"
 msgstr "Налаштовування меню – %1"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:176
+#: kmoretools/kmoretoolsmenufactory.cpp:173
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current folder"
 msgstr "%1 — поточна тека"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:183
+#: kmoretools/kmoretoolsmenufactory.cpp:182
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current device"
 msgstr "%1 — поточний пристрій"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:197
+#: kmoretools/kmoretoolsmenufactory.cpp:195
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - all devices"
@@ -875,24 +863,19 @@ msgstr "дані"
 msgid "Download New %1..."
 msgstr "Отримати нові %1…"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt "The dialog title when we know which type of stuff is being requested"
 msgid "Download New %1"
 msgstr "Отримання нових даних %1"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt ""
 "A placeholder title used in the dialog when there is no better title "
 "available"
 msgid "Download New Stuff"
 msgstr "Отримання нових матеріалів"
-
-#: qtquick/qml/Dialog.qml:127
-#, kde-format
-msgid "Contribute your own..."
-msgstr "Додати власну роботу…"
 
 #: qtquick/qml/DownloadItemsSheet.qml:30
 #, kde-format
@@ -1237,20 +1220,17 @@ msgstr "Дізнайтеся про те, як додати результати
 msgid "Go to..."
 msgstr "Перейти до…"
 
-#: qtquick/qml/Page.qml:510
+#: qtquick/qml/Page.qml:442
+#, kde-format
+msgid "Contribute your own…"
+msgstr "Додати власну роботу…"
+
+#: qtquick/qml/Page.qml:508
 #, kde-format
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
-msgid "Loading more..."
+msgid "Loading more…"
 msgstr "Завантажуємо додаткові дані…"
-
-#: qtquick/qml/Page.qml:521
-#, kde-format
-msgctxt ""
-"A message shown when there are no entries in the list, and when it is not "
-"trying to load anything"
-msgid "There is no hot new stuff to get here"
-msgstr "Тут немає ніяких корисних нових даних"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:110
 #, kde-format
@@ -1352,6 +1332,11 @@ msgstr "Встановлення…"
 msgctxt "Title for a dialog box which shows error messages"
 msgid "An Error Occurred"
 msgstr "Сталася помилка"
+
+#: qtquick/qml/private/ErrorDisplayer.qml:51
+#, kde-format
+msgid "Please try again later."
+msgstr "Будь ласка, повторіть спробу пізніше."
 
 #: qtquick/qml/private/GridTileDelegate.qml:113
 #, kde-format
@@ -1668,3 +1653,286 @@ msgstr "Повторне встановлення"
 msgctxt "Show the size of the file in a list"
 msgid "<p>Size: %1</p>"
 msgstr "<p>Розмір: %1</p>"
+
+#: ui/widgetquestionlistener.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Yes"
+msgstr "Так"
+
+#: ui/widgetquestionlistener.cpp:90
+#, kde-format
+msgctxt "@action:button"
+msgid "No"
+msgstr "Ні"
+
+#~ msgid ""
+#~ "The downloaded file is a html file. This indicates a link to a website "
+#~ "instead of the actual download. Would you like to open the site with a "
+#~ "browser instead?"
+#~ msgstr ""
+#~ "Отриманий файл є файлом у форматі HTML. Це означає, що отримано посилання "
+#~ "на дані, а не самі дані. Бажаєте відкрити відповідну сторінку у "
+#~ "переглядачі інтернету?"
+
+#~ msgid "Possibly bad download link"
+#~ msgstr "Ймовірно, помилкове посилання на отримання"
+
+#~ msgid "Downloaded file was a HTML file. Opened in browser."
+#~ msgstr "Отримано файл HTML. Цей файл відкрито у переглядачі інтернету."
+
+#~ msgctxt ""
+#~ "A message shown when there are no entries in the list, and when it is not "
+#~ "trying to load anything"
+#~ msgid "There is no hot new stuff to get here"
+#~ msgstr "Тут немає ніяких корисних нових даних"
+
+#~ msgctxt "Opposite to Back"
+#~ msgid "Next"
+#~ msgstr "Далі"
+
+#~ msgid "Finish"
+#~ msgstr "Завершити"
+
+#~ msgid "Fetching license data from server..."
+#~ msgstr "Отримання даних щодо ліцензування з сервера..."
+
+#~ msgid "Fetching content data from server..."
+#~ msgstr "Отримання даних з сервера..."
+
+#~ msgid "Could not fetch provider information."
+#~ msgstr "Не вдалося завантажити відомості про надавача."
+
+#~ msgid "Register a new account"
+#~ msgstr "Зареєструвати новий обліковий запис"
+
+#~ msgid "Checking login..."
+#~ msgstr "Перевірка реєстраційних даних..."
+
+#~ msgid "Fetching your previously updated content..."
+#~ msgstr "Отримання попередньо оновлених вами даних..."
+
+#~ msgid "Could not verify login, please try again."
+#~ msgstr "Не вдалося зберегти реєстраційні дані, повторіть спробу."
+
+#~ msgid "Fetching your previously updated content finished."
+#~ msgstr "Отримання попередньо оновлених вами даних завершено."
+
+#~ msgid "Fetching content data from server finished."
+#~ msgstr "Отримання даних з сервера завершено."
+
+#~ msgctxt ""
+#~ "A link to the website where the get hot new stuff upload can be seen"
+#~ msgid "Visit website"
+#~ msgstr "Відвідати вебсайт"
+
+#~ msgid "Share Hot New Stuff"
+#~ msgstr "Спільне використання нових матеріалів"
+
+#~ msgctxt "Program name followed by 'Add On Uploader'"
+#~ msgid "%1 Add-On Uploader"
+#~ msgstr "Додаток вивантаження для %1"
+
+#~ msgid "File not found: %1"
+#~ msgstr "Файл не знайдено: %1"
+
+#~ msgid "Upload Failed"
+#~ msgstr "Невдала спроба вивантаження"
+
+#~ msgid ""
+#~ "The server does not recognize the category %2 to which you are trying to "
+#~ "upload."
+#~ msgid_plural ""
+#~ "The server does not recognize any of the categories to which you are "
+#~ "trying to upload: %2"
+#~ msgstr[0] "Серверу невідома категорія вашого вивантаження: %2"
+#~ msgstr[1] "Серверу невідома категорія ваших вивантажень: %2"
+#~ msgstr[2] "Серверу невідома категорія ваших вивантажень: %2"
+#~ msgstr[3] "Серверу невідома категорія вашого вивантаження: %2"
+
+#~ msgid "Error"
+#~ msgstr "Помилка"
+
+#~ msgid "The selected category \"%1\" is invalid."
+#~ msgstr "Вказане категорія, «%1», є некоректною."
+
+#~ msgid "Select preview image"
+#~ msgstr "Вибір ескізу"
+
+#~ msgid "There was a network error."
+#~ msgstr "Помилка під час обміну даними мережею."
+
+#~ msgid "Uploading Failed"
+#~ msgstr "Невдала спроба вивантаження"
+
+#~ msgid "Authentication error."
+#~ msgstr "Помилка розпізнавання."
+
+#~ msgid "Upload failed: %1"
+#~ msgstr "Невдала спроба вивантаження: %1"
+
+#~ msgid "Password:"
+#~ msgstr "Пароль:"
+
+#~ msgid "Username:"
+#~ msgstr "Користувач:"
+
+#~ msgid "File to upload:"
+#~ msgstr "Файл для вивантаження:"
+
+#~ msgid "GPL"
+#~ msgstr "GPL"
+
+#~ msgid "LGPL"
+#~ msgstr "LGPL"
+
+#~ msgid "BSD"
+#~ msgstr "BSD"
+
+#~ msgid "Description:"
+#~ msgstr "Опис:"
+
+#~ msgid "Version:"
+#~ msgstr "Версія:"
+
+#~ msgid "License:"
+#~ msgstr "Ліцензія:"
+
+#~ msgid "Please fill out the information about your upload in English."
+#~ msgstr "Будь ласка, надайте відомості про вивантажені дані англійською."
+
+#~ msgid "Title:"
+#~ msgstr "Заголовок:"
+
+#~ msgid "Name of the file as it will appear on the website"
+#~ msgstr "Назва файла, яку буде використано на вебсайті"
+
+#~ msgid ""
+#~ "This should clearly describe the file content. It can be the same text as "
+#~ "the title of the kvtml file."
+#~ msgstr ""
+#~ "Тут має бути точно описано вміст файла. Текст може збігатися з вмістом "
+#~ "поля заголовка самого файла kvtml."
+
+#~ msgid "Preview Images"
+#~ msgstr "Ескізи зображень"
+
+#~ msgid "Select Preview..."
+#~ msgstr "Вибрати перегляд…"
+
+#~ msgid "Set a price for this item"
+#~ msgstr "Встановити ціну"
+
+#~ msgid "Price"
+#~ msgstr "Ціна"
+
+#~ msgid "Price:"
+#~ msgstr "Ціна:"
+
+#~ msgid "Reason for price:"
+#~ msgstr "Призначення грошей:"
+
+#~ msgid "Fetch content link from server"
+#~ msgstr "Отримати посилання на дані з сервера"
+
+#~ msgid "Create content on server"
+#~ msgstr "Зберегти дані на сервері"
+
+#~ msgid "Upload content"
+#~ msgstr "Вивантаження даних"
+
+#~ msgid "Upload first preview"
+#~ msgstr "Вивантаження першого ескізу"
+
+#~ msgid "Note: You can edit, update and delete your content on the website."
+#~ msgstr ""
+#~ "Зауваження: ви можете змінювати, оновлювати і вилучати ваші дані з "
+#~ "вебсайта."
+
+#~ msgid "Upload second preview"
+#~ msgstr "Вивантаження другого ескізу"
+
+#~ msgid "Upload third preview"
+#~ msgstr "Вивантаження третього ескізу"
+
+#~ msgid ""
+#~ "I ensure that this content does not violate any existing copyright, law "
+#~ "or trademark. I agree for my IP address to be logged. (Distributing "
+#~ "content without the permission of the copyright holder is illegal.)"
+#~ msgstr ""
+#~ "Я підтверджую, що ці дані не порушують жодних авторських прав, законів та "
+#~ "прав на торговельні марки. Я погоджуюся з тим, що мою IP-адресу буде "
+#~ "записано до журналу. Поширення даних, на яке ви не маєте дозволу від "
+#~ "їхнього правовласника, є протизаконним!"
+
+#~ msgid "Start Upload"
+#~ msgstr "Почати вивантаження"
+
+#~ msgid "Failed to execute install script"
+#~ msgstr "Не вдалося виконати скрипт встановлення"
+
+#~ msgctxt ""
+#~ "Status message to be shown when the entry is in the process of being "
+#~ "installed"
+#~ msgid "Currently installing the item %1 by %2. Please wait..."
+#~ msgstr "Зараз встановлюємо %1, автор — %2. Будь ласка, зачекайте…"
+
+#~ msgctxt "Label for the busy indicator showing an item is being installed"
+#~ msgid "Installing..."
+#~ msgstr "Встановлення…"
+
+#~ msgid "Tiles view mode"
+#~ msgstr "Режим мозаїчного перегляду"
+
+#~ msgid "Show:"
+#~ msgstr "Показати:"
+
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on when items were "
+#~ "most recently updated"
+#~ msgid "Most recent first"
+#~ msgstr "Найсвіжіші — першими"
+
+#~ msgctxt ""
+#~ "List option which will set the sort order to be alphabetical based on the "
+#~ "name"
+#~ msgid "A-Z"
+#~ msgstr "А-Я"
+
+#~ msgctxt "List option which will set the sort order to based on user ratings"
+#~ msgid "Highest rated first"
+#~ msgstr "Найкращі — першими"
+
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on number of downloads"
+#~ msgid "Most downloaded first"
+#~ msgstr "Найпопулярніші — першими"
+
+#~ msgctxt ""
+#~ "If a knsrc file defines an adoption command, the option to run this "
+#~ "command and 'use' an item becomes available. This is the text for an "
+#~ "action to do so."
+#~ msgid "Use"
+#~ msgstr "Використати"
+
+#~ msgid "Using %1"
+#~ msgstr "Використовуємо %1"
+
+#~ msgctxt "Show a page with details for this item"
+#~ msgid "Details..."
+#~ msgstr "Подробиці…"
+
+#~ msgid "Enter search phrase here"
+#~ msgstr "Введіть сюди фразу для пошуку"
+
+#~ msgid "The uninstallation process failed to successfully run the command %1"
+#~ msgstr "Процесу вилучення не вдалося успішно виконати команду %1"
+
+#~ msgid "Close"
+#~ msgstr "Закрити"
+
+#~ msgid "Download File"
+#~ msgstr "Отримання файла"
+
+#~ msgid "Configuration file not found: \"%1\""
+#~ msgstr "Не знайдено файла налаштувань: «%1»"

@@ -1,5 +1,6 @@
 /*
     SPDX-FileCopyrightText: 2021 Oleg Solovyov <mcpain@altlinux.org>
+    SPDX-FileCopyrightText: 2021 Alexander Lohnau <alexander.lohnau@gmx.de>
 
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
@@ -11,7 +12,6 @@
 #include "ui/widgetquestionlistener.h"
 #include <KAuthorized>
 #include <KLocalizedString>
-#include <KMessageBox>
 
 #include <QPointer>
 
@@ -69,13 +69,19 @@ void Action::showDialog()
 
     if (!d->dialog) {
         d->dialog = new QtQuickDialogWrapper(d->configFile, this);
+        connect(d->dialog.data(), &KNS3::QtQuickDialogWrapper::closed, this, [this]() {
+            const QList<KNSCore::EntryInternal> changedInternalEntries = d->dialog->changedEntries();
+#if KNEWSTUFFWIDGETS_BUILD_DEPRECATED_SINCE(5, 91)
+            QList<KNS3::Entry> changedEntries;
+            for (const KNSCore::EntryInternal &e : changedInternalEntries) {
+                changedEntries << EntryPrivate::fromInternal(&e);
+            }
+            Q_EMIT dialogFinished(changedEntries);
+#endif
+            Q_EMIT dialogFinished(changedInternalEntries);
+        });
     }
-    const auto changedInternalEntries = d->dialog->exec();
-    QList<KNS3::Entry> changedEntries;
-    for (const KNSCore::EntryInternal &e : changedInternalEntries) {
-        changedEntries << EntryPrivate::fromInternal(&e);
-    }
-    Q_EMIT dialogFinished(changedEntries);
+    d->dialog->open();
 }
 
 }

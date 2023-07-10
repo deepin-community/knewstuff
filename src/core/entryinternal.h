@@ -20,7 +20,7 @@
 #include "author.h"
 // This include only exists for the KNS3::Entry::Status enum
 // TODO Move the KNS3::Entry::Status enum to Core for KF6
-#include "entry.h"
+#include "KNS3/Entry"
 
 #include "knewstuffcore_export.h"
 
@@ -51,6 +51,7 @@ KNEWSTUFFCORE_EXPORT QString replaceBBCode(const QString &unformattedText);
  */
 class KNEWSTUFFCORE_EXPORT EntryInternal
 {
+    Q_GADGET
 public:
     typedef QList<EntryInternal> List;
 
@@ -91,6 +92,7 @@ public:
         AdoptedEvent = 2, ///< Used when an entry has been successfully adopted (use this to determine whether a call to Engine::adoptEntry() succeeded)
         DetailsLoadedEvent = 3, ///< Used when more details have been added to an existing entry (such as the full description), and the UI should be updated
     };
+    Q_ENUM(EntryEvent)
 
     /**
      * Represents whether the current entry is an actual catalog entry,
@@ -553,5 +555,7 @@ inline uint qHash(const KNSCore::EntryInternal &entry)
 
 }
 Q_DECLARE_METATYPE(KNSCore::EntryInternal::List)
-
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+Q_DECLARE_METATYPE(KNSCore::EntryInternal)
+#endif
 #endif

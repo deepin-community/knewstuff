@@ -221,11 +221,15 @@ void Installation::downloadPayload(const KNSCore::EntryInternal &entry)
 
     QString fileName(source.fileName());
     QTemporaryFile tempFile(QDir::tempPath() + QStringLiteral("/XXXXXX-") + fileName);
+    tempFile.setAutoRemove(false);
     if (!tempFile.open()) {
         return; // ERROR
     }
     QUrl destination = QUrl::fromLocalFile(tempFile.fileName());
     qCDebug(KNEWSTUFFCORE) << "Downloading payload" << source << "to" << destination;
+#ifdef Q_OS_WIN // can't write to the file if it's open, on Windows
+    tempFile.close();
+#endif
 
     // FIXME: check for validity
     FileCopyJob *job = FileCopyJob::file_copy(source, destination, -1, JobFlag::Overwrite | JobFlag::HideProgressInfo);
@@ -247,6 +251,7 @@ void Installation::slotPayloadResult(KJob *job)
             Q_EMIT signalInstallationFailed(errorMessage);
         } else {
             FileCopyJob *fcjob = static_cast<FileCopyJob *>(job);
+            qCDebug(KNEWSTUFFCORE) << "Copied to" << fcjob->destUrl();
 #if KNEWSTUFFCORE_BUILD_DEPRECATED_SINCE(5, 79)
             // check if the app likes html files - disabled by default as too many bad links have been submitted to opendesktop.org
             if (!acceptHtml) {
@@ -254,18 +259,13 @@ void Installation::slotPayloadResult(KJob *job)
                 QMimeDatabase db;
                 QMimeType mimeType = db.mimeTypeForFile(fcjob->destUrl().toLocalFile());
                 if (mimeType.inherits(QStringLiteral("text/html")) || mimeType.inherits(QStringLiteral("application/x-php"))) {
-                    Question question;
-                    question.setQuestion(
-                        i18n("The downloaded file is a html file. This indicates a link to a website instead of the actual download. Would you like to open "
-                             "the site with a browser instead?"));
-                    question.setTitle(i18n("Possibly bad download link"));
-                    if (question.ask() == Question::YesResponse) {
-                        QDesktopServices::openUrl(fcjob->srcUrl());
-                        Q_EMIT signalInstallationFailed(i18n("Downloaded file was a HTML file. Opened in browser."));
-                        entry.setStatus(KNS3::Entry::Invalid);
-                        Q_EMIT signalEntryChanged(entry);
-                        return;
-                    }
+                    const auto error = i18n("Cannot install '%1' because it points to a web page. Click <a href='%2'>here</a> to finish the installation.",
+                                            entry.name(),
+                                            fcjob->srcUrl().toString());
+                    Q_EMIT signalInstallationFailed(error);
+                    entry.setStatus(KNS3::Entry::Invalid);
+                    Q_EMIT signalEntryChanged(entry);
+                    return;
                 }
 #if KNEWSTUFFCORE_BUILD_DEPRECATED_SINCE(5, 79)
             }
@@ -279,10 +279,11 @@ void Installation::slotPayloadResult(KJob *job)
 
 void KNSCore::Installation::install(KNSCore::EntryInternal entry, const QString &downloadedFile)
 {
-    qCDebug(KNEWSTUFFCORE) << "Install: " << entry.name() << " from " << downloadedFile;
+    qCDebug(KNEWSTUFFCORE) << "Install:" << entry.name() << "from" << downloadedFile;
+    Q_ASSERT(QFileInfo::exists(downloadedFile));
 
     if (entry.payload().isEmpty()) {
-        qCDebug(KNEWSTUFFCORE) << "No payload associated with: " << entry.name();
+        qCDebug(KNEWSTUFFCORE) << "No payload associated with:" << entry.name();
         return;
     }
 
@@ -323,18 +324,15 @@ void KNSCore::Installation::install(KNSCore::EntryInternal entry, const QString 
                 scriptArgPath = scriptArgPath.left(scriptArgPath.lastIndexOf(QLatin1Char('*')));
             }
             QProcess *p = runPostInstallationCommand(scriptArgPath);
-            connect(p,
-                    qOverload<int, QProcess::ExitStatus>(&QProcess::finished),
-                    this,
-                    [entry, installationFinished, this](int exitCode, QProcess::ExitStatus) {
-                        if (exitCode) {
-                            EntryInternal newEntry = entry;
-                            newEntry.setStatus(KNS3::Entry::Invalid);
-                            Q_EMIT signalEntryChanged(newEntry);
-                        } else {
-                            installationFinished();
-                        }
-                    });
+            connect(p, &QProcess::finished, this, [entry, installationFinished, this](int exitCode) {
+                if (exitCode) {
+                    EntryInternal newEntry = entry;
+                    newEntry.setStatus(KNS3::Entry::Invalid);
+                    Q_EMIT signalEntryChanged(newEntry);
+                } else {
+                    installationFinished();
+                }
+            });
         } else {
             installationFinished();
         }
@@ -425,7 +423,6 @@ QStringList Installation::installDownloadedFileAndUncompress(const KNSCore::Entr
         qCDebug(KNEWSTUFFCORE) << "Using KPackage for installation";
         KPackage::PackageStructure structure;
         KPackage::Package package(&structure);
-        QString serviceType;
         package.setPath(payloadfile);
         auto resetEntryStatus = [this, entry]() {
             KNSCore::EntryInternal changedEntry(entry);
@@ -438,18 +435,25 @@ QStringList Installation::installDownloadedFileAndUncompress(const KNSCore::Entr
         };
         if (package.isValid() && package.metadata().isValid()) {
             qCDebug(KNEWSTUFFCORE) << "Package metadata is valid";
-            serviceType = package.metadata().value(QStringLiteral("X-Plasma-ServiceType"));
 #if KNEWSTUFFCORE_BUILD_DEPRECATED_SINCE(5, 90)
+            QString serviceType;
+            serviceType = package.metadata().value(QStringLiteral("X-Plasma-ServiceType"));
             const auto serviceTypes =
                 package.metadata().rawData().value(QLatin1String("KPlugin")).toObject().value(QLatin1String("ServiceTypes")).toVariant().toStringList();
             if (serviceType.isEmpty() && !serviceTypes.isEmpty()) {
                 serviceType = serviceTypes.first();
             }
-#endif
-
             if (serviceType.isEmpty()) {
                 serviceType = property("kpackageType").toString();
+            } else if (serviceType != property("kpackageType").toString()) {
+                qCWarning(KNEWSTUFFCORE) << "The package" << package.metadata().fileName()
+                                         << "defines a different kpackage type than the one defined by the app."
+                                         << "Please report this to the author of the addon.";
             }
+#else
+            const QString serviceType = property("kpackageType").toString();
+#endif
+
             if (!serviceType.isEmpty()) {
                 qCDebug(KNEWSTUFFCORE) << "Service type discovered as" << serviceType;
                 KPackage::PackageStructure *structure = KPackage::PackageLoader::self()->loadPackageStructure(serviceType);
@@ -563,6 +567,7 @@ QStringList Installation::installDownloadedFileAndUncompress(const KNSCore::Entr
                 archive.reset(new KZip(payloadfile));
                 // clang-format off
             } else if (mimeType.inherits(QStringLiteral("application/tar"))
+                    || mimeType.inherits(QStringLiteral("application/x-tar")) // BUG 450662
                     || mimeType.inherits(QStringLiteral("application/x-gzip"))
                     || mimeType.inherits(QStringLiteral("application/x-bzip"))
                     || mimeType.inherits(QStringLiteral("application/x-lzma"))
@@ -624,7 +629,7 @@ QStringList Installation::installDownloadedFileAndUncompress(const KNSCore::Entr
             }
         }
 
-        qCDebug(KNEWSTUFFCORE) << "isarchive: " << isarchive;
+        qCDebug(KNEWSTUFFCORE) << "isarchive:" << isarchive;
 
         // some wallpapers are compressed, some aren't
         if ((!isarchive && standardResourceDirectory == QLatin1String("wallpaper"))
@@ -635,7 +640,7 @@ QStringList Installation::installDownloadedFileAndUncompress(const KNSCore::Entr
             /// @todo when using KIO::get the http header can be accessed and it contains a real file name.
             // FIXME: make naming convention configurable through *.knsrc? e.g. for kde-look.org image names
             QUrl source = QUrl(entry.payload());
-            qCDebug(KNEWSTUFFCORE) << "installing non-archive from " << source.url();
+            qCDebug(KNEWSTUFFCORE) << "installing non-archive from" << source;
 #if KNEWSTUFF_BUILD_DEPRECATED_SINCE(5, 79)
             QString installfile;
             QString ext = source.fileName().section(QLatin1Char('.'), -1);
@@ -656,7 +661,7 @@ QStringList Installation::installDownloadedFileAndUncompress(const KNSCore::Entr
             const QString installpath = QDir(installdir).filePath(source.fileName());
 #endif
 
-            qCDebug(KNEWSTUFFCORE) << "Install to file " << installpath;
+            qCDebug(KNEWSTUFFCORE) << "Install to file" << installpath;
             // FIXME: copy goes here (including overwrite checking)
             // FIXME: what must be done now is to update the cache *again*
             //        in order to set the new payload filename (on root tag only)
@@ -669,6 +674,7 @@ QStringList Installation::installDownloadedFileAndUncompress(const KNSCore::Entr
             if (QFile::exists(installpath) && QDir::tempPath() != installdir) {
                 if (!update) {
                     Question question(Question::YesNoQuestion);
+                    question.setEntry(entry);
                     question.setQuestion(i18n("This file already exists on disk (possibly due to an earlier failed download attempt). Continuing means "
                                               "overwriting it. Do you wish to overwrite the existing file?")
                                          + QStringLiteral("\n'") + installpath + QLatin1Char('\''));
@@ -682,10 +688,13 @@ QStringList Installation::installDownloadedFileAndUncompress(const KNSCore::Entr
             if (success) {
                 // remove in case it's already present and in a temporary directory, so we get to actually use the path again
                 if (installpath.startsWith(QDir::tempPath())) {
-                    file.remove(installpath);
+                    QFile::remove(installpath);
                 }
                 success = file.rename(installpath);
-                qCDebug(KNEWSTUFFCORE) << "move: " << file.fileName() << " to " << installpath;
+                qCDebug(KNEWSTUFFCORE) << "move:" << file.fileName() << "to" << installpath;
+                if (!success) {
+                    qCWarning(KNEWSTUFFCORE) << file.errorString();
+                }
             }
             if (!success) {
                 Q_EMIT signalInstallationError(i18n("Unable to move the file %1 to the intended destination %2", payloadfile, installpath));
@@ -705,7 +714,7 @@ QProcess *Installation::runPostInstallationCommand(const QString &installPath)
     QString fileArg(KShell::quoteArg(installPath));
     command.replace(QLatin1String("%f"), fileArg);
 
-    qCDebug(KNEWSTUFFCORE) << "Run command: " << command;
+    qCDebug(KNEWSTUFFCORE) << "Run command:" << command;
 
     QProcess *ret = new QProcess(this);
     auto onProcessFinished = [this, command, ret](int exitcode, QProcess::ExitStatus status) {
@@ -730,7 +739,7 @@ QProcess *Installation::runPostInstallationCommand(const QString &installPath)
         }
         sender()->deleteLater();
     };
-    connect(ret, static_cast<void (QProcess::*)(int, QProcess::ExitStatus)>(&QProcess::finished), this, onProcessFinished);
+    connect(ret, &QProcess::finished, this, onProcessFinished);
 
     QStringList args = KShell::splitArgs(command);
     ret->setProgram(args.takeFirst());
@@ -794,18 +803,23 @@ void Installation::uninstall(EntryInternal entry)
                 KPackage::Package package(&structure);
                 package.setPath(installedFile);
                 if (package.isValid() && package.metadata().isValid()) {
-                    QString serviceType = package.metadata().value(QStringLiteral("X-Plasma-ServiceType"));
 #if KNEWSTUFFCORE_BUILD_DEPRECATED_SINCE(5, 90)
+                    QString serviceType = package.metadata().value(QStringLiteral("X-Plasma-ServiceType"));
                     const auto serviceTypes =
                         package.metadata().rawData().value(QLatin1String("KPlugin")).toObject().value(QLatin1String("ServiceTypes")).toVariant().toStringList();
                     if (serviceType.isEmpty() && !serviceTypes.isEmpty()) {
                         serviceType = serviceTypes.first();
                     }
-#endif
-
                     if (serviceType.isEmpty()) {
                         serviceType = property("kpackageType").toString();
+                    } else if (serviceType != property("kpackageType").toString()) {
+                        qCWarning(KNEWSTUFFCORE) << "The package" << package.metadata().fileName()
+                                                 << "defines a different kpackage type than the one defined by the app."
+                                                 << "Please report this to the author of the addon.";
                     }
+#else
+                    const QString serviceType = property("kpackageType").toString();
+#endif
                     if (!serviceType.isEmpty()) {
                         KPackage::PackageStructure *structure = KPackage::PackageLoader::self()->loadPackageStructure(serviceType);
                         if (structure) {
@@ -937,6 +951,7 @@ void Installation::uninstall(EntryInternal entry)
                             Q_EMIT signalInstallationError(err);
                             // Ask the user if he wants to continue, even though the script failed
                             Question question(Question::ContinueCancelQuestion);
+                            question.setEntry(entry);
                             question.setQuestion(err);
                             Question::Response response = question.ask();
                             if (response == Question::CancelResponse) {
@@ -947,11 +962,11 @@ void Installation::uninstall(EntryInternal entry)
                                 return;
                             }
                         } else {
-                            qCDebug(KNEWSTUFFCORE) << "Command executed successfully: " << command;
+                            qCDebug(KNEWSTUFFCORE) << "Command executed successfully:" << command;
                         }
                         deleteFilesAndMarkAsUninstalled();
                     };
-                    connect(process, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, onProcessFinished);
+                    connect(process, &QProcess::finished, this, onProcessFinished);
                 }
             }
             // If the entry got deleted, but the RemoveDeadEntries option was not selected this case can happen

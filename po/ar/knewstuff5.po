@@ -1,10 +1,10 @@
-# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2021.
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-27 00:40+0000\n"
-"PO-Revision-Date: 2021-12-06 19:10+0400\n"
+"POT-Creation-Date: 2022-12-15 00:44+0000\n"
+"PO-Revision-Date: 2022-12-24 18:32+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -13,14 +13,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 21.07.70\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #: attica/atticaprovider.cpp:167
 #, kde-format
 msgid "All categories are missing"
 msgstr "جميع التصنيفات مفقودة"
 
-#: attica/atticaprovider.cpp:479
+#: attica/atticaprovider.cpp:480
 #, kde-format
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
@@ -31,7 +31,7 @@ msgstr ""
 "هذا العنصر يكّلف %2 %1.\n"
 "هل ترغب بشرائه؟"
 
-#: attica/atticaprovider.cpp:493
+#: attica/atticaprovider.cpp:494
 #, kde-format
 msgid ""
 "Your account balance is too low:\n"
@@ -42,47 +42,47 @@ msgstr ""
 "رصديك: %1\n"
 "السعر:%2"
 
-#: attica/atticaprovider.cpp:536
+#: attica/atticaprovider.cpp:537
 #, kde-format
 msgctxt "voting for an item (good/bad)"
 msgid "Your vote was recorded."
 msgstr "أرسل صوتك بنجاح."
 
-#: attica/atticaprovider.cpp:551
+#: attica/atticaprovider.cpp:552
 #, kde-format
 msgid "You are now a fan."
 msgstr "تم تسجيل صوتك."
 
-#: attica/atticaprovider.cpp:579 core/engine.cpp:388 opds/opdsprovider.cpp:288
+#: attica/atticaprovider.cpp:580 core/engine.cpp:394 opds/opdsprovider.cpp:288
 #, kde-format
 msgid ""
 "The service is currently undergoing maintenance and is expected to be back "
 "in %1."
 msgstr "الخدمة تحت الصيانة و يتوقع رجوعها في %1."
 
-#: attica/atticaprovider.cpp:584
+#: attica/atticaprovider.cpp:585
 #, kde-format
 msgid "Network error %1: %2"
 msgstr "خطأ شبكيّ %1: %2"
 
-#: attica/atticaprovider.cpp:590
+#: attica/atticaprovider.cpp:591
 #, kde-format
 msgid "Too many requests to server. Please try again in a few minutes."
 msgstr "العديد من الطلبات على الخادم. رجاءا حاول مجددا بعد بضع دقائق."
 
-#: attica/atticaprovider.cpp:593
+#: attica/atticaprovider.cpp:594
 #, kde-format
 msgid ""
 "The Open Collaboration Services instance %1 does not support the attempted "
 "function."
 msgstr "نسخة الخدمات التعاونية %1 لا تدعم الوظيفة المطلوبة."
 
-#: attica/atticaprovider.cpp:597
+#: attica/atticaprovider.cpp:598
 #, kde-format
 msgid "Unknown Open Collaboration Service API error. (%1)"
 msgstr "خطأ غير معروف في واجهة API لخدمة التعاون المفتوحة. (%1)"
 
-#: button.cpp:41 widgets/action.cpp:34
+#: button.cpp:43 widgets/action.cpp:34 widgets/button.cpp:58
 #, kde-format
 msgid "Download New Stuff..."
 msgstr "نزِل أشياء جديدة..."
@@ -108,22 +108,22 @@ msgstr ""
 msgid "Initializing"
 msgstr "يهيّئ"
 
-#: core/engine.cpp:239
+#: core/engine.cpp:241
 #, kde-format
 msgid "Configuration file exists, but cannot be opened: \"%1\""
 msgstr "ملف الضبط موجود ولكن لا يمكن فتحه: \"%1\""
 
-#: core/engine.cpp:252
+#: core/engine.cpp:254
 #, kde-format
 msgid "Configuration file is invalid: \"%1\""
 msgstr "ملف الضبط غير صالح: \"%1\""
 
-#: core/engine.cpp:261
+#: core/engine.cpp:263
 #, kde-format
 msgid "Use"
 msgstr "استخدم"
 
-#: core/engine.cpp:278
+#: core/engine.cpp:284
 #, kde-format
 msgid ""
 "Could not initialise the installation handler for %1\n"
@@ -132,37 +132,37 @@ msgstr ""
 "تعذر تهيئة معالج التثبيت لـ %1\n"
 "هذا خطأ فادح ويجب إبلاغ مؤلف التطبيق"
 
-#: core/engine.cpp:353
+#: core/engine.cpp:359
 #, kde-format
 msgid "Loading provider information"
 msgstr "يحمّل معلومات المزوّد"
 
-#: core/engine.cpp:414
+#: core/engine.cpp:420
 #, kde-format
 msgid "Could not load get hot new stuff providers from file: %1"
 msgstr "لا يمكن تحميل مزودي الحصول على الأشياء الجديدة من ملف: %1"
 
-#: core/engine.cpp:444
+#: core/engine.cpp:450
 #, kde-format
 msgid "Error initializing provider."
 msgstr "خطأ في تهيئة المزود."
 
-#: core/engine.cpp:448 core/engine.cpp:1016
+#: core/engine.cpp:454 core/engine.cpp:1022
 #, kde-format
 msgid "Loading data"
 msgstr "يحمّل البيانات"
 
-#: core/engine.cpp:490
+#: core/engine.cpp:496
 #, kde-format
 msgid "Loading data from provider"
 msgstr "يحمّل البيانات من المزود"
 
-#: core/engine.cpp:495
+#: core/engine.cpp:501
 #, kde-format
 msgid "Loading of providers from file: %1 failed"
 msgstr "فشل تحميل المزودين من ملف: %1"
 
-#: core/engine.cpp:743
+#: core/engine.cpp:749
 #, kde-format
 msgid ""
 "Could not perform an installation of the entry %1 as it does not have any "
@@ -171,12 +171,12 @@ msgstr ""
 "تعذر إجراء تثبيت للمدخلة %1 لأنه لا تحتوي على أي عناصر قابلة للتحميل. يرجى "
 "الاتصال بالمؤلف حتى يتمكن من إصلاح هذا."
 
-#: core/engine.cpp:866
+#: core/engine.cpp:872
 #, kde-format
 msgid "Pick Update Item"
 msgstr "اختر عنصر التحديث"
 
-#: core/engine.cpp:868
+#: core/engine.cpp:874
 #, kde-format
 msgid ""
 "Please pick the item from the list below which should be used to apply this "
@@ -187,25 +187,25 @@ msgstr ""
 "لم نتمكن من التعرف على العنصر المراد تحديده ، بناءً على العنصر الأصلي ، والذي "
 "تم تسميته %1"
 
-#: core/engine.cpp:887
+#: core/engine.cpp:893
 #, kde-format
 msgid ""
 "We failed to identify a good link for updating %1, and are unable to perform "
 "the update"
 msgstr "فشلنا في التعرف على رابط جيد لتحديث %1 ، ولا يمكننا إجراء التحديث"
 
-#: core/engine.cpp:966
+#: core/engine.cpp:972
 #, kde-format
 msgid "Re: %1"
 msgstr "الإعادة: %1"
 
-#: core/engine.cpp:1008 ui/itemsgridviewdelegate.cpp:329
+#: core/engine.cpp:1014 ui/itemsgridviewdelegate.cpp:329
 #: ui/itemsviewdelegate.cpp:117
 #, kde-format
 msgid "Installing"
 msgstr "يثبّت"
 
-#: core/engine.cpp:1012
+#: core/engine.cpp:1018
 #, kde-format
 msgid "Loading one preview"
 msgid_plural "Loading %1 previews"
@@ -216,7 +216,7 @@ msgstr[3] "يحمّل %1 معاينات"
 msgstr[4] "يحمّل %1 معاينة"
 msgstr[5] "يحمّل %1 معاينة"
 
-#: core/engine.cpp:1214
+#: core/engine.cpp:1225
 #, kde-format
 msgid ""
 "Failed to adopt '%1'\n"
@@ -235,47 +235,36 @@ msgstr "عنصر غير صالح."
 msgid "Download of item failed: no download URL for \"%1\"."
 msgstr "تحميل العنصر فشل: لا عنوان URL لـ\"%1\"."
 
-#: core/installation.cpp:245
+#: core/installation.cpp:249
 #, kde-format
 msgid "Download of \"%1\" failed, error: %2"
 msgstr "فشل تحميل \"%1\"، الخطأ: %2"
 
-#: core/installation.cpp:259
+#: core/installation.cpp:262
 #, kde-format
 msgid ""
-"The downloaded file is a html file. This indicates a link to a website "
-"instead of the actual download. Would you like to open the site with a "
-"browser instead?"
+"Cannot install '%1' because it points to a web page. Click <a "
+"href='%2'>here</a> to finish the installation."
 msgstr ""
-"ملف التنزيل هو ملف HTML. وهو يشير إلى صفحة وِب بدلًا من تنزيل أصلي. هل تريد "
-"فتح الموقع بمتصفّح الإنترنت بدلَ ذلك؟"
+"تعذر تثبيت  '%1' لأنها تشير إلى صفحة ويب. انقر  <a href='%2'>هنا</a> لتنهي "
+"التثبيت."
 
-#: core/installation.cpp:261
-#, kde-format
-msgid "Possibly bad download link"
-msgstr "قد تكون وصلة التنزيل سيئة"
-
-#: core/installation.cpp:264
-#, kde-format
-msgid "Downloaded file was a HTML file. Opened in browser."
-msgstr "الملف المُحمل كان ملف HTML. فُتح في المتصفح."
-
-#: core/installation.cpp:302
+#: core/installation.cpp:303
 #, kde-format
 msgid "Could not install \"%1\": file not found."
 msgstr "تعذّر تثبيب \"%1\": لم يُعثر على الملف."
 
-#: core/installation.cpp:489
+#: core/installation.cpp:493
 #, kde-format
 msgid "The installation of %1 failed to create the expected new directory %2"
 msgstr "فشل تثبيت %1 في إنشاء الدليل  %2 المتوقع"
 
-#: core/installation.cpp:512 core/installation.cpp:827
+#: core/installation.cpp:516 core/installation.cpp:841
 #, kde-format
 msgid "Installation of %1 failed: %2"
 msgstr "فشل تثبيت %1: %2"
 
-#: core/installation.cpp:521
+#: core/installation.cpp:525
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the service type %2 was not accepted by "
@@ -285,21 +274,21 @@ msgstr ""
 "فشل تثبيت %1 ، حيث لم يتم قبول نوع الخدمة %2 من قبل النظام (هل نسيت تثبيت "
 "المكون الإضافي لدعم KPackage لهذا النوع من الحزم؟)"
 
-#: core/installation.cpp:531
+#: core/installation.cpp:535
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain a "
 "correct KPackage structure."
 msgstr "فشل تثبيت %1 ، لأن الحزمة التي نزّلت لا تحتوي على بنية KPackage صحيحة."
 
-#: core/installation.cpp:537
+#: core/installation.cpp:541
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not list a "
 "service type."
 msgstr "فشل تثبيت %1 ، لأن الحزمة التي نزّلت لا تسرد نوع الخدمة."
 
-#: core/installation.cpp:544
+#: core/installation.cpp:548
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain "
@@ -308,17 +297,17 @@ msgstr ""
 "فشل تثبيت %1 ، لأن الحزمة التي نزّلت لا تحتوي معلومات تعريفية مفيدة، مما يعني "
 "أنها حزمKPackage غير صالحة."
 
-#: core/installation.cpp:577
+#: core/installation.cpp:582
 #, kde-format
 msgid "Could not determine the type of archive of the downloaded file %1"
 msgstr "غير قادر على تحديد نوع الأرشيف للملف المحمل %1"
 
-#: core/installation.cpp:589
+#: core/installation.cpp:594
 #, kde-format
 msgid "Failed to open the archive file %1. The reported error was: %2"
 msgstr "فشل فتح ملفّ الأرشيف %1. الخطأ هو: %2"
 
-#: core/installation.cpp:672
+#: core/installation.cpp:678
 #, kde-format
 msgid ""
 "This file already exists on disk (possibly due to an earlier failed download "
@@ -328,17 +317,17 @@ msgstr ""
 "هذا الملف موجود بالفعل على القرص (ربما يرجع ذلك إلى محاولة تنزيل سابقة "
 "فاشلة). الاستمرار يعني الكتابة فوقه. هل ترغب في الكتابة فوق الملف الموجود؟"
 
-#: core/installation.cpp:675
+#: core/installation.cpp:681
 #, kde-format
 msgid "Overwrite File"
 msgstr "اكتب على الملف"
 
-#: core/installation.cpp:691
+#: core/installation.cpp:700
 #, kde-format
 msgid "Unable to move the file %1 to the intended destination %2"
 msgstr "تعذر نقل الملف%1 إلى الوجهة المقصودة %2"
 
-#: core/installation.cpp:714
+#: core/installation.cpp:723
 #, kde-format
 msgid ""
 "The installation failed while attempting to run the command:\n"
@@ -352,7 +341,7 @@ msgstr ""
 "المخرجات الراجعة:\n"
 "%2"
 
-#: core/installation.cpp:724
+#: core/installation.cpp:733
 #, kde-format
 msgid ""
 "The installation failed with code %1 while attempting to run the command:\n"
@@ -367,7 +356,7 @@ msgstr ""
 "المخرجات الراجعة:\n"
 "%3"
 
-#: core/installation.cpp:766
+#: core/installation.cpp:775
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed file %2 could not be "
@@ -377,14 +366,14 @@ msgstr ""
 "فشلت إزالة %1، حيث تعذر إزالة الملف المثبت %2 تلقائيًا. يمكنك محاولة حذف هذا "
 "الملف يدويًا ، إذا كنت تعتقد أن هذا خطأ."
 
-#: core/installation.cpp:834
+#: core/installation.cpp:848
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain a "
 "correct KPackage structure."
 msgstr "فشل إزالة %1 ، لأن الحزمة التي نزّلت لا تحتوي على بنية KPackage صحيحة."
 
-#: core/installation.cpp:839
+#: core/installation.cpp:853
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package is not a supported type "
@@ -394,7 +383,7 @@ msgstr ""
 "فشل إزالة %1 ، حيث أن  نوع الحزمة المثبتة غير مدعومة (هل نسيت تثبيت المكون "
 "الإضافي لدعم KPackage لهذا النوع من الحزم؟)"
 
-#: core/installation.cpp:846
+#: core/installation.cpp:860
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain any "
@@ -403,14 +392,14 @@ msgstr ""
 "فشل إزالة %1 ، لأن الحزمة التي نزّلت لا تحتوي معلومات تعريفية مفيدة، مما يعني "
 "أنها حزمKPackage غير صالحة."
 
-#: core/installation.cpp:886
+#: core/installation.cpp:900
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the downloaded file %2 could not be "
 "automatically removed."
 msgstr "فشلت إزالة %1، حيث تعذر إزالة الملف المنزل %2 تلقائيًا."
 
-#: core/installation.cpp:891
+#: core/installation.cpp:905
 #, kde-format
 msgid ""
 "The removal of %1 failed, due to the installed file not being a KPackage. "
@@ -420,7 +409,7 @@ msgstr ""
 "فشلت إزالة %1 نظرًا لأن الملف المثبت ليس حزمة KPackage.الملف المعني هو %2 ، "
 "ويمكنك محاولة حذفه بنفسك ، إذا كنت متأكدًا من عدم الحاجة إليه."
 
-#: core/installation.cpp:899
+#: core/installation.cpp:913
 #, kde-format
 msgid ""
 "The removal of %1 failed, as there seems to somehow be more than one thing "
@@ -429,7 +418,7 @@ msgstr ""
 "فشلت إزالة %1 ، حيث يبدو أن هناك أكثر من شيء مثبت بطريقة ما ، وهو أمر لا "
 "يُفترض أن يكون ممكنًا للإدخالات القائمة على KPackage."
 
-#: core/installation.cpp:932
+#: core/installation.cpp:946
 #, kde-format
 msgid ""
 "The uninstallation process failed to successfully run the command %1\n"
@@ -595,7 +584,7 @@ msgid "Provider:"
 msgstr "المزود:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
-#: downloadwidget.ui:71 qtquick/qml/Page.qml:424
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:426
 #, kde-format
 msgid "Category:"
 msgstr "التصنيف:"
@@ -700,19 +689,19 @@ msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "اضبط..."
 
-#: kmoretools/kmoretools_p.h:376
+#: kmoretools/kmoretools_p.h:373
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Visit homepage"
 msgstr "زر الصفحة الرئيسية"
 
-#: kmoretools/kmoretools_p.h:388
+#: kmoretools/kmoretools_p.h:386
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Install"
 msgstr "ثبّت"
 
-#: kmoretools/kmoretools_p.h:396
+#: kmoretools/kmoretools_p.h:395
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "No further information available."
@@ -728,19 +717,19 @@ msgstr "قائمة الضبط"
 msgid "Configure menu - %1"
 msgstr "قائمة الضبط - %1"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:176
+#: kmoretools/kmoretoolsmenufactory.cpp:173
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current folder"
 msgstr "%1 - المجلد الحالي"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:183
+#: kmoretools/kmoretoolsmenufactory.cpp:182
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current device"
 msgstr "%1 - الجهاز الحالي"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:197
+#: kmoretools/kmoretoolsmenufactory.cpp:195
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - all devices"
@@ -836,24 +825,19 @@ msgstr "جديدة"
 msgid "Download New %1..."
 msgstr "نزّل أشياء %1..."
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt "The dialog title when we know which type of stuff is being requested"
 msgid "Download New %1"
 msgstr "نزّل أشياء %1"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt ""
 "A placeholder title used in the dialog when there is no better title "
 "available"
 msgid "Download New Stuff"
 msgstr "نزِل أشياء جديدة"
-
-#: qtquick/qml/Dialog.qml:127
-#, kde-format
-msgid "Contribute your own..."
-msgstr "ساهم بما معك..."
 
 #: qtquick/qml/DownloadItemsSheet.qml:30
 #, kde-format
@@ -1195,20 +1179,17 @@ msgstr "تعلم كيف تضيف أشيائك إلى هذه القائمة"
 msgid "Go to..."
 msgstr "اذهب إلى..."
 
-#: qtquick/qml/Page.qml:510
+#: qtquick/qml/Page.qml:442
+#, kde-format
+msgid "Contribute your own…"
+msgstr "ساهم بما معك…"
+
+#: qtquick/qml/Page.qml:508
 #, kde-format
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
-msgid "Loading more..."
-msgstr "يحمل المزيد..."
-
-#: qtquick/qml/Page.qml:521
-#, kde-format
-msgctxt ""
-"A message shown when there are no entries in the list, and when it is not "
-"trying to load anything"
-msgid "There is no hot new stuff to get here"
-msgstr "لا يوجد أشياء جديدة هنا."
+msgid "Loading more…"
+msgstr "يحمّل المزيد…"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:110
 #, kde-format
@@ -1309,6 +1290,11 @@ msgstr "يثبّت..."
 msgctxt "Title for a dialog box which shows error messages"
 msgid "An Error Occurred"
 msgstr "حدث خطأ"
+
+#: qtquick/qml/private/ErrorDisplayer.qml:51
+#, kde-format
+msgid "Please try again later."
+msgstr "الرجاء المحاولة مرة أخرى في وقت لاحق."
 
 #: qtquick/qml/private/GridTileDelegate.qml:113
 #, kde-format
@@ -1615,3 +1601,244 @@ msgstr "ثبّت مرة أخرى"
 msgctxt "Show the size of the file in a list"
 msgid "<p>Size: %1</p>"
 msgstr "<p>الحجم: %1</p>"
+
+#: ui/widgetquestionlistener.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Yes"
+msgstr "نعم"
+
+#: ui/widgetquestionlistener.cpp:90
+#, kde-format
+msgctxt "@action:button"
+msgid "No"
+msgstr "لا"
+
+#~ msgid ""
+#~ "The downloaded file is a html file. This indicates a link to a website "
+#~ "instead of the actual download. Would you like to open the site with a "
+#~ "browser instead?"
+#~ msgstr ""
+#~ "ملف التنزيل هو ملف HTML. وهو يشير إلى صفحة وِب بدلًا من تنزيل أصلي. هل تريد "
+#~ "فتح الموقع بمتصفّح الإنترنت بدلَ ذلك؟"
+
+#~ msgid "Possibly bad download link"
+#~ msgstr "قد تكون وصلة التنزيل سيئة"
+
+#~ msgid "Downloaded file was a HTML file. Opened in browser."
+#~ msgstr "الملف المُحمل كان ملف HTML. فُتح في المتصفح."
+
+#~ msgctxt ""
+#~ "A message shown when there are no entries in the list, and when it is not "
+#~ "trying to load anything"
+#~ msgid "There is no hot new stuff to get here"
+#~ msgstr "لا يوجد أشياء جديدة هنا."
+
+#~ msgctxt "Opposite to Back"
+#~ msgid "Next"
+#~ msgstr "التالي"
+
+#~ msgid "Finish"
+#~ msgstr "أ&نهِ"
+
+#~ msgid "Fetching license data from server..."
+#~ msgstr "يجلب بيانات الرخصة من الخادم..."
+
+#~ msgid "Fetching content data from server..."
+#~ msgstr "يجلب بيانات المحتوى من الخادم..."
+
+#~ msgid "Could not fetch provider information."
+#~ msgstr "لم يتمكن من جلب معلومات المزوّد..."
+
+#~ msgid "Register a new account"
+#~ msgstr "سجّل حساب جديد"
+
+#~ msgid "Checking login..."
+#~ msgstr "يتحقّق من الولوج..."
+
+#~ msgid "Fetching your previously updated content..."
+#~ msgstr "يجلب محتوياتك المحدّثة مؤخّرًا..."
+
+#~ msgid "Could not verify login, please try again."
+#~ msgstr "تعذّر مصادقة الولوج، يرجى المحاولة مجدّدًا."
+
+#~ msgid "Fetching your previously updated content finished."
+#~ msgstr "إنتهى إلتماس محتواك السابق المحدث."
+
+#~ msgid "Fetching content data from server finished."
+#~ msgstr "إنتهى إلتماس بيانات المحتوى من الخادم."
+
+#~ msgctxt ""
+#~ "A link to the website where the get hot new stuff upload can be seen"
+#~ msgid "Visit website"
+#~ msgstr "زيارة الموقع"
+
+#~ msgid "Share Hot New Stuff"
+#~ msgstr "شارك أشياء جديدة"
+
+#~ msgctxt "Program name followed by 'Add On Uploader'"
+#~ msgid "%1 Add-On Uploader"
+#~ msgstr "%1 رافع الإضافات"
+
+#~ msgid "File not found: %1"
+#~ msgstr "الملف غير موجود: %1"
+
+#~ msgid "Upload Failed"
+#~ msgstr "فشل الرفع"
+
+#~ msgid ""
+#~ "The server does not recognize the category %2 to which you are trying to "
+#~ "upload."
+#~ msgid_plural ""
+#~ "The server does not recognize any of the categories to which you are "
+#~ "trying to upload: %2"
+#~ msgstr[0] "لم يتعرف الخادم على الفئة %2 التي تحاول التحميل إليها."
+#~ msgstr[1] "لم يتعرف الخادم على أي من الفئات التي تحاول التحميل إليها: %2"
+#~ msgstr[2] "لم يتعرف الخادم على أي من الفئات التي تحاول التحميل إليها: %2"
+#~ msgstr[3] "لم يتعرف الخادم على أي من الفئات التي تحاول التحميل إليها: %2"
+#~ msgstr[4] "لم يتعرف الخادم على أي من الفئات التي تحاول التحميل إليها: %2"
+#~ msgstr[5] "لم يتعرف الخادم على أي من الفئات التي تحاول التحميل إليها: %2"
+
+#~ msgid "Error"
+#~ msgstr "خطأ"
+
+#~ msgid "The selected category \"%1\" is invalid."
+#~ msgstr "الفئة المحدّدة \"%1\" غير صالحة."
+
+#~ msgid "Select preview image"
+#~ msgstr "إختر صورة معاينة"
+
+#~ msgid "There was a network error."
+#~ msgstr "كان خطأ في الشبكة."
+
+#~ msgid "Uploading Failed"
+#~ msgstr "فشل الرفع"
+
+#~ msgid "Authentication error."
+#~ msgstr "خطأ في الاستيثاق."
+
+#~ msgid "Upload failed: %1"
+#~ msgstr "فشل الرفع: %1"
+
+#~ msgid "Password:"
+#~ msgstr "كلمة السر:"
+
+#~ msgid "Username:"
+#~ msgstr "اسم المستخدم:"
+
+#~ msgid "File to upload:"
+#~ msgstr "الملف ليُرفع:"
+
+#~ msgid "GPL"
+#~ msgstr "GPL"
+
+#~ msgid "LGPL"
+#~ msgstr "LGPL"
+
+#~ msgid "BSD"
+#~ msgstr "BSD"
+
+#~ msgid "Description:"
+#~ msgstr "الوصف :"
+
+#~ msgid "Version:"
+#~ msgstr "الإصدار:"
+
+#~ msgid "License:"
+#~ msgstr "الترخيص:"
+
+#~ msgid "Please fill out the information about your upload in English."
+#~ msgstr "المرجو  اكتب معلومات عن المواد التي رفعتها باللغة الإنجليزية."
+
+#~ msgid "Title:"
+#~ msgstr "العنوان:"
+
+#~ msgid "Name of the file as it will appear on the website"
+#~ msgstr "اسم الملف كما سيظهر على الموقع"
+
+#~ msgid ""
+#~ "This should clearly describe the file content. It can be the same text as "
+#~ "the title of the kvtml file."
+#~ msgstr ""
+#~ "يجب أن يصف هذا محتوى الملف بوضوح. يمكن أن يكون نفس نص عنوان ملف kvtml."
+
+#~ msgid "Preview Images"
+#~ msgstr "صور المعاينة"
+
+#~ msgid "Select Preview..."
+#~ msgstr "اختر معاينة..."
+
+#~ msgid "Set a price for this item"
+#~ msgstr "ضع سعرًا لهذا العنصر"
+
+#~ msgid "Price"
+#~ msgstr "السعر"
+
+#~ msgid "Price:"
+#~ msgstr "السعر:"
+
+#~ msgid "Reason for price:"
+#~ msgstr "سبب السعر:"
+
+#~ msgid "Fetch content link from server"
+#~ msgstr "اجلب وصلة التعليق من الخادم"
+
+#~ msgid "Create content on server"
+#~ msgstr "أنشئ محتوى على الخادم"
+
+#~ msgid "Upload content"
+#~ msgstr "ارفع محتوى"
+
+#~ msgid "Upload first preview"
+#~ msgstr "ارفع المعاينة الأولى"
+
+#~ msgid "Note: You can edit, update and delete your content on the website."
+#~ msgstr "ملاحظة: يمكنك تحرير، تحديث وحذف محتوياتك من موقع الوِب."
+
+#~ msgid "Upload second preview"
+#~ msgstr "ارفع المعاينة الثانية"
+
+#~ msgid "Upload third preview"
+#~ msgstr "ارفع المعاينة الثالثة"
+
+#~ msgid ""
+#~ "I ensure that this content does not violate any existing copyright, law "
+#~ "or trademark. I agree for my IP address to be logged. (Distributing "
+#~ "content without the permission of the copyright holder is illegal.)"
+#~ msgstr ""
+#~ "أنا أضمن أن هذا المحتوى لا ينتهك حقوق النشر، القانون أو العلامات التجارية "
+#~ "الموجودة. أنا أسمح لعنوان IP خاصتي بالولوج. (نشر المحتوى دون تصريح من "
+#~ "صاحب حقوق النشر غير قانوني.)"
+
+#~ msgid "Start Upload"
+#~ msgstr "ابدأ الرفع"
+
+#, fuzzy
+#~| msgid "Installing"
+#~ msgctxt "Label for the busy indicator showing an item is being installed"
+#~ msgid "Installing..."
+#~ msgstr "يثبّت"
+
+#, fuzzy
+#~| msgid "Details view mode"
+#~ msgid "Tiles view mode"
+#~ msgstr "وضع عرض التفاصيل"
+
+#, fuzzy
+#~| msgid "Most downloads"
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on number of downloads"
+#~ msgid "Most downloaded first"
+#~ msgstr "الأكثر تحميلاً"
+
+#, fuzzy
+#~| msgid "Details"
+#~ msgctxt "Show a page with details for this item"
+#~ msgid "Details..."
+#~ msgstr "التفاصيل"
+
+#~ msgid "Enter search phrase here"
+#~ msgstr "أدخل عبارة البحث هنا"
+
+#~ msgid "Download File"
+#~ msgstr "ملف التنزيل"

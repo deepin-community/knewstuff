@@ -180,6 +180,7 @@ libKF5NewStuff.so.5 libkf5newstuff5 #MINVER#
  _ZNK4KNS314DownloadWidget5titleEv@Base 5.0.0
  _ZNK4KNS315DownloadManager10metaObjectEv@Base 4.95.0
  _ZNK4KNS320QtQuickDialogWrapper10metaObjectEv@Base 5.78.0
+ _ZNK4KNS320QtQuickDialogWrapper14changedEntriesEv@Base 5.94.0
  _ZNK4KNS35Entry10providerIdEv@Base 4.95.0
  _ZNK4KNS35Entry12shortSummaryEv@Base 5.23.0
  _ZNK4KNS35Entry13previewImagesEv@Base 5.23.0

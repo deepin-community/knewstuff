@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-27 00:40+0000\n"
+"POT-Creation-Date: 2022-12-15 00:44+0000\n"
 "PO-Revision-Date: 2015-11-04 15:13+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "All categories are missing"
 msgstr "A h-uile roinn-seòrsa"
 
-#: attica/atticaprovider.cpp:479
+#: attica/atticaprovider.cpp:480
 #, kde-format
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
@@ -36,7 +36,7 @@ msgstr ""
 "Tha an nì seo %1 %2.\n"
 "A bheil thu airson a cheannach?"
 
-#: attica/atticaprovider.cpp:493
+#: attica/atticaprovider.cpp:494
 #, kde-format
 msgid ""
 "Your account balance is too low:\n"
@@ -47,50 +47,50 @@ msgstr ""
 "Am balans agad: %1\n"
 "A' phrìs: %2"
 
-#: attica/atticaprovider.cpp:536
+#: attica/atticaprovider.cpp:537
 #, kde-format
 msgctxt "voting for an item (good/bad)"
 msgid "Your vote was recorded."
 msgstr "Chaidh a' bhòt agad a chlàradh."
 
-#: attica/atticaprovider.cpp:551
+#: attica/atticaprovider.cpp:552
 #, kde-format
 msgid "You are now a fan."
 msgstr "Tha thu 'ga leantainn a-nis."
 
-#: attica/atticaprovider.cpp:579 core/engine.cpp:388 opds/opdsprovider.cpp:288
+#: attica/atticaprovider.cpp:580 core/engine.cpp:394 opds/opdsprovider.cpp:288
 #, kde-format
 msgid ""
 "The service is currently undergoing maintenance and is expected to be back "
 "in %1."
 msgstr ""
 
-#: attica/atticaprovider.cpp:584
+#: attica/atticaprovider.cpp:585
 #, fuzzy, kde-format
 #| msgid "Network error. (%1)"
 msgid "Network error %1: %2"
 msgstr "Mearachd lìonraidh. (%1)"
 
-#: attica/atticaprovider.cpp:590
+#: attica/atticaprovider.cpp:591
 #, kde-format
 msgid "Too many requests to server. Please try again in a few minutes."
 msgstr ""
 "Tha iarrtasan aig an fhrithealaiche. Feuch ris a-rithist an ceann mionaid no "
 "dhà."
 
-#: attica/atticaprovider.cpp:593
+#: attica/atticaprovider.cpp:594
 #, kde-format
 msgid ""
 "The Open Collaboration Services instance %1 does not support the attempted "
 "function."
 msgstr ""
 
-#: attica/atticaprovider.cpp:597
+#: attica/atticaprovider.cpp:598
 #, kde-format
 msgid "Unknown Open Collaboration Service API error. (%1)"
 msgstr "Mearachd Open Collaboration Service API nach aihne dhuinn. (%1)"
 
-#: button.cpp:41 widgets/action.cpp:34
+#: button.cpp:43 widgets/action.cpp:34 widgets/button.cpp:58
 #, kde-format
 msgid "Download New Stuff..."
 msgstr "Luchdaich a-nuas stuth ùr..."
@@ -114,74 +114,74 @@ msgstr ""
 msgid "Initializing"
 msgstr "'Ga thòiseachadh"
 
-#: core/engine.cpp:239
+#: core/engine.cpp:241
 #, fuzzy, kde-format
 #| msgid "Configuration file not found: \"%1\""
 msgid "Configuration file exists, but cannot be opened: \"%1\""
 msgstr "Cha deach am faidhle rèiteachaidh a lorg: \"%1\""
 
-#: core/engine.cpp:252
+#: core/engine.cpp:254
 #, kde-format
 msgid "Configuration file is invalid: \"%1\""
 msgstr "Chan eil am faidhle rèiteachaidh dligheach: \"%1\""
 
-#: core/engine.cpp:261
+#: core/engine.cpp:263
 #, kde-format
 msgid "Use"
 msgstr ""
 
-#: core/engine.cpp:278
+#: core/engine.cpp:284
 #, kde-format
 msgid ""
 "Could not initialise the installation handler for %1\n"
 "This is a critical error and should be reported to the application author"
 msgstr ""
 
-#: core/engine.cpp:353
+#: core/engine.cpp:359
 #, kde-format
 msgid "Loading provider information"
 msgstr "A' luchdadh fiosrachadh an t-solaraiche"
 
-#: core/engine.cpp:414
+#: core/engine.cpp:420
 #, kde-format
 msgid "Could not load get hot new stuff providers from file: %1"
 msgstr ""
 "Cha b' urrainn dhuinn solaraichean deagh-stuith ùir a luchdadh on fhaidhle: "
 "%1"
 
-#: core/engine.cpp:444
+#: core/engine.cpp:450
 #, kde-format
 msgid "Error initializing provider."
 msgstr "Mearachd le tòiseachadh an t-solaraiche."
 
-#: core/engine.cpp:448 core/engine.cpp:1016
+#: core/engine.cpp:454 core/engine.cpp:1022
 #, kde-format
 msgid "Loading data"
 msgstr "A' luchdadh dàta"
 
-#: core/engine.cpp:490
+#: core/engine.cpp:496
 #, kde-format
 msgid "Loading data from provider"
 msgstr "A' luchdadh dàta on t-solaraiche"
 
-#: core/engine.cpp:495
+#: core/engine.cpp:501
 #, kde-format
 msgid "Loading of providers from file: %1 failed"
 msgstr "Dh'fhàillig le luchdadh nan solaraichean on fhaidhle: %1"
 
-#: core/engine.cpp:743
+#: core/engine.cpp:749
 #, kde-format
 msgid ""
 "Could not perform an installation of the entry %1 as it does not have any "
 "downloadable items defined. Please contact the author so they can fix this."
 msgstr ""
 
-#: core/engine.cpp:866
+#: core/engine.cpp:872
 #, kde-format
 msgid "Pick Update Item"
 msgstr ""
 
-#: core/engine.cpp:868
+#: core/engine.cpp:874
 #, kde-format
 msgid ""
 "Please pick the item from the list below which should be used to apply this "
@@ -189,25 +189,25 @@ msgid ""
 "original item, which was named %1"
 msgstr ""
 
-#: core/engine.cpp:887
+#: core/engine.cpp:893
 #, kde-format
 msgid ""
 "We failed to identify a good link for updating %1, and are unable to perform "
 "the update"
 msgstr ""
 
-#: core/engine.cpp:966
+#: core/engine.cpp:972
 #, kde-format
 msgid "Re: %1"
 msgstr "Re: %1"
 
-#: core/engine.cpp:1008 ui/itemsgridviewdelegate.cpp:329
+#: core/engine.cpp:1014 ui/itemsgridviewdelegate.cpp:329
 #: ui/itemsviewdelegate.cpp:117
 #, kde-format
 msgid "Installing"
 msgstr "'Ga stàladh"
 
-#: core/engine.cpp:1012
+#: core/engine.cpp:1018
 #, kde-format
 msgid "Loading one preview"
 msgid_plural "Loading %1 previews"
@@ -216,7 +216,7 @@ msgstr[1] "A' luchdadh %1 ro-shealladh"
 msgstr[2] "A' luchdadh %1 ro-sheallaidhean"
 msgstr[3] "A' luchdadh %1 ro-shealladh"
 
-#: core/engine.cpp:1214
+#: core/engine.cpp:1225
 #, kde-format
 msgid ""
 "Failed to adopt '%1'\n"
@@ -235,51 +235,35 @@ msgstr ""
 "Cha deach leinn an nì a luchdadh: chan eil URL luchdaidh a-nuas airson "
 "\"%1\" ann."
 
-#: core/installation.cpp:245
+#: core/installation.cpp:249
 #, kde-format
 msgid "Download of \"%1\" failed, error: %2"
 msgstr "Cha deach leinn \"%1\" a luchdadh a-nuas, mearachd: %2"
 
-#: core/installation.cpp:259
+#: core/installation.cpp:262
 #, kde-format
 msgid ""
-"The downloaded file is a html file. This indicates a link to a website "
-"instead of the actual download. Would you like to open the site with a "
-"browser instead?"
+"Cannot install '%1' because it points to a web page. Click <a "
+"href='%2'>here</a> to finish the installation."
 msgstr ""
-"Tha am faidhle air a luchdadh a-nuas 'na fhaidhle HTML. Tha seo a' "
-"riochdachadh ceangal seach dearbh-luchdadh a-nuas. A bheil thu airson an "
-"làrach-lìn fhosgladh le brabhsair 'na àite?"
 
-#: core/installation.cpp:261
-#, kde-format
-msgid "Possibly bad download link"
-msgstr "Droch-cheangal luchdaidh a-nuas ma dh'fhaoidte"
-
-#: core/installation.cpp:264
-#, kde-format
-msgid "Downloaded file was a HTML file. Opened in browser."
-msgstr ""
-"Tha am faidhle a chaidh a luchdadh a-nuas 'na fhaidhle HTML. Dh'fhosgail "
-"sinn sa bhrabhsair e."
-
-#: core/installation.cpp:302
+#: core/installation.cpp:303
 #, kde-format
 msgid "Could not install \"%1\": file not found."
 msgstr "Cha b' urrainn dhuinn \"%1\" a stàladh: cha deach am faidhle a lorg."
 
-#: core/installation.cpp:489
+#: core/installation.cpp:493
 #, kde-format
 msgid "The installation of %1 failed to create the expected new directory %2"
 msgstr ""
 
-#: core/installation.cpp:512 core/installation.cpp:827
+#: core/installation.cpp:516 core/installation.cpp:841
 #, fuzzy, kde-format
 #| msgid "Installing"
 msgid "Installation of %1 failed: %2"
 msgstr "'Ga stàladh"
 
-#: core/installation.cpp:521
+#: core/installation.cpp:525
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the service type %2 was not accepted by "
@@ -287,38 +271,38 @@ msgid ""
 "type of package?)"
 msgstr ""
 
-#: core/installation.cpp:531
+#: core/installation.cpp:535
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain a "
 "correct KPackage structure."
 msgstr ""
 
-#: core/installation.cpp:537
+#: core/installation.cpp:541
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not list a "
 "service type."
 msgstr ""
 
-#: core/installation.cpp:544
+#: core/installation.cpp:548
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain "
 "any useful meta information, which means it is not a valid KPackage."
 msgstr ""
 
-#: core/installation.cpp:577
+#: core/installation.cpp:582
 #, kde-format
 msgid "Could not determine the type of archive of the downloaded file %1"
 msgstr ""
 
-#: core/installation.cpp:589
+#: core/installation.cpp:594
 #, kde-format
 msgid "Failed to open the archive file %1. The reported error was: %2"
 msgstr ""
 
-#: core/installation.cpp:672
+#: core/installation.cpp:678
 #, kde-format
 msgid ""
 "This file already exists on disk (possibly due to an earlier failed download "
@@ -326,18 +310,18 @@ msgid ""
 "existing file?"
 msgstr ""
 
-#: core/installation.cpp:675
+#: core/installation.cpp:681
 #, fuzzy, kde-format
 #| msgid "Overwrite existing file?"
 msgid "Overwrite File"
 msgstr "A bheil thu airson sgrìobhadh thairis air an fhaidhle a tha ann?"
 
-#: core/installation.cpp:691
+#: core/installation.cpp:700
 #, kde-format
 msgid "Unable to move the file %1 to the intended destination %2"
 msgstr ""
 
-#: core/installation.cpp:714
+#: core/installation.cpp:723
 #, kde-format
 msgid ""
 "The installation failed while attempting to run the command:\n"
@@ -347,7 +331,7 @@ msgid ""
 "%2"
 msgstr ""
 
-#: core/installation.cpp:724
+#: core/installation.cpp:733
 #, kde-format
 msgid ""
 "The installation failed with code %1 while attempting to run the command:\n"
@@ -357,7 +341,7 @@ msgid ""
 "%3"
 msgstr ""
 
-#: core/installation.cpp:766
+#: core/installation.cpp:775
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed file %2 could not be "
@@ -365,14 +349,14 @@ msgid ""
 "believe this is an error."
 msgstr ""
 
-#: core/installation.cpp:834
+#: core/installation.cpp:848
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain a "
 "correct KPackage structure."
 msgstr ""
 
-#: core/installation.cpp:839
+#: core/installation.cpp:853
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package is not a supported type "
@@ -380,21 +364,21 @@ msgid ""
 "package?)"
 msgstr ""
 
-#: core/installation.cpp:846
+#: core/installation.cpp:860
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain any "
 "useful meta information, which means it is not a valid KPackage."
 msgstr ""
 
-#: core/installation.cpp:886
+#: core/installation.cpp:900
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the downloaded file %2 could not be "
 "automatically removed."
 msgstr ""
 
-#: core/installation.cpp:891
+#: core/installation.cpp:905
 #, kde-format
 msgid ""
 "The removal of %1 failed, due to the installed file not being a KPackage. "
@@ -402,14 +386,14 @@ msgid ""
 "you are certain that it is not needed."
 msgstr ""
 
-#: core/installation.cpp:899
+#: core/installation.cpp:913
 #, kde-format
 msgid ""
 "The removal of %1 failed, as there seems to somehow be more than one thing "
 "installed, which is not supposed to be possible for KPackage based entries."
 msgstr ""
 
-#: core/installation.cpp:932
+#: core/installation.cpp:946
 #, kde-format
 msgid ""
 "The uninstallation process failed to successfully run the command %1\n"
@@ -572,7 +556,7 @@ msgid "Provider:"
 msgstr "Solaraiche:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
-#: downloadwidget.ui:71 qtquick/qml/Page.qml:424
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:426
 #, kde-format
 msgid "Category:"
 msgstr "Roinn-seòrsa:"
@@ -679,20 +663,20 @@ msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "Rèitich..."
 
-#: kmoretools/kmoretools_p.h:376
+#: kmoretools/kmoretools_p.h:373
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Visit homepage"
 msgstr "Tadhail air an duilleag-dhachaigh"
 
-#: kmoretools/kmoretools_p.h:388
+#: kmoretools/kmoretools_p.h:386
 #, fuzzy, kde-format
 #| msgid "Install"
 msgctxt "@action:inmenu"
 msgid "Install"
 msgstr "Stàlaich"
 
-#: kmoretools/kmoretools_p.h:396
+#: kmoretools/kmoretools_p.h:395
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "No further information available."
@@ -708,7 +692,7 @@ msgstr "Clàr-taice rèiteachaidh"
 msgid "Configure menu - %1"
 msgstr "Clàr-taice rèiteachaidh - %1"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:176
+#: kmoretools/kmoretoolsmenufactory.cpp:173
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "$GenericName - current folder"
@@ -716,7 +700,7 @@ msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current folder"
 msgstr "$GenericName - am pasgan làithreach"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:183
+#: kmoretools/kmoretoolsmenufactory.cpp:182
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "$GenericName - current device"
@@ -724,7 +708,7 @@ msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current device"
 msgstr "$GenericName - an t-uidheam làithreach"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:197
+#: kmoretools/kmoretoolsmenufactory.cpp:195
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "$GenericName - all devices"
@@ -824,14 +808,14 @@ msgstr ""
 msgid "Download New %1..."
 msgstr "Luchdaich a-nuas stuth ùr..."
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, fuzzy, kde-format
 #| msgid "Download New Stuff..."
 msgctxt "The dialog title when we know which type of stuff is being requested"
 msgid "Download New %1"
 msgstr "Luchdaich a-nuas stuth ùr..."
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, fuzzy, kde-format
 #| msgid "Download New Stuff..."
 msgctxt ""
@@ -839,11 +823,6 @@ msgctxt ""
 "available"
 msgid "Download New Stuff"
 msgstr "Luchdaich a-nuas stuth ùr..."
-
-#: qtquick/qml/Dialog.qml:127
-#, kde-format
-msgid "Contribute your own..."
-msgstr ""
 
 #: qtquick/qml/DownloadItemsSheet.qml:30
 #, kde-format
@@ -1198,21 +1177,18 @@ msgstr ""
 msgid "Go to..."
 msgstr ""
 
-#: qtquick/qml/Page.qml:510
+#: qtquick/qml/Page.qml:442
+#, kde-format
+msgid "Contribute your own…"
+msgstr ""
+
+#: qtquick/qml/Page.qml:508
 #, fuzzy, kde-format
 #| msgid "Loading Preview"
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
-msgid "Loading more..."
+msgid "Loading more…"
 msgstr "A' luchdadh an ro-sheallaidh"
-
-#: qtquick/qml/Page.qml:521
-#, kde-format
-msgctxt ""
-"A message shown when there are no entries in the list, and when it is not "
-"trying to load anything"
-msgid "There is no hot new stuff to get here"
-msgstr ""
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:110
 #, kde-format
@@ -1317,6 +1293,11 @@ msgstr "'Ga stàladh"
 #, kde-format
 msgctxt "Title for a dialog box which shows error messages"
 msgid "An Error Occurred"
+msgstr ""
+
+#: qtquick/qml/private/ErrorDisplayer.qml:51
+#, kde-format
+msgid "Please try again later."
 msgstr ""
 
 #: qtquick/qml/private/GridTileDelegate.qml:113
@@ -1612,3 +1593,257 @@ msgstr "Stàlaich às ùr"
 msgctxt "Show the size of the file in a list"
 msgid "<p>Size: %1</p>"
 msgstr ""
+
+#: ui/widgetquestionlistener.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Yes"
+msgstr ""
+
+#: ui/widgetquestionlistener.cpp:90
+#, kde-format
+msgctxt "@action:button"
+msgid "No"
+msgstr ""
+
+#~ msgid ""
+#~ "The downloaded file is a html file. This indicates a link to a website "
+#~ "instead of the actual download. Would you like to open the site with a "
+#~ "browser instead?"
+#~ msgstr ""
+#~ "Tha am faidhle air a luchdadh a-nuas 'na fhaidhle HTML. Tha seo a' "
+#~ "riochdachadh ceangal seach dearbh-luchdadh a-nuas. A bheil thu airson an "
+#~ "làrach-lìn fhosgladh le brabhsair 'na àite?"
+
+#~ msgid "Possibly bad download link"
+#~ msgstr "Droch-cheangal luchdaidh a-nuas ma dh'fhaoidte"
+
+#~ msgid "Downloaded file was a HTML file. Opened in browser."
+#~ msgstr ""
+#~ "Tha am faidhle a chaidh a luchdadh a-nuas 'na fhaidhle HTML. Dh'fhosgail "
+#~ "sinn sa bhrabhsair e."
+
+#~ msgctxt "Opposite to Back"
+#~ msgid "Next"
+#~ msgstr "Air adhart"
+
+#~ msgid "Finish"
+#~ msgstr "Crìochnaich"
+
+#~ msgid "Fetching license data from server..."
+#~ msgstr "A' faighinn fiosrachadh a' cheadachais on fhrithealaiche..."
+
+#~ msgid "Fetching content data from server..."
+#~ msgstr "A' faighinn dàta na susbainte on fhrithealaiche..."
+
+#~ msgid "Could not fetch provider information."
+#~ msgstr "Cha b' urrainn dhuinn fiosrachadh an t-solaraiche fhaighinn."
+
+#~ msgid "Register a new account"
+#~ msgstr "Clàraich cunntas ùr"
+
+#~ msgid "Checking login..."
+#~ msgstr "A' dearbhadh a' chlàraidh a-steach..."
+
+#~ msgid "Fetching your previously updated content..."
+#~ msgstr "A' faighinn na susbainte a chaidh ùrachadh roimhe..."
+
+#~ msgid "Could not verify login, please try again."
+#~ msgstr ""
+#~ "Cha b' urrainn dhuinn an clàradh a-steach a dhearbhadh, feuch ris a-"
+#~ "rithist."
+
+#~ msgid "Fetching your previously updated content finished."
+#~ msgstr "Tha an t-susbaint agad a chaidh ùrachadh roimhe air a faighinn."
+
+#~ msgid "Fetching content data from server finished."
+#~ msgstr "Tha dàta na susbainte air fhaighinn on fhrithealaiche."
+
+#~ msgctxt ""
+#~ "A link to the website where the get hot new stuff upload can be seen"
+#~ msgid "Visit website"
+#~ msgstr "Tadhail air an làrach-lìn"
+
+#~ msgid "Share Hot New Stuff"
+#~ msgstr "Co-roinn deagh-stuth ùr"
+
+#~ msgctxt "Program name followed by 'Add On Uploader'"
+#~ msgid "%1 Add-On Uploader"
+#~ msgstr "Inneal luchdaidh suas tuilleadain %1"
+
+#~ msgid "File not found: %1"
+#~ msgstr "Cha deach am faidhle a lorg: %1"
+
+#~ msgid "Upload Failed"
+#~ msgstr "Dh'fhàillig leis an luchdadh suas"
+
+#~ msgid ""
+#~ "The server does not recognize the category %2 to which you are trying to "
+#~ "upload."
+#~ msgid_plural ""
+#~ "The server does not recognize any of the categories to which you are "
+#~ "trying to upload: %2"
+#~ msgstr[0] ""
+#~ "Chan aithnich am frithealaiche an roinn-seòrsa %2 dhan a tha thu a' "
+#~ "feuchainn ri rud a luchdadh suas."
+#~ msgstr[1] ""
+#~ "Chan aithnich am frithealaiche gin dhe na roinnean-seòrsa dhan a tha thu "
+#~ "a' feuchainn ri rud a luchdadh suas: %2"
+#~ msgstr[2] ""
+#~ "Chan aithnich am frithealaiche gin dhe na roinnean-seòrsa dhan a tha thu "
+#~ "a' feuchainn ri rud a luchdadh suas: %2"
+#~ msgstr[3] ""
+#~ "Chan aithnich am frithealaiche gin dhe na roinnean-seòrsa dhan a tha thu "
+#~ "a' feuchainn ri rud a luchdadh suas: %2"
+
+#~ msgid "Error"
+#~ msgstr "Mearachd"
+
+#~ msgid "The selected category \"%1\" is invalid."
+#~ msgstr "Chan eil an roinn-seòrsa \"%1\" a thagh thu dligheach."
+
+#~ msgid "Select preview image"
+#~ msgstr "Tagh dealbh ro-sheallaidh"
+
+#~ msgid "There was a network error."
+#~ msgstr "Bha mearachd lìonraidh ann."
+
+#~ msgid "Uploading Failed"
+#~ msgstr "Dh'fhàillig leis an luchdadh suas"
+
+#~ msgid "Authentication error."
+#~ msgstr "Mearachd leis an dearbhadh."
+
+#~ msgid "Upload failed: %1"
+#~ msgstr "Dh'fhàillig leis an luchdadh suas: %1"
+
+#~ msgid "Password:"
+#~ msgstr "Facal-faire:"
+
+#~ msgid "Username:"
+#~ msgstr "Ainm-cleachdaiche:"
+
+#~ msgid "File to upload:"
+#~ msgstr "Am faidhle ri luchdadh suas:"
+
+#~ msgid "GPL"
+#~ msgstr "GPL"
+
+#~ msgid "LGPL"
+#~ msgstr "LGPL"
+
+#~ msgid "BSD"
+#~ msgstr "BSD"
+
+#~ msgid "Description:"
+#~ msgstr "Tuairisgeul:"
+
+#~ msgid "Version:"
+#~ msgstr "Tionndadh:"
+
+#~ msgid "License:"
+#~ msgstr "Ceadachas:"
+
+#~ msgid "Please fill out the information about your upload in English."
+#~ msgstr "Feuch an lìon thu fiosrachadh mun luchdadh suas agad sa Bheurla."
+
+#~ msgid "Title:"
+#~ msgstr "Tiotal:"
+
+#~ msgid "Name of the file as it will appear on the website"
+#~ msgstr "Ainm an fhaidhle mar a nochdas e air an làrach-lìn"
+
+#~ msgid ""
+#~ "This should clearly describe the file content. It can be the same text as "
+#~ "the title of the kvtml file."
+#~ msgstr ""
+#~ "Bu chòir dha seo susbaint an fhaidhle a mhìneachadh gu soilleir. Faodaidh "
+#~ "e bhith co-ionnann ris an tiotal air an fhaidhle kvtml."
+
+#~ msgid "Preview Images"
+#~ msgstr "Dealbhan ro-sheallaidh"
+
+#~ msgid "Select Preview..."
+#~ msgstr "Tagh ro-shealladh..."
+
+#~ msgid "Set a price for this item"
+#~ msgstr "Suidhich prìs airson an nì sei"
+
+#~ msgid "Price"
+#~ msgstr "Prìs"
+
+#~ msgid "Price:"
+#~ msgstr "Prìs:"
+
+#~ msgid "Reason for price:"
+#~ msgstr "Adhbhar na prìse:"
+
+#~ msgid "Fetch content link from server"
+#~ msgstr "Faigh ceangail susbainte on fhrithealaiche"
+
+#~ msgid "Create content on server"
+#~ msgstr "Cruthaich susbaint air an fhrithealaiche"
+
+#~ msgid "Upload content"
+#~ msgstr "Luchdaich suas susbaint"
+
+#~ msgid "Upload first preview"
+#~ msgstr "Luchdaich suas a' chiad ro-shealladh"
+
+#~ msgid "Note: You can edit, update and delete your content on the website."
+#~ msgstr ""
+#~ "An aire: 'S urrainn dhut an t-susbaint agad a dheasachadh, ùrachadh is a "
+#~ "sguabadh às air an làrach-lìn."
+
+#~ msgid "Upload second preview"
+#~ msgstr "Luchdaich suas an dàrna ro-shealladh"
+
+#~ msgid "Upload third preview"
+#~ msgstr "Luchdaich suas an treas ro-shealladh"
+
+#~ msgid ""
+#~ "I ensure that this content does not violate any existing copyright, law "
+#~ "or trademark. I agree for my IP address to be logged. (Distributing "
+#~ "content without the permission of the copyright holder is illegal.)"
+#~ msgstr ""
+#~ "Tha mi a' dèanamh cinnteach nach eil an t-susbaint seo a' briseadh a-"
+#~ "steach air còir-lethbhreac, lagh no comharra-malairt sam bith. Tha mi ag "
+#~ "aontachadh gun dèid an seòladh IP agam a chlàradh. (Tha e mì-laghail a "
+#~ "bhith a' sgaoileadh susbaint gun chead o sheilbheadair na còrach-"
+#~ "lethbhreac.)"
+
+#~ msgid "Start Upload"
+#~ msgstr "Tòisich air an luchdadh suas"
+
+#, fuzzy
+#~| msgid "Installing"
+#~ msgctxt "Label for the busy indicator showing an item is being installed"
+#~ msgid "Installing..."
+#~ msgstr "'Ga stàladh"
+
+#, fuzzy
+#~| msgid "Details view mode"
+#~ msgid "Tiles view mode"
+#~ msgstr "Modh sealladh an fhiosrachaidh"
+
+#, fuzzy
+#~| msgid "Most downloads"
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on number of downloads"
+#~ msgid "Most downloaded first"
+#~ msgstr "Air a luchdadh a-nuas as trice"
+
+#, fuzzy
+#~| msgid "Details"
+#~ msgctxt "Show a page with details for this item"
+#~ msgid "Details..."
+#~ msgstr "Mion-fhiosrachadh"
+
+#~ msgid "Enter search phrase here"
+#~ msgstr "Cuir a-steach faclan-luirg an-seo"
+
+#~ msgid "Download File"
+#~ msgstr "Luchdaich a-nuas faidhle"
+
+#~ msgid "Configuration file not found: \"%1\""
+#~ msgstr "Cha deach am faidhle rèiteachaidh a lorg: \"%1\""

@@ -14,6 +14,7 @@
 namespace KNSCore
 {
 class Engine;
+using Entry = KNSCore::EntryInternal;
 }
 
 namespace KNS3
@@ -38,12 +39,16 @@ public:
      */
     void open();
 
+#if KNEWSTUFF_ENABLE_DEPRECATED_SINCE(5, 94)
     /**
      * Similar to QDialog::exec. Shows the dialog and blocks until the user closes it.
      * @return changedEntries, useful if you want to refresh the UI after entries were changed
      * @see open
+     * @deprecated Since 5.94, connect to closed signal instead or use KNSWidgets::Button/KNSWidgets::Action
      */
+    KNEWSTUFF_DEPRECATED_VERSION(5, 78, "Connect to closed signal instead or use KNSWidgets::Button/KNSWidgets::Action")
     QList<KNSCore::EntryInternal> exec();
+#endif
 
     /**
      * This signal gets emitted when the dialog is closed
@@ -55,6 +60,12 @@ public:
      * @return KNSCore::Engine used by the dialog
      */
     KNSCore::Engine *engine();
+
+    /**
+     * Entries that were changed while the user interacted with the dialog
+     * @since 5.94
+     */
+    QList<KNSCore::Entry> changedEntries() const;
 
 private:
     std::unique_ptr<QtQuickDialogWrapperPrivate> d;

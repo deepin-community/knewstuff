@@ -13,19 +13,20 @@
 # Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2011, 2012, 2013, 2014, 2015.
 # Jeff Huang <s8321414@gmail.com>, 2016, 2017.
 # pan93412 <pan93412@gmail.com>, 2018, 2019, 2020.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-27 00:40+0000\n"
-"PO-Revision-Date: 2020-05-14 23:33+0800\n"
-"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"POT-Creation-Date: 2022-12-15 00:44+0000\n"
+"PO-Revision-Date: 2023-01-29 23:25+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.04.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: attica/atticaprovider.cpp:167
@@ -42,7 +43,7 @@ msgstr "遺失所有分類"
 # TRANSTR:
 # 這個項目要價 1 USD。\n
 # 確定購買？
-#: attica/atticaprovider.cpp:479
+#: attica/atticaprovider.cpp:480
 #, kde-format
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
@@ -53,7 +54,7 @@ msgstr ""
 "這個項目要價 %2 %1。\n"
 "確定購買？"
 
-#: attica/atticaprovider.cpp:493
+#: attica/atticaprovider.cpp:494
 #, kde-format
 msgid ""
 "Your account balance is too low:\n"
@@ -64,47 +65,47 @@ msgstr ""
 "餘額：%1\n"
 "售價：%2"
 
-#: attica/atticaprovider.cpp:536
+#: attica/atticaprovider.cpp:537
 #, kde-format
 msgctxt "voting for an item (good/bad)"
 msgid "Your vote was recorded."
 msgstr "已記錄投票。"
 
-#: attica/atticaprovider.cpp:551
+#: attica/atticaprovider.cpp:552
 #, kde-format
 msgid "You are now a fan."
 msgstr "您已成為粉絲。"
 
-#: attica/atticaprovider.cpp:579 core/engine.cpp:388 opds/opdsprovider.cpp:288
+#: attica/atticaprovider.cpp:580 core/engine.cpp:394 opds/opdsprovider.cpp:288
 #, kde-format
 msgid ""
 "The service is currently undergoing maintenance and is expected to be back "
 "in %1."
-msgstr ""
+msgstr "服務目前正在維護中，預計 %1 後會恢復。"
 
-#: attica/atticaprovider.cpp:584
+#: attica/atticaprovider.cpp:585
 #, kde-format
 msgid "Network error %1: %2"
 msgstr "網路錯誤 %1：%2"
 
-#: attica/atticaprovider.cpp:590
+#: attica/atticaprovider.cpp:591
 #, kde-format
 msgid "Too many requests to server. Please try again in a few minutes."
 msgstr "太多要求到伺服器。請稍等幾分鐘後再嘗試。"
 
-#: attica/atticaprovider.cpp:593
+#: attica/atticaprovider.cpp:594
 #, kde-format
 msgid ""
 "The Open Collaboration Services instance %1 does not support the attempted "
 "function."
 msgstr "%1 開放協同服務實例不支援嘗試使用的功能。"
 
-#: attica/atticaprovider.cpp:597
+#: attica/atticaprovider.cpp:598
 #, kde-format
 msgid "Unknown Open Collaboration Service API error. (%1)"
 msgstr "未知的開放協同服務 API 錯誤。(%1)"
 
-#: button.cpp:41 widgets/action.cpp:34
+#: button.cpp:43 widgets/action.cpp:34 widgets/button.cpp:58
 #, kde-format
 msgid "Download New Stuff..."
 msgstr "下載熱門玩意..."
@@ -130,22 +131,22 @@ msgstr ""
 msgid "Initializing"
 msgstr "初始化中"
 
-#: core/engine.cpp:239
+#: core/engine.cpp:241
 #, kde-format
 msgid "Configuration file exists, but cannot be opened: \"%1\""
 msgstr "設定檔已存在，但無法開啟：「%1」"
 
-#: core/engine.cpp:252
+#: core/engine.cpp:254
 #, kde-format
 msgid "Configuration file is invalid: \"%1\""
 msgstr "設定檔不合法：%1"
 
-#: core/engine.cpp:261
+#: core/engine.cpp:263
 #, kde-format
 msgid "Use"
 msgstr "使用"
 
-#: core/engine.cpp:278
+#: core/engine.cpp:284
 #, kde-format
 msgid ""
 "Could not initialise the installation handler for %1\n"
@@ -154,49 +155,51 @@ msgstr ""
 "無法初始化 %1 的安裝處理器\n"
 "此為嚴重錯誤，應向應用程式作者回報"
 
-#: core/engine.cpp:353
+#: core/engine.cpp:359
 #, kde-format
 msgid "Loading provider information"
 msgstr "載入提供者資訊中"
 
-#: core/engine.cpp:414
+#: core/engine.cpp:420
 #, kde-format
 msgid "Could not load get hot new stuff providers from file: %1"
 msgstr "無法從檔案 %1 載入熱門新玩意的供應者"
 
-#: core/engine.cpp:444
+#: core/engine.cpp:450
 #, kde-format
 msgid "Error initializing provider."
 msgstr "初始化提供者時發生錯誤。"
 
-#: core/engine.cpp:448 core/engine.cpp:1016
+#: core/engine.cpp:454 core/engine.cpp:1022
 #, kde-format
 msgid "Loading data"
 msgstr "載入資料中"
 
-#: core/engine.cpp:490
+#: core/engine.cpp:496
 #, kde-format
 msgid "Loading data from provider"
 msgstr "從提供者載入資料中"
 
-#: core/engine.cpp:495
+#: core/engine.cpp:501
 #, kde-format
 msgid "Loading of providers from file: %1 failed"
 msgstr "從檔案 %1 載入提供者失敗"
 
-#: core/engine.cpp:743
+#: core/engine.cpp:749
 #, kde-format
 msgid ""
 "Could not perform an installation of the entry %1 as it does not have any "
 "downloadable items defined. Please contact the author so they can fix this."
 msgstr ""
+"由於條目 %1 沒有定義任何可下載的項目，因此無法進行安裝。請與作者聯絡好修正這"
+"個問題。"
 
-#: core/engine.cpp:866
+#: core/engine.cpp:872
 #, kde-format
 msgid "Pick Update Item"
 msgstr "選擇更新項目"
 
-#: core/engine.cpp:868
+#: core/engine.cpp:874
 #, kde-format
 msgid ""
 "Please pick the item from the list below which should be used to apply this "
@@ -206,31 +209,31 @@ msgstr ""
 "請從下方列表選擇要套用此更新的項目。我們無法基於名稱為 %1 的原始項目來識別要"
 "選擇的項目。"
 
-#: core/engine.cpp:887
+#: core/engine.cpp:893
 #, kde-format
 msgid ""
 "We failed to identify a good link for updating %1, and are unable to perform "
 "the update"
-msgstr ""
+msgstr "我們無法辨識可用以更新 %1 用的連結，因此無法進行更新"
 
-#: core/engine.cpp:966
+#: core/engine.cpp:972
 #, kde-format
 msgid "Re: %1"
 msgstr "重做：%1"
 
-#: core/engine.cpp:1008 ui/itemsgridviewdelegate.cpp:329
+#: core/engine.cpp:1014 ui/itemsgridviewdelegate.cpp:329
 #: ui/itemsviewdelegate.cpp:117
 #, kde-format
 msgid "Installing"
 msgstr "安裝中"
 
-#: core/engine.cpp:1012
+#: core/engine.cpp:1018
 #, kde-format
 msgid "Loading one preview"
 msgid_plural "Loading %1 previews"
 msgstr[0] "載入 %1 個預覽"
 
-#: core/engine.cpp:1214
+#: core/engine.cpp:1225
 #, kde-format
 msgid ""
 "Failed to adopt '%1'\n"
@@ -247,47 +250,34 @@ msgstr "無效的項目"
 msgid "Download of item failed: no download URL for \"%1\"."
 msgstr "下載項目失敗：沒有 %1 的下載網址。"
 
-#: core/installation.cpp:245
+#: core/installation.cpp:249
 #, kde-format
 msgid "Download of \"%1\" failed, error: %2"
 msgstr "下載 %1 失敗，錯誤：%2"
 
-#: core/installation.cpp:259
+#: core/installation.cpp:262
 #, kde-format
 msgid ""
-"The downloaded file is a html file. This indicates a link to a website "
-"instead of the actual download. Would you like to open the site with a "
-"browser instead?"
-msgstr ""
-"下載的檔案是一個 html 檔。它指向一個網站而不是實際上會下載內容。您要改成用瀏"
-"覽器開啟此網站嗎？"
+"Cannot install '%1' because it points to a web page. Click <a "
+"href='%2'>here</a> to finish the installation."
+msgstr "無法安裝 %1，因為它指向一個網頁。點擊<a href='%2'>這裡</a>來完成安裝。"
 
-#: core/installation.cpp:261
-#, kde-format
-msgid "Possibly bad download link"
-msgstr "可能是錯誤的下載連結"
-
-#: core/installation.cpp:264
-#, kde-format
-msgid "Downloaded file was a HTML file. Opened in browser."
-msgstr "下載的檔案是一個 HTML 檔。在瀏覽器內開啟。"
-
-#: core/installation.cpp:302
+#: core/installation.cpp:303
 #, kde-format
 msgid "Could not install \"%1\": file not found."
 msgstr "無法安裝 %1：找不到檔案。"
 
-#: core/installation.cpp:489
+#: core/installation.cpp:493
 #, kde-format
 msgid "The installation of %1 failed to create the expected new directory %2"
 msgstr "%1 安裝程式無法建立應新增的目錄 %2"
 
-#: core/installation.cpp:512 core/installation.cpp:827
+#: core/installation.cpp:516 core/installation.cpp:841
 #, kde-format
 msgid "Installation of %1 failed: %2"
 msgstr "%1 安裝失敗：%2"
 
-#: core/installation.cpp:521
+#: core/installation.cpp:525
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the service type %2 was not accepted by "
@@ -297,21 +287,21 @@ msgstr ""
 "%1 安裝失敗，%2 服務類型系統不接受 (是否忘記安裝此類型軟體包的 KPackage 支援"
 "外掛程式？)"
 
-#: core/installation.cpp:531
+#: core/installation.cpp:535
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain a "
 "correct KPackage structure."
 msgstr "%1 安裝失敗，下載的軟體包未包含正確的 KPackage 結構。"
 
-#: core/installation.cpp:537
+#: core/installation.cpp:541
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not list a "
 "service type."
 msgstr "%1 安裝失敗，下載的軟體包未列舉服務類型。"
 
-#: core/installation.cpp:544
+#: core/installation.cpp:548
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain "
@@ -319,17 +309,17 @@ msgid ""
 msgstr ""
 "%1 安裝失敗，下載的軟體包未包含任何有用的中繼資訊，即此非有效的 KPackage。"
 
-#: core/installation.cpp:577
+#: core/installation.cpp:582
 #, kde-format
 msgid "Could not determine the type of archive of the downloaded file %1"
 msgstr "無法確定下載的 %1 檔案的封存檔類型"
 
-#: core/installation.cpp:589
+#: core/installation.cpp:594
 #, kde-format
 msgid "Failed to open the archive file %1. The reported error was: %2"
 msgstr "無法開啟 %1 封存檔。回傳錯誤：%2"
 
-#: core/installation.cpp:672
+#: core/installation.cpp:678
 #, kde-format
 msgid ""
 "This file already exists on disk (possibly due to an earlier failed download "
@@ -339,17 +329,17 @@ msgstr ""
 "此檔案已在磁碟中（可能是因為稍早的下載嘗試失敗）。選擇繼續則會覆寫該檔案，確"
 "定覆寫？"
 
-#: core/installation.cpp:675
+#: core/installation.cpp:681
 #, kde-format
 msgid "Overwrite File"
 msgstr "覆寫檔案"
 
-#: core/installation.cpp:691
+#: core/installation.cpp:700
 #, kde-format
 msgid "Unable to move the file %1 to the intended destination %2"
 msgstr "無法移動 %1 檔案至預定的目的地 %2"
 
-#: core/installation.cpp:714
+#: core/installation.cpp:723
 #, kde-format
 msgid ""
 "The installation failed while attempting to run the command:\n"
@@ -364,7 +354,7 @@ msgstr ""
 "回傳輸出：\n"
 "%2"
 
-#: core/installation.cpp:724
+#: core/installation.cpp:733
 #, kde-format
 msgid ""
 "The installation failed with code %1 while attempting to run the command:\n"
@@ -379,28 +369,24 @@ msgstr ""
 "回傳輸出：\n"
 "%3"
 
-#: core/installation.cpp:766
-#, fuzzy, kde-format
-#| msgid ""
-#| "The removal of %1 failed, due to the installed file not being a KPackage. "
-#| "The file in question was %2, and you can attempt to delete it yourself, "
-#| "if you are certain that it is not needed."
+#: core/installation.cpp:775
+#, kde-format
 msgid ""
 "The removal of %1 failed, as the installed file %2 could not be "
 "automatically removed. You can attempt to manually delete this file, if you "
 "believe this is an error."
 msgstr ""
-"%1 移除失敗，安裝的檔案不是 KPackage。有問題的檔案為 %2，如您確定已用不到，則"
-"可嘗試自行刪除。"
+"%1 移除失敗，安裝的檔案 %2 無法被自動移除。如果您相信這是錯的，您可嘗試自行刪"
+"除這個檔案。"
 
-#: core/installation.cpp:834
+#: core/installation.cpp:848
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain a "
 "correct KPackage structure."
 msgstr "%1 移除失敗，安裝的軟體包未包含正確的 KPackage 結構。"
 
-#: core/installation.cpp:839
+#: core/installation.cpp:853
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package is not a supported type "
@@ -410,7 +396,7 @@ msgstr ""
 "%1 移除失敗，安裝的軟體包非支援的類型 (是否忘記安裝此類型軟體包的 KPackage 支"
 "援外掛程式？)"
 
-#: core/installation.cpp:846
+#: core/installation.cpp:860
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain any "
@@ -418,14 +404,14 @@ msgid ""
 msgstr ""
 "%1 移除失敗，安裝的軟體包未包含任何有用的中繼資訊，即此非有效的 KPackage。"
 
-#: core/installation.cpp:886
+#: core/installation.cpp:900
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the downloaded file %2 could not be "
 "automatically removed."
 msgstr "%1 移除失敗，下載的 %2 檔案無法自動移除。"
 
-#: core/installation.cpp:891
+#: core/installation.cpp:905
 #, kde-format
 msgid ""
 "The removal of %1 failed, due to the installed file not being a KPackage. "
@@ -435,14 +421,14 @@ msgstr ""
 "%1 移除失敗，安裝的檔案不是 KPackage。有問題的檔案為 %2，如您確定已用不到，則"
 "可嘗試自行刪除。"
 
-#: core/installation.cpp:899
+#: core/installation.cpp:913
 #, kde-format
 msgid ""
 "The removal of %1 failed, as there seems to somehow be more than one thing "
 "installed, which is not supposed to be possible for KPackage based entries."
 msgstr ""
 
-#: core/installation.cpp:932
+#: core/installation.cpp:946
 #, kde-format
 msgid ""
 "The uninstallation process failed to successfully run the command %1\n"
@@ -459,12 +445,12 @@ msgstr ""
 #: core/jobs/filecopyworker.cpp:49
 #, kde-format
 msgid "Could not open %1 for writing"
-msgstr ""
+msgstr "無法開啟 %1 供寫入"
 
 #: core/jobs/filecopyworker.cpp:52
 #, kde-format
 msgid "Could not open %1 for reading"
-msgstr ""
+msgstr "無法開啟 %1 供讀取"
 
 #: core/jobs/kpackagejob.cpp:114
 #, kde-format
@@ -608,7 +594,7 @@ msgid "Provider:"
 msgstr "提供者："
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
-#: downloadwidget.ui:71 qtquick/qml/Page.qml:424
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:426
 #, kde-format
 msgid "Category:"
 msgstr "類別："
@@ -713,19 +699,19 @@ msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "設定..."
 
-#: kmoretools/kmoretools_p.h:376
+#: kmoretools/kmoretools_p.h:373
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Visit homepage"
 msgstr "造訪首頁"
 
-#: kmoretools/kmoretools_p.h:388
+#: kmoretools/kmoretools_p.h:386
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Install"
 msgstr "安裝"
 
-#: kmoretools/kmoretools_p.h:396
+#: kmoretools/kmoretools_p.h:395
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "No further information available."
@@ -741,19 +727,19 @@ msgstr "設定選單"
 msgid "Configure menu - %1"
 msgstr "設定選單 - %1"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:176
+#: kmoretools/kmoretoolsmenufactory.cpp:173
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current folder"
 msgstr "%1 - 目前資料夾"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:183
+#: kmoretools/kmoretoolsmenufactory.cpp:182
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current device"
 msgstr "%1 - 目前裝置"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:197
+#: kmoretools/kmoretoolsmenufactory.cpp:195
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - all devices"
@@ -816,8 +802,7 @@ msgid "More tools..."
 msgstr "更多工具..."
 
 #: qtquick/categoriesmodel.cpp:63
-#, fuzzy, kde-format
-#| msgid "All Categories"
+#, kde-format
 msgctxt ""
 "The first entry in the category selection list (also the default value)"
 msgid "All Categories"
@@ -835,40 +820,31 @@ msgstr "未知分類"
 #. @note For the sake of consistency, you should NOT override the text property, just set this one
 #.
 #: qtquick/qml/Button.qml:43
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "Used to contruct the button's label (which will become Download New 'this "
-#| "value'...)"
-#| msgid "Stuff"
+#, kde-format
 msgctxt ""
 "Used to construct the button's label (which will become Download New 'this "
 "value'...)"
 msgid "Stuff"
-msgstr "項目"
+msgstr "玩意"
 
 #: qtquick/qml/Button.qml:44
 #, kde-format
 msgid "Download New %1..."
 msgstr "下載新%1…"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt "The dialog title when we know which type of stuff is being requested"
 msgid "Download New %1"
 msgstr "下載新%1"
 
-#: qtquick/qml/Dialog.qml:41
+#: qtquick/qml/Dialog.qml:43
 #, kde-format
 msgctxt ""
 "A placeholder title used in the dialog when there is no better title "
 "available"
 msgid "Download New Stuff"
 msgstr "下載熱門玩意"
-
-#: qtquick/qml/Dialog.qml:127
-#, kde-format
-msgid "Contribute your own..."
-msgstr ""
 
 #: qtquick/qml/DownloadItemsSheet.qml:30
 #, kde-format
@@ -894,16 +870,12 @@ msgid "Installing %1 from %2"
 msgstr "從 %2 安裝 %1"
 
 #: qtquick/qml/EntryDetails.qml:65
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "Status message to be shown when the entry is in the process of being "
-#| "updated"
-#| msgid "Currently updating the item %1 by %2. Please wait..."
+#, kde-format
 msgctxt ""
 "Status message to be shown when the entry is in the process of being "
 "installed OR uninstalled"
 msgid "Currently working on the item %1 by %2. Please wait..."
-msgstr "正在使用 %2 更新 %1 項目。請稍候..."
+msgstr "目前正在處理 %2 的項目 %1。請稍候..."
 
 #: qtquick/qml/EntryDetails.qml:67
 #, kde-format
@@ -1048,7 +1020,7 @@ msgctxt ""
 "List option which will set the sort order to based on when items were most "
 "recently updated"
 msgid "Show most recent first"
-msgstr "先顯示最近項目"
+msgstr "先顯示最近的項目"
 
 #: qtquick/qml/NewStuffList.qml:83
 #, kde-format
@@ -1062,14 +1034,14 @@ msgstr "依字母排序"
 #, kde-format
 msgctxt "List option which will set the sort order to based on user ratings"
 msgid "Show highest rated first"
-msgstr "先顯示最高評價"
+msgstr "先顯示評價最高的項目"
 
 #: qtquick/qml/NewStuffList.qml:85
 #, kde-format
 msgctxt ""
 "List option which will set the sort order to based on number of downloads"
 msgid "Show most downloaded first"
-msgstr "先顯示下載數最多項"
+msgstr "先顯示下載數最多的項目"
 
 #: qtquick/qml/Page.qml:132
 #, kde-format
@@ -1091,68 +1063,55 @@ msgstr ""
 #: qtquick/qml/Page.qml:214
 #, kde-format
 msgid "Tiles"
-msgstr ""
+msgstr "方塊"
 
 #: qtquick/qml/Page.qml:216
 #, kde-format
 msgid "Icons"
-msgstr ""
+msgstr "圖示"
 
 #: qtquick/qml/Page.qml:218
-#, fuzzy, kde-format
-#| msgid "Preview Images"
+#, kde-format
 msgid "Preview"
-msgstr "預覽影像"
+msgstr "預覽"
 
 #: qtquick/qml/Page.qml:233
-#, fuzzy, kde-format
-#| msgid "Details view mode"
+#, kde-format
 msgid "Detailed Tiles View Mode"
-msgstr "詳細資料檢視模式"
+msgstr "使用詳細方塊的檢視模式"
 
 #: qtquick/qml/Page.qml:241
-#, fuzzy, kde-format
-#| msgid "Icons view mode"
+#, kde-format
 msgid "Icons Only View Mode"
-msgstr "圖示檢視模式"
+msgstr "只有圖示的檢視模式"
 
 #: qtquick/qml/Page.qml:249
-#, fuzzy, kde-format
-#| msgid "Details view mode"
+#, kde-format
 msgid "Large Preview View Mode"
-msgstr "詳細資料檢視模式"
+msgstr "使用大預覽的檢視模式"
 
 #: qtquick/qml/Page.qml:259
-#, fuzzy, kde-format
-#| msgctxt "List option which will set the filter to show everything"
-#| msgid "Show Everything"
+#, kde-format
 msgid "Everything"
-msgstr "顯示所有項目"
+msgstr "所有項目"
 
 #: qtquick/qml/Page.qml:263
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "List option which will set the filter so only installed items with "
-#| "updates available are shown"
-#| msgid "Updateable Only"
+#, kde-format
 msgid "Updateable"
-msgstr "只顯示可更新項"
+msgstr "可更新"
 
 #: qtquick/qml/Page.qml:282
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "The first entry in the category selection list (also the default value)"
-#| msgid "Show All Categories"
+#, kde-format
 msgctxt "List option which will set the filter to show everything"
 msgid "Show All Entries"
-msgstr "顯示所有分類"
+msgstr "顯示所有項目"
 
 #: qtquick/qml/Page.qml:290
 #, kde-format
 msgctxt ""
 "List option which will set the filter so only installed items are shown"
 msgid "Show Only Installed Entries"
-msgstr ""
+msgstr "僅顯示已安裝項目"
 
 #: qtquick/qml/Page.qml:298
 #, kde-format
@@ -1160,101 +1119,78 @@ msgctxt ""
 "List option which will set the filter so only installed items with updates "
 "available are shown"
 msgid "Show Only Updateable Entries"
-msgstr ""
+msgstr "僅顯示可更新項目"
 
 #: qtquick/qml/Page.qml:308
 #, kde-format
 msgid "Recent"
-msgstr ""
+msgstr "最近"
 
 #: qtquick/qml/Page.qml:310
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "List option which will set the sort order to be alphabetical based on the "
-#| "name"
-#| msgid "Sort alphabetically"
+#, kde-format
 msgid "Alphabetical"
-msgstr "依字母排序"
+msgstr "按字母順序"
 
 #: qtquick/qml/Page.qml:314
-#, fuzzy, kde-format
-#| msgctxt "The number of times the item has been downloaded"
-#| msgid "%1 downloads"
+#, kde-format
 msgid "Downloads"
-msgstr "下載 %1 次"
+msgstr "下載"
 
 #: qtquick/qml/Page.qml:333
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "List option which will set the sort order to based on when items were "
-#| "most recently updated"
-#| msgid "Show most recent first"
+#, kde-format
 msgctxt ""
 "List option which will set the sort order to based on when items were most "
 "recently updated"
 msgid "Show Most Recent First"
-msgstr "先顯示最近項目"
+msgstr "先顯示最近的項目"
 
 #: qtquick/qml/Page.qml:341
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "List option which will set the sort order to be alphabetical based on the "
-#| "name"
-#| msgid "Sort alphabetically"
+#, kde-format
 msgctxt ""
 "List option which will set the sort order to be alphabetical based on the "
 "name"
 msgid "Sort Alphabetically By Name"
-msgstr "依字母排序"
+msgstr "依名稱字母排序"
 
 #: qtquick/qml/Page.qml:349
-#, fuzzy, kde-format
-#| msgctxt "List option which will set the sort order to based on user ratings"
-#| msgid "Show highest rated first"
+#, kde-format
 msgctxt "List option which will set the sort order to based on user ratings"
 msgid "Show Highest Rated First"
-msgstr "先顯示最高評價"
+msgstr "先顯示評價最高的項目"
 
 #: qtquick/qml/Page.qml:357
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "List option which will set the sort order to based on number of downloads"
-#| msgid "Show most downloaded first"
+#, kde-format
 msgctxt ""
 "List option which will set the sort order to based on number of downloads"
 msgid "Show Most Downloaded First"
-msgstr "先顯示下載數最多項"
+msgstr "先顯示下載數最多的項目"
 
 #: qtquick/qml/Page.qml:366
-#, fuzzy, kde-format
-#| msgid "New Upload"
+#, kde-format
 msgid "Upload..."
-msgstr "新增上傳"
+msgstr "上傳…"
 
 #: qtquick/qml/Page.qml:367
 #, kde-format
 msgid "Learn how to add your own hot new stuff to this list"
-msgstr ""
+msgstr "了解如何將您自己的新玩意加到這個列表裡"
 
 #: qtquick/qml/Page.qml:375
 #, kde-format
 msgid "Go to..."
-msgstr ""
+msgstr "跳到…"
 
-#: qtquick/qml/Page.qml:510
+#: qtquick/qml/Page.qml:442
+#, kde-format
+msgid "Contribute your own…"
+msgstr "貢獻您自己的…"
+
+#: qtquick/qml/Page.qml:508
 #, kde-format
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
-msgid "Loading more..."
-msgstr "載入更多..."
-
-#: qtquick/qml/Page.qml:521
-#, kde-format
-msgctxt ""
-"A message shown when there are no entries in the list, and when it is not "
-"trying to load anything"
-msgid "There is no hot new stuff to get here"
-msgstr "沒有什麼熱門的新東西"
+msgid "Loading more…"
+msgstr "正在載入更多…"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:110
 #, kde-format
@@ -1321,7 +1257,7 @@ msgctxt ""
 "Label for the busy indicator showing an item is being installed OR "
 "uninstalled"
 msgid "Working..."
-msgstr ""
+msgstr "處理中…"
 
 #: qtquick/qml/private/entrygriddelegates/FeedbackOverlay.qml:46
 #, kde-format
@@ -1356,6 +1292,11 @@ msgctxt "Title for a dialog box which shows error messages"
 msgid "An Error Occurred"
 msgstr "發生錯誤"
 
+#: qtquick/qml/private/ErrorDisplayer.qml:51
+#, kde-format
+msgid "Please try again later."
+msgstr "請稍後再試。"
+
 #: qtquick/qml/private/GridTileDelegate.qml:113
 #, kde-format
 msgid "None"
@@ -1366,38 +1307,32 @@ msgstr "無"
 msgctxt ""
 "A text representation of the rating, shown as a fraction of the max value"
 msgid "(%1/%2)"
-msgstr ""
+msgstr "(%1/%2)"
 
 #: qtquick/qml/UploadPage.qml:51
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "A placeholder title used in the dialog when there is no better title "
-#| "available"
-#| msgid "Download New Stuff"
+#, kde-format
 msgctxt "@knewstuff5"
 msgid "Upload New Stuff: %1"
-msgstr "下載熱門玩意"
+msgstr "上傳好玩意：%1"
 
 #: qtquick/qml/UploadPage.qml:83
-#, fuzzy, kde-format
-#| msgid "Fetching provider information..."
+#, kde-format
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
 msgid "Updating information..."
-msgstr "取得提供者資訊中..."
+msgstr "更新資訊中…"
 
 #: qtquick/qml/UploadPage.qml:95
 #, kde-format
 msgctxt "The name of the KDE Store"
 msgid "KDE Store"
-msgstr ""
+msgstr "KDE Store"
 
 #: qtquick/qml/UploadPage.qml:101
-#, fuzzy, kde-format
-#| msgid "Provider:"
+#, kde-format
 msgctxt "An unnamed provider"
 msgid "Your Provider"
-msgstr "提供者："
+msgstr "您的提供者"
 
 #: qtquick/qml/UploadPage.qml:109
 #, kde-format
@@ -1405,7 +1340,7 @@ msgctxt ""
 "Text for an action which causes the specified website to be opened using the "
 "user's system default browser"
 msgid "Open Website: %1"
-msgstr ""
+msgstr "開始網站：%1"
 
 #: qtquick/qml/UploadPage.qml:114
 #, kde-format
@@ -1413,7 +1348,7 @@ msgctxt ""
 "Text for an action which will attempt to send an email using the user's "
 "system default email client"
 msgid "Send Email To: %1"
-msgstr ""
+msgstr "傳送電子郵件給：%1"
 
 #: qtquick/qml/UploadPage.qml:121
 #, kde-format
@@ -1453,37 +1388,34 @@ msgstr ""
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #: qtquick/searchpresetmodel.cpp:58
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Popular"
-msgstr ""
+msgstr "受歡迎"
 
 #: qtquick/searchpresetmodel.cpp:61
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Featured"
-msgstr ""
+msgstr "特色"
 
 #: qtquick/searchpresetmodel.cpp:64
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Restart"
-msgstr ""
+msgstr "重新啟動"
 
 #: qtquick/searchpresetmodel.cpp:67
-#, fuzzy, kde-format
-#| msgid "Newest"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "New"
-msgstr "最新的"
+msgstr "新的"
 
 #: qtquick/searchpresetmodel.cpp:70
-#, fuzzy, kde-format
-#| msgctxt "A link to the description of this Get Hot New Stuff item"
-#| msgid "Homepage"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "Home"
 msgstr "首頁"
@@ -1498,35 +1430,31 @@ msgstr ""
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Up"
-msgstr ""
+msgstr "往上"
 
 #: qtquick/searchpresetmodel.cpp:79
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Recommended"
-msgstr ""
+msgstr "建議"
 
 #: qtquick/searchpresetmodel.cpp:82
-#, fuzzy, kde-format
-#| msgid "Description:"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "Subscriptions"
-msgstr "描述："
+msgstr "訂閱"
 
 #: qtquick/searchpresetmodel.cpp:85
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "The first entry in the category selection list (also the default value)"
-#| msgid "Show All Categories"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "All Entries"
-msgstr "顯示所有分類"
+msgstr "所有項目"
 
 #: qtquick/searchpresetmodel.cpp:88
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Search Preset: %1"
-msgstr ""
+msgstr "搜尋設定檔：%1"
 
 #: tools/knewstuff-dialog/main.cpp:31
 #, kde-format
@@ -1645,3 +1573,279 @@ msgstr "再次安裝"
 msgctxt "Show the size of the file in a list"
 msgid "<p>Size: %1</p>"
 msgstr "<p>大小：%1</p>"
+
+#: ui/widgetquestionlistener.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Yes"
+msgstr "是"
+
+#: ui/widgetquestionlistener.cpp:90
+#, kde-format
+msgctxt "@action:button"
+msgid "No"
+msgstr "否"
+
+#~ msgid ""
+#~ "The downloaded file is a html file. This indicates a link to a website "
+#~ "instead of the actual download. Would you like to open the site with a "
+#~ "browser instead?"
+#~ msgstr ""
+#~ "下載的檔案是一個 html 檔。它指向一個網站而不是實際上會下載內容。您要改成用"
+#~ "瀏覽器開啟此網站嗎？"
+
+#~ msgid "Possibly bad download link"
+#~ msgstr "可能是錯誤的下載連結"
+
+#~ msgid "Downloaded file was a HTML file. Opened in browser."
+#~ msgstr "下載的檔案是一個 HTML 檔。在瀏覽器內開啟。"
+
+#~ msgctxt ""
+#~ "A message shown when there are no entries in the list, and when it is not "
+#~ "trying to load anything"
+#~ msgid "There is no hot new stuff to get here"
+#~ msgstr "沒有什麼熱門的新東西"
+
+#~ msgctxt "Opposite to Back"
+#~ msgid "Next"
+#~ msgstr "下一步"
+
+#~ msgid "Finish"
+#~ msgstr "完成"
+
+#~ msgid "Fetching license data from server..."
+#~ msgstr "在伺服器上抓取授權資料..."
+
+#~ msgid "Fetching content data from server..."
+#~ msgstr "在伺服器上抓取內容資料..."
+
+#~ msgid "Could not fetch provider information."
+#~ msgstr "無法取的提供者資訊。"
+
+#~ msgid "Register a new account"
+#~ msgstr "註冊新帳號"
+
+#~ msgid "Checking login..."
+#~ msgstr "檢查登入中..."
+
+#~ msgid "Fetching your previously updated content..."
+#~ msgstr "抓取您上次上傳的內容..."
+
+#~ msgid "Could not verify login, please try again."
+#~ msgstr "無法查驗登入，請再試一次。"
+
+#~ msgid "Fetching your previously updated content finished."
+#~ msgstr "已完成抓取您上次上傳的內容。"
+
+#~ msgid "Fetching content data from server finished."
+#~ msgstr "已完成抓取內容資料。"
+
+#~ msgctxt ""
+#~ "A link to the website where the get hot new stuff upload can be seen"
+#~ msgid "Visit website"
+#~ msgstr "造訪網站"
+
+#~ msgid "Share Hot New Stuff"
+#~ msgstr "分享熱門玩意"
+
+#~ msgctxt "Program name followed by 'Add On Uploader'"
+#~ msgid "%1 Add-On Uploader"
+#~ msgstr "%1 外加上傳器"
+
+#~ msgid "File not found: %1"
+#~ msgstr "檔案找不到：%1"
+
+#~ msgid "Upload Failed"
+#~ msgstr "上傳失敗"
+
+#~ msgid ""
+#~ "The server does not recognize the category %2 to which you are trying to "
+#~ "upload."
+#~ msgid_plural ""
+#~ "The server does not recognize any of the categories to which you are "
+#~ "trying to upload: %2"
+#~ msgstr[0] "伺服器無法辨識出您要上傳到哪個類別：%2"
+
+#~ msgid "Error"
+#~ msgstr "錯誤"
+
+#~ msgid "The selected category \"%1\" is invalid."
+#~ msgstr "選取的類別 %1 不合法"
+
+#~ msgid "Select preview image"
+#~ msgstr "選擇預覽影像"
+
+#~ msgid "There was a network error."
+#~ msgstr "發生網路錯誤。"
+
+#~ msgid "Uploading Failed"
+#~ msgstr "上傳失敗"
+
+#~ msgid "Authentication error."
+#~ msgstr "認證錯誤。"
+
+#~ msgid "Upload failed: %1"
+#~ msgstr "上傳失敗：%1"
+
+#~ msgid "Password:"
+#~ msgstr "密碼："
+
+#~ msgid "Username:"
+#~ msgstr "使用者名稱："
+
+#~ msgid "File to upload:"
+#~ msgstr "要上傳的檔案；"
+
+#~ msgid "GPL"
+#~ msgstr "GPL"
+
+#~ msgid "LGPL"
+#~ msgstr "LGPL"
+
+#~ msgid "BSD"
+#~ msgstr "BSD"
+
+#~ msgid "Description:"
+#~ msgstr "描述："
+
+#~ msgid "Version:"
+#~ msgstr "版本："
+
+#~ msgid "License:"
+#~ msgstr "授權："
+
+#~ msgid "Please fill out the information about your upload in English."
+#~ msgstr "請用英文填寫您的上傳檔的資訊。"
+
+#~ msgid "Title:"
+#~ msgstr "標題："
+
+#~ msgid "Name of the file as it will appear on the website"
+#~ msgstr "出現在網站上的檔名"
+
+#~ msgid ""
+#~ "This should clearly describe the file content. It can be the same text as "
+#~ "the title of the kvtml file."
+#~ msgstr "應該要能清楚描述檔案的內容。它可以跟 kvtml 檔的標題一樣。"
+
+#~ msgid "Preview Images"
+#~ msgstr "預覽影像"
+
+#~ msgid "Select Preview..."
+#~ msgstr "選擇預覽..."
+
+#~ msgid "Set a price for this item"
+#~ msgstr "對此項目設定價格"
+
+#~ msgid "Price"
+#~ msgstr "價格"
+
+#~ msgid "Price:"
+#~ msgstr "價格："
+
+#~ msgid "Reason for price:"
+#~ msgstr "設定價格的理由："
+
+#~ msgid "Fetch content link from server"
+#~ msgstr "從伺服器上抓取內容連結"
+
+#~ msgid "Create content on server"
+#~ msgstr "在伺服器上建立內容"
+
+#~ msgid "Upload content"
+#~ msgstr "上傳內容"
+
+#~ msgid "Upload first preview"
+#~ msgstr "上傳第一個預覽"
+
+#~ msgid "Note: You can edit, update and delete your content on the website."
+#~ msgstr "注意：您可以編輯、更新與刪除網站上您的內容。"
+
+#~ msgid "Upload second preview"
+#~ msgstr "上傳第二個預覽"
+
+#~ msgid "Upload third preview"
+#~ msgstr "上傳第三個預覽"
+
+#~ msgid ""
+#~ "I ensure that this content does not violate any existing copyright, law "
+#~ "or trademark. I agree for my IP address to be logged. (Distributing "
+#~ "content without the permission of the copyright holder is illegal.)"
+#~ msgstr ""
+#~ "我確定此內容並未違反任何現有的授權、法律或商標。我同意我的 IP 位址被紀錄。"
+#~ "（未經版權持有者同意即散布內容是違法的。）"
+
+#~ msgid "Start Upload"
+#~ msgstr "開始上傳"
+
+#~ msgid "Failed to execute install script"
+#~ msgstr "無法執行安裝文稿"
+
+#~ msgctxt ""
+#~ "Status message to be shown when the entry is in the process of being "
+#~ "installed"
+#~ msgid "Currently installing the item %1 by %2. Please wait..."
+#~ msgstr "正在使用 %2 安裝 %1 項目。請稍候..."
+
+#~ msgctxt "Label for the busy indicator showing an item is being installed"
+#~ msgid "Installing..."
+#~ msgstr "安裝中..."
+
+#, fuzzy
+#~| msgid "Details view mode"
+#~ msgid "Tiles view mode"
+#~ msgstr "詳細資料檢視模式"
+
+#, fuzzy
+#~| msgctxt ""
+#~| "List option which will set the sort order to based on when items were "
+#~| "most recently updated"
+#~| msgid "Show most recent first"
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on when items were "
+#~ "most recently updated"
+#~ msgid "Most recent first"
+#~ msgstr "先顯示最近項目"
+
+#, fuzzy
+#~| msgctxt ""
+#~| "List option which will set the sort order to based on user ratings"
+#~| msgid "Show highest rated first"
+#~ msgctxt "List option which will set the sort order to based on user ratings"
+#~ msgid "Highest rated first"
+#~ msgstr "先顯示最高評價"
+
+#, fuzzy
+#~| msgctxt ""
+#~| "List option which will set the sort order to based on number of downloads"
+#~| msgid "Show most downloaded first"
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on number of downloads"
+#~ msgid "Most downloaded first"
+#~ msgstr "先顯示下載數最多項"
+
+#~ msgctxt ""
+#~ "If a knsrc file defines an adoption command, the option to run this "
+#~ "command and 'use' an item becomes available. This is the text for an "
+#~ "action to do so."
+#~ msgid "Use"
+#~ msgstr "使用"
+
+#~ msgid "Using %1"
+#~ msgstr "使用 %1"
+
+#~ msgctxt "Show a page with details for this item"
+#~ msgid "Details..."
+#~ msgstr "詳細資料..."
+
+#~ msgid "Enter search phrase here"
+#~ msgstr "在此輸入搜尋字串"
+
+#~ msgid "The uninstallation process failed to successfully run the command %1"
+#~ msgstr "解除安裝程序無法成功執行 %1 命令"
+
+#~ msgid "Close"
+#~ msgstr "關閉"
+
+#~ msgid "Download File"
+#~ msgstr "下載檔案"

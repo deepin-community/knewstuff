@@ -1,28 +1,29 @@
-# KDE3 - Georgian translation of kdelibs4.po
-# Gia Shervashidze <giasher@telenet.ge>, 2005.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the knewstuff package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: kdelibs4\n"
+"Project-Id-Version: knewstuff\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-27 00:40+0000\n"
-"PO-Revision-Date: 2009-12-17 02:11+0400\n"
-"Last-Translator: George Machitidze <giomac@gmail.com>\n"
-"Language-Team: Georgian <http://www.gia.ge>\n"
+"POT-Creation-Date: 2022-12-15 00:44+0000\n"
+"PO-Revision-Date: 2023-01-30 10:13+0100\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: attica/atticaprovider.cpp:167
-#, fuzzy, kde-format
-#| msgid "PageUp"
+#, kde-format
 msgid "All categories are missing"
-msgstr "PageUp"
+msgstr "კატეგორიები აღმოჩენილი არაა"
 
-#: attica/atticaprovider.cpp:479
+#: attica/atticaprovider.cpp:480
 #, kde-format
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
@@ -30,154 +31,151 @@ msgid ""
 "This item costs %1 %2.\n"
 "Do you want to buy it?"
 msgstr ""
+"ეს ელემენტი %1 %2 ღირს.\n"
+"გნებავთ, შეიძინოთ?"
 
-#: attica/atticaprovider.cpp:493
+#: attica/atticaprovider.cpp:494
 #, kde-format
 msgid ""
 "Your account balance is too low:\n"
 "Your balance: %1\n"
 "Price: %2"
 msgstr ""
+"თქვენი ანგარიშის ბალანსი ძალიან დაბალია:\n"
+"თქვენი ბალანსი: %1\n"
+"ფასი: %2"
 
-#: attica/atticaprovider.cpp:536
-#, fuzzy, kde-format
-#| msgid "No text was replaced."
+#: attica/atticaprovider.cpp:537
+#, kde-format
 msgctxt "voting for an item (good/bad)"
 msgid "Your vote was recorded."
-msgstr "არაფერი შეცვლილა."
+msgstr "თქვენი ხმა ჩაწერილია."
 
-#: attica/atticaprovider.cpp:551
+#: attica/atticaprovider.cpp:552
 #, kde-format
 msgid "You are now a fan."
-msgstr ""
+msgstr "ახლა ფანი ხარ."
 
-#: attica/atticaprovider.cpp:579 core/engine.cpp:388 opds/opdsprovider.cpp:288
+#: attica/atticaprovider.cpp:580 core/engine.cpp:394 opds/opdsprovider.cpp:288
 #, kde-format
 msgid ""
 "The service is currently undergoing maintenance and is expected to be back "
 "in %1."
 msgstr ""
 
-#: attica/atticaprovider.cpp:584
+#: attica/atticaprovider.cpp:585
 #, kde-format
 msgid "Network error %1: %2"
-msgstr ""
+msgstr "ქსელის შეცდომა %1: %2"
 
-#: attica/atticaprovider.cpp:590
+#: attica/atticaprovider.cpp:591
 #, kde-format
 msgid "Too many requests to server. Please try again in a few minutes."
-msgstr ""
+msgstr "სერვერის მეტისმეტად ბევრი მოთხოვნა. რამდენიმე წუთში თავიდან სცადეთ."
 
-#: attica/atticaprovider.cpp:593
+#: attica/atticaprovider.cpp:594
 #, kde-format
 msgid ""
 "The Open Collaboration Services instance %1 does not support the attempted "
 "function."
 msgstr ""
 
-#: attica/atticaprovider.cpp:597
+#: attica/atticaprovider.cpp:598
 #, kde-format
 msgid "Unknown Open Collaboration Service API error. (%1)"
-msgstr ""
+msgstr "ღია კოლაბორაციის სერვისის API-ის უცნობი შეცდომა. (%1)"
 
-#: button.cpp:41 widgets/action.cpp:34
-#, fuzzy, kde-format
-#| msgid "Download New Stuff"
+#: button.cpp:43 widgets/action.cpp:34 widgets/button.cpp:58
+#, kde-format
 msgid "Download New Stuff..."
-msgstr "ახალი მასალის ჩამოტვირთვა"
+msgstr "ახალი რამერუმეების მიღება..."
 
 #: core/commentsmodel.cpp:168
-#, fuzzy, kde-format
-#| msgctxt "QFile"
-#| msgid "Unknown error"
+#, kde-format
 msgctxt ""
 "The value returned for an unknown role when requesting data from the model."
 msgid "Unknown CommentsModel role"
-msgstr "უცნობი შეცდომა"
+msgstr ""
 
 #: core/engine.cpp:169
-#, fuzzy, kde-format
-#| msgid "An error occurred while accessing '%1'"
+#, kde-format
 msgid ""
 "An error occurred during the installation process:\n"
 "%1"
-msgstr "ჩატვირთვის შეცდომა - <B>%1</B>:"
+msgstr ""
+"შეცდომა დაყენების პროცესში:\n"
+"%1"
 
 #: core/engine.cpp:203
-#, fuzzy, kde-format
-#| msgid "Installing"
+#, kde-format
 msgid "Initializing"
-msgstr "ჩადგმა"
+msgstr "ინიციალიზაცია"
 
-#: core/engine.cpp:239
-#, fuzzy, kde-format
-#| msgid "Configuration files"
+#: core/engine.cpp:241
+#, kde-format
 msgid "Configuration file exists, but cannot be opened: \"%1\""
-msgstr "გამართვის ფაილები"
+msgstr "კონფიგურაციის ფაილი არსებობს, მაგრამ გახსნა შეუძლებელია: \"%1\""
 
-#: core/engine.cpp:252
-#, fuzzy, kde-format
-#| msgid "Configuration files"
+#: core/engine.cpp:254
+#, kde-format
 msgid "Configuration file is invalid: \"%1\""
-msgstr "გამართვის ფაილები"
+msgstr "კონფიგურაციის ფაილი არასწორია: \"%1\""
 
-#: core/engine.cpp:261
+#: core/engine.cpp:263
 #, kde-format
 msgid "Use"
-msgstr ""
+msgstr "გამოყენება"
 
-#: core/engine.cpp:278
+#: core/engine.cpp:284
 #, kde-format
 msgid ""
 "Could not initialise the installation handler for %1\n"
 "This is a critical error and should be reported to the application author"
 msgstr ""
 
-#: core/engine.cpp:353
-#, fuzzy, kde-format
-#| msgid "View Frame Information"
+#: core/engine.cpp:359
+#, kde-format
 msgid "Loading provider information"
-msgstr "ინფორმაცია ბლოკის შესახებ"
+msgstr "მომწოდებლის ინფორმაციის ჩატვირთვა"
 
-#: core/engine.cpp:414
+#: core/engine.cpp:420
 #, kde-format
 msgid "Could not load get hot new stuff providers from file: %1"
 msgstr ""
 
-#: core/engine.cpp:444
+#: core/engine.cpp:450
 #, kde-format
 msgid "Error initializing provider."
-msgstr ""
+msgstr "მომწოდებლის ინიციალიზაციის შეცდომა."
 
-#: core/engine.cpp:448 core/engine.cpp:1016
-#, fuzzy, kde-format
-#| msgid "Loading Applet"
+#: core/engine.cpp:454 core/engine.cpp:1022
+#, kde-format
 msgid "Loading data"
-msgstr "აპლეტის ჩატვირთვა"
+msgstr "მონაცემების ჩატვირთვა"
 
-#: core/engine.cpp:490
+#: core/engine.cpp:496
 #, kde-format
 msgid "Loading data from provider"
-msgstr ""
+msgstr "მონაცემების ჩატვირთვა მომწოდებლიდან"
 
-#: core/engine.cpp:495
+#: core/engine.cpp:501
 #, kde-format
 msgid "Loading of providers from file: %1 failed"
-msgstr ""
+msgstr "%1-დან მომწოდებლების ჩატვირთვა შეუძლებელია"
 
-#: core/engine.cpp:743
+#: core/engine.cpp:749
 #, kde-format
 msgid ""
 "Could not perform an installation of the entry %1 as it does not have any "
 "downloadable items defined. Please contact the author so they can fix this."
 msgstr ""
 
-#: core/engine.cpp:866
+#: core/engine.cpp:872
 #, kde-format
 msgid "Pick Update Item"
-msgstr ""
+msgstr "აირჩიეთ ბმული"
 
-#: core/engine.cpp:868
+#: core/engine.cpp:874
 #, kde-format
 msgid ""
 "Please pick the item from the list below which should be used to apply this "
@@ -185,90 +183,78 @@ msgid ""
 "original item, which was named %1"
 msgstr ""
 
-#: core/engine.cpp:887
+#: core/engine.cpp:893
 #, kde-format
 msgid ""
 "We failed to identify a good link for updating %1, and are unable to perform "
 "the update"
 msgstr ""
 
-#: core/engine.cpp:966
-#, fuzzy, kde-format
-#| msgid "Redo: %1"
+#: core/engine.cpp:972
+#, kde-format
 msgid "Re: %1"
-msgstr "გამეორება: %1"
+msgstr "Re: %1"
 
-#: core/engine.cpp:1008 ui/itemsgridviewdelegate.cpp:329
+#: core/engine.cpp:1014 ui/itemsgridviewdelegate.cpp:329
 #: ui/itemsviewdelegate.cpp:117
 #, kde-format
 msgid "Installing"
-msgstr "ჩადგმა"
+msgstr "დაყენება"
 
-#: core/engine.cpp:1012
-#, fuzzy, kde-format
-#| msgid "Print Previe&w..."
+#: core/engine.cpp:1018
+#, kde-format
 msgid "Loading one preview"
 msgid_plural "Loading %1 previews"
-msgstr[0] "ბეჭდვის &ესკიზი"
+msgstr[0] "ერთი მინიატურის ჩატვირთვა"
+msgstr[1] "%1 მინიატურის ჩატვირთვა"
 
-#: core/engine.cpp:1214
-#, fuzzy, kde-format
+#: core/engine.cpp:1225
+#, kde-format
 msgid ""
 "Failed to adopt '%1'\n"
 "%2"
-msgstr "ვერ ვახერხებ '%1' რესურსის ჩატვირთვა"
+msgstr ""
+"'%1'-ის დამუშავების შეცდომა\n"
+"%2"
 
 #: core/installation.cpp:211
-#, fuzzy, kde-format
-#| msgid "Invalid Filenames"
+#, kde-format
 msgid "Invalid item."
-msgstr "მცდარი ალმები"
+msgstr "არასწორი ელემენტი."
 
 #: core/installation.cpp:218
 #, kde-format
 msgid "Download of item failed: no download URL for \"%1\"."
 msgstr ""
 
-#: core/installation.cpp:245
+#: core/installation.cpp:249
 #, kde-format
 msgid "Download of \"%1\" failed, error: %2"
-msgstr ""
+msgstr "\"%1\"-ის გადმოწერა შეუძლებელია. შეცდომა: %2"
 
-#: core/installation.cpp:259
+#: core/installation.cpp:262
 #, kde-format
 msgid ""
-"The downloaded file is a html file. This indicates a link to a website "
-"instead of the actual download. Would you like to open the site with a "
-"browser instead?"
+"Cannot install '%1' because it points to a web page. Click <a "
+"href='%2'>here</a> to finish the installation."
 msgstr ""
 
-#: core/installation.cpp:261
-#, fuzzy, kde-format
-msgid "Possibly bad download link"
-msgstr "არ ხერხდება ახალი ფაილის შექმნა."
-
-#: core/installation.cpp:264
+#: core/installation.cpp:303
 #, kde-format
-msgid "Downloaded file was a HTML file. Opened in browser."
-msgstr ""
-
-#: core/installation.cpp:302
-#, fuzzy, kde-format
 msgid "Could not install \"%1\": file not found."
-msgstr "ვერ ვპოულობ '%1' სერვისს."
+msgstr "\"%1\"-ის დაყენების შეცდომა: ფაილი ვერ ვიპოვე;."
 
-#: core/installation.cpp:489
+#: core/installation.cpp:493
 #, kde-format
 msgid "The installation of %1 failed to create the expected new directory %2"
 msgstr ""
 
-#: core/installation.cpp:512 core/installation.cpp:827
-#, fuzzy, kde-format
-#| msgid "Installing"
+#: core/installation.cpp:516 core/installation.cpp:841
+#, kde-format
 msgid "Installation of %1 failed: %2"
-msgstr "ჩადგმა"
+msgstr "%1-ის დაყენების შეცდომა: %2"
 
-#: core/installation.cpp:521
+#: core/installation.cpp:525
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the service type %2 was not accepted by "
@@ -276,38 +262,38 @@ msgid ""
 "type of package?)"
 msgstr ""
 
-#: core/installation.cpp:531
+#: core/installation.cpp:535
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain a "
 "correct KPackage structure."
 msgstr ""
 
-#: core/installation.cpp:537
+#: core/installation.cpp:541
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not list a "
 "service type."
 msgstr ""
 
-#: core/installation.cpp:544
+#: core/installation.cpp:548
 #, kde-format
 msgid ""
 "The installation of %1 failed, as the downloaded package does not contain "
 "any useful meta information, which means it is not a valid KPackage."
 msgstr ""
 
-#: core/installation.cpp:577
+#: core/installation.cpp:582
 #, kde-format
 msgid "Could not determine the type of archive of the downloaded file %1"
 msgstr ""
 
-#: core/installation.cpp:589
-#, fuzzy, kde-format
+#: core/installation.cpp:594
+#, kde-format
 msgid "Failed to open the archive file %1. The reported error was: %2"
-msgstr "ბლოკირების ფაილი ვერ იხნება."
+msgstr "არქივის ფაილის (%1) გახსნა შეუძლებელია. შეცდომა: %2"
 
-#: core/installation.cpp:672
+#: core/installation.cpp:678
 #, kde-format
 msgid ""
 "This file already exists on disk (possibly due to an earlier failed download "
@@ -315,18 +301,17 @@ msgid ""
 "existing file?"
 msgstr ""
 
-#: core/installation.cpp:675
-#, fuzzy, kde-format
-#| msgid "Overwrite File?"
+#: core/installation.cpp:681
+#, kde-format
 msgid "Overwrite File"
-msgstr "ჩავანაცვლო ფაილი?"
+msgstr "ფაილის ჩანაცვლება"
 
-#: core/installation.cpp:691
+#: core/installation.cpp:700
 #, kde-format
 msgid "Unable to move the file %1 to the intended destination %2"
 msgstr ""
 
-#: core/installation.cpp:714
+#: core/installation.cpp:723
 #, kde-format
 msgid ""
 "The installation failed while attempting to run the command:\n"
@@ -336,7 +321,7 @@ msgid ""
 "%2"
 msgstr ""
 
-#: core/installation.cpp:724
+#: core/installation.cpp:733
 #, kde-format
 msgid ""
 "The installation failed with code %1 while attempting to run the command:\n"
@@ -346,7 +331,7 @@ msgid ""
 "%3"
 msgstr ""
 
-#: core/installation.cpp:766
+#: core/installation.cpp:775
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed file %2 could not be "
@@ -354,14 +339,14 @@ msgid ""
 "believe this is an error."
 msgstr ""
 
-#: core/installation.cpp:834
+#: core/installation.cpp:848
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain a "
 "correct KPackage structure."
 msgstr ""
 
-#: core/installation.cpp:839
+#: core/installation.cpp:853
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package is not a supported type "
@@ -369,21 +354,21 @@ msgid ""
 "package?)"
 msgstr ""
 
-#: core/installation.cpp:846
+#: core/installation.cpp:860
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the installed package does not contain any "
 "useful meta information, which means it is not a valid KPackage."
 msgstr ""
 
-#: core/installation.cpp:886
+#: core/installation.cpp:900
 #, kde-format
 msgid ""
 "The removal of %1 failed, as the downloaded file %2 could not be "
 "automatically removed."
 msgstr ""
 
-#: core/installation.cpp:891
+#: core/installation.cpp:905
 #, kde-format
 msgid ""
 "The removal of %1 failed, due to the installed file not being a KPackage. "
@@ -391,14 +376,14 @@ msgid ""
 "you are certain that it is not needed."
 msgstr ""
 
-#: core/installation.cpp:899
+#: core/installation.cpp:913
 #, kde-format
 msgid ""
 "The removal of %1 failed, as there seems to somehow be more than one thing "
 "installed, which is not supposed to be possible for KPackage based entries."
 msgstr ""
 
-#: core/installation.cpp:932
+#: core/installation.cpp:946
 #, kde-format
 msgid ""
 "The uninstallation process failed to successfully run the command %1\n"
@@ -409,18 +394,14 @@ msgid ""
 msgstr ""
 
 #: core/jobs/filecopyworker.cpp:49
-#, fuzzy, kde-format
+#, kde-format
 msgid "Could not open %1 for writing"
-msgstr ""
-"'%1' ბიბლიოთეკის გახსნა ვერ ხერხდება.\n"
-"%2"
+msgstr "%1-ის ჩასაწერად გახსნის შეცდომა"
 
 #: core/jobs/filecopyworker.cpp:52
-#, fuzzy, kde-format
+#, kde-format
 msgid "Could not open %1 for reading"
-msgstr ""
-"'%1' ბიბლიოთეკის გახსნა ვერ ხერხდება.\n"
-"%2"
+msgstr "%1-ის წასაკითხად გახსნის შეცდომა"
 
 #: core/jobs/kpackagejob.cpp:114
 #, kde-format
@@ -439,7 +420,7 @@ msgstr ""
 #: core/jobs/kpackagejob.cpp:125
 #, kde-format
 msgid "The service type %1 was not understood by the KPackage installer"
-msgstr ""
+msgstr "სერვისის ტიპი %1 KPackage-ის დამყენებლისთვის გაუგებარია"
 
 #: core/security.cpp:69
 #, kde-format
@@ -448,21 +429,13 @@ msgid ""
 "<i>gpg</i> is installed, otherwise verification of downloaded resources will "
 "not be possible.</qt>"
 msgstr ""
-"<qt>ვერ ვახერხებ დავიწყო <i>gpg</i> და ყველა საჭირო კოდის მიღებას. "
-"გადაამოწმეთ, რომ პროგრამა <i>gpg</i> ჩადგმულია, სხვა შემთხვევაში "
-"ჩამოტვირთული რესურსების შემოწმება ვერ მოხერხდება.</qt>"
 
 #: core/security.cpp:191
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Enter passphrase for key <b>0x%1</b>, belonging to<br><i>%2&lt;%3&gt;"
-#| "</i>:</qt>"
+#, kde-format
 msgid ""
 "<qt>Enter passphrase for key <b>0x%1</b>, belonging to<br /><i>%2&lt;%3&gt;</"
 "i><br />:</qt>"
 msgstr ""
-"<qt>მიუთითეთ კოდური ფრაზა კოდისთვის <b>0x%1</b>, რომელიც<br><i>%2&lt;%3&gt;</"
-"i>-ს მიეკუთვნება:</qt>"
 
 #: core/security.cpp:264
 #, kde-format
@@ -471,19 +444,16 @@ msgid ""
 "that <i>gpg</i> is installed, otherwise verification of downloaded resources "
 "will not be possible.</qt>"
 msgstr ""
-"<qt>ვერ ვახერხებ დავიწყო <i>gpg</i> და შევამოწმო ფაილის მართებულობა. "
-"გადაამოწმეთ, რომ პროგრამა <i>gpg</i> ჩადგმულია, სხვა შემთხვევაში "
-"ჩამოტვირთული რესურსების შემოწმება ვერ მოხერხდება.</qt>"
 
 #: core/security.cpp:320
 #, kde-format
 msgid "Key used for signing:"
-msgstr "ხელმოწერისთვის გამოყენებული კოდი:"
+msgstr "ხელმოწერისთვის გამოყენებული გასაღები:"
 
 #: core/security.cpp:321
 #, kde-format
 msgid "Select Signing Key"
-msgstr "ხელმოწერის კოდის არჩევა"
+msgstr "აირჩიეთ ხელმოწერის გასაღები"
 
 #: core/security.cpp:348
 #, kde-format
@@ -491,146 +461,126 @@ msgid ""
 "<qt>Cannot start <i>gpg</i> and sign the file. Make sure that <i>gpg</i> is "
 "installed, otherwise signing of the resources will not be possible.</qt>"
 msgstr ""
-"<qt>ვერ ვახერხებ დავიწყო <i>gpg</i> და ფაილის ხელმოწერას. გადაამოწმეთ, რომ "
-"პროგრამა <i>gpg</i> ჩადგმულია, სხვა შემთხვევაში ჩამოტვირთული რესურსების "
-"შემოწმება ვერ მოხერხდება.</qt>"
 
 #: downloaddialog.cpp:69 downloadwidget.cpp:213
-#, fuzzy, kde-format
-#| msgid "Get Hot New Stuff"
+#, kde-format
 msgid "Get Hot New Stuff"
-msgstr "სიახლეების მიღება"
+msgstr "მიიღეთ ახალი პროგრამები"
 
 #: downloaddialog.cpp:86
 #, kde-format
 msgctxt "Program name followed by 'Add On Installer'"
 msgid "%1 Add-On Installer"
-msgstr ""
+msgstr "%1 დამატების დამყენებელი"
 
 #: downloadwidget.cpp:123
 #, kde-format
 msgid "Timeout. Check Internet connection."
-msgstr ""
+msgstr "მოლოდინის დრო გავიდა. გადაამოწმეთ ინტერნეტკავშირი."
 
 #: downloadwidget.cpp:186
-#, fuzzy, kde-format
-#| msgid "<Merge %1>"
+#, kde-format
 msgid "Server: %1"
-msgstr "<შერწყმა - %1>"
+msgstr "სერვერი: %1"
 
 #: downloadwidget.cpp:187
-#, fuzzy, kde-format
-#| msgid "Hide %1"
+#, kde-format
 msgid "<br />Provider: %1"
-msgstr "დამალვა - %1"
+msgstr "<br />მომწოდებელი: %1"
 
 #: downloadwidget.cpp:188
-#, fuzzy, kde-format
-#| msgid "Version:"
+#, kde-format
 msgid "<br />Version: %1"
-msgstr "ვერსია:"
+msgstr "<br />ვერსია: %1"
 
 #: downloadwidget.cpp:190
-#, fuzzy, kde-format
-#| msgid "Show version information"
+#, kde-format
 msgid "Provider information"
-msgstr "ვერსიის შესახებ ინფორმაციის ჩვენება"
+msgstr "მომწოდებლის ინფორმაცია"
 
 #: downloadwidget.cpp:203
-#, fuzzy, kde-format
+#, kde-format
 msgid "Could not install %1"
-msgstr "ვერ ვპოულობ '%1' სერვისს."
+msgstr "%1-ის დაყენების შეცდომა"
 
 #: downloadwidget.cpp:203
-#, fuzzy, kde-format
-#| msgid "Get Hot New Stuff"
+#, kde-format
 msgid "Get Hot New Stuff!"
-msgstr "სიახლეების მიღება"
+msgstr "მიიღეთ ახალი პროგრამები!"
 
 #: downloadwidget.cpp:262
-#, fuzzy, kde-format
-#| msgid "Icon View"
+#, kde-format
 msgid "Icons view mode"
-msgstr "პიქტოგრამების ზომა"
+msgstr "ხატულების ხედის რეჟიმი"
 
 #: downloadwidget.cpp:264
-#, fuzzy, kde-format
-#| msgid "Detailed View"
+#, kde-format
 msgid "Details view mode"
-msgstr "დეტალები"
+msgstr "დეტალების ჩვენების რეჟიმი"
 
 #: downloadwidget.cpp:279
-#, fuzzy, kde-format
-#| msgid "Hot New Stuff Providers"
+#, kde-format
 msgid "All Providers"
-msgstr "ახალი მასალის მომწოდებლები"
+msgstr "ყველა მომწოდებელი"
 
 #: downloadwidget.cpp:286
-#, fuzzy, kde-format
-#| msgid "PageUp"
+#, kde-format
 msgid "All Categories"
-msgstr "PageUp"
+msgstr "ყველა კატეგორია"
 
 #. i18n: ectx: property (text), widget (QLabel, m_providerLabel)
 #: downloadwidget.ui:54
-#, fuzzy, kde-format
-#| msgid "Hide %1"
+#, kde-format
 msgid "Provider:"
-msgstr "დამალვა - %1"
+msgstr "მომწოდებელი:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
-#: downloadwidget.ui:71 qtquick/qml/Page.qml:424
-#, fuzzy, kde-format
-#| msgid "Any Character"
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:426
+#, kde-format
 msgid "Category:"
-msgstr "ნებისმიერი სიმბოლო"
+msgstr "კატეგორია:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mostDownloadsRadio)
 #: downloadwidget.ui:90
 #, kde-format
 msgid "Most downloads"
-msgstr "ყველაზე პოპულარული"
+msgstr "თითქმის ყველა გადმოწერა"
 
 #. i18n: ectx: property (text), widget (QRadioButton, newestRadio)
 #: downloadwidget.ui:103
-#, fuzzy, kde-format
-#| msgid "New"
+#, kde-format
 msgid "Newest"
-msgstr "ახალი"
+msgstr "უახლესი"
 
 #. i18n: ectx: property (text), widget (QRadioButton, ratingRadio)
 #: downloadwidget.ui:110 qtquick/qml/Page.qml:312
-#, fuzzy, kde-format
-#| msgid "Rating"
+#, kde-format
 msgid "Rating"
-msgstr "რეიტინგი"
+msgstr "შეფასება"
 
 #. i18n: ectx: property (text), widget (QRadioButton, installedRadio)
 #: downloadwidget.ui:117 qtquick/qml/Page.qml:261
-#, fuzzy, kde-format
-#| msgid "Install"
+#, kde-format
 msgid "Installed"
-msgstr "ჩადგმა"
+msgstr "დაყენებულია"
 
 #. i18n: ectx: property (text), widget (QLabel, orderLabel)
 #: downloadwidget.ui:175
 #, kde-format
 msgid "Order by:"
-msgstr ""
+msgstr "დალაგება:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: downloadwidget.ui:185
-#, fuzzy, kde-format
-#| msgid "S&earch:"
+#, kde-format
 msgid "Search:"
-msgstr "&ძიება:"
+msgstr "ძებნა:"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, m_searchEdit)
 #: downloadwidget.ui:217 qtquick/qml/Page.qml:381 qtquick/qml/Page.qml:388
-#, fuzzy, kde-format
-#| msgid "Search"
+#, kde-format
 msgid "Search..."
-msgstr "ძიება"
+msgstr "ძებნა..."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: downloadwidget.ui:371
@@ -642,29 +592,27 @@ msgstr "ავტორი:"
 #: downloadwidget.ui:396
 #, kde-format
 msgid "<a href=\"https://opendesktop.org\">Homepage</a>"
-msgstr ""
+msgstr "<a href=\"https://opendesktop.org\">საწყისი გვერდი</a>"
 
 #. i18n: ectx: property (text), widget (QPushButton, updateButton)
 #: downloadwidget.ui:572 ui/itemsgridviewdelegate.cpp:324
 #: ui/itemsviewdelegate.cpp:112
-#, fuzzy, kde-format
-#| msgid "KConf Update"
+#, kde-format
 msgid "Update"
-msgstr "KConf-ის განახლება"
+msgstr "განახლება"
 
 #. i18n: ectx: property (text), widget (QPushButton, uninstallButton)
 #: downloadwidget.ui:582 ui/itemsgridviewdelegate.cpp:320
 #: ui/itemsviewdelegate.cpp:108 ui/itemsviewdelegate.cpp:173
-#, fuzzy, kde-format
-#| msgid "Install"
+#, kde-format
 msgid "Uninstall"
-msgstr "ჩადგმა"
+msgstr "ამოშლა"
 
 #. i18n: ectx: property (text), widget (QPushButton, becomeFanButton)
 #: downloadwidget.ui:589
 #, kde-format
 msgid "Become a Fan"
-msgstr ""
+msgstr "გახდი გულშემატკივარი"
 
 #. i18n: ectx: property (text), widget (QPushButton, installButton)
 #: downloadwidget.ui:596 qtquick/qml/DownloadItemsSheet.qml:69
@@ -675,123 +623,110 @@ msgid "Install"
 msgstr "ჩადგმა"
 
 #: kmoretools/kmoretools.cpp:521
-#, fuzzy, kde-format
-#| msgid "Install"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Not installed:"
-msgstr "ჩადგმა"
+msgstr "დაყენებული არაა:"
 
 #: kmoretools/kmoretools.cpp:618
-#, fuzzy, kde-format
-#| msgid "Choose..."
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "More"
-msgstr "არჩევა..."
+msgstr "მეტი"
 
 #: kmoretools/kmoretools.cpp:654
-#, fuzzy, kde-format
-#| msgid "Confi&gure..."
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure..."
-msgstr "&გამართვა..."
+msgstr "გამართვა..."
 
-#: kmoretools/kmoretools_p.h:376
-#, fuzzy, kde-format
-#| msgid "Homepage"
+#: kmoretools/kmoretools_p.h:373
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Visit homepage"
-msgstr "ვებსაიტი"
+msgstr "ეწვიეთ მთავარ გვერდს"
 
-#: kmoretools/kmoretools_p.h:388
-#, fuzzy, kde-format
-#| msgid "Install"
+#: kmoretools/kmoretools_p.h:386
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Install"
 msgstr "ჩადგმა"
 
-#: kmoretools/kmoretools_p.h:396
-#, fuzzy, kde-format
-#| msgid "There is no matching item available.\n"
+#: kmoretools/kmoretools_p.h:395
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "No further information available."
-msgstr "თანმხვედრი ელემენტები არაა.\n"
+msgstr "მეტი ინფორმაცია ხელმისაწვდომი არაა."
 
 #: kmoretools/kmoretoolsconfigdialog_p.cpp:170
-#, fuzzy, kde-format
-#| msgid "Configure"
+#, kde-format
 msgid "Configure menu"
-msgstr "გამართვა"
+msgstr "მენიუს მორგება"
 
 #: kmoretools/kmoretoolsconfigdialog_p.cpp:172
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "Configure menu - %1"
-msgstr "&გამართვა - %1..."
+msgstr "მენიუს მორგება - %1"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:176
-#, fuzzy, kde-format
-#| msgid "Parent Folder"
+#: kmoretools/kmoretoolsmenufactory.cpp:173
+#, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current folder"
-msgstr "თავსართის ბეჭდვა"
+msgstr "%1 - მიმდინარე საქაღალდე"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:183
+#: kmoretools/kmoretoolsmenufactory.cpp:182
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - current device"
-msgstr ""
+msgstr "%1 - მიმდინარე მოწყობილობა"
 
-#: kmoretools/kmoretoolsmenufactory.cpp:197
+#: kmoretools/kmoretoolsmenufactory.cpp:195
 #, kde-format
 msgctxt "@action:inmenu %1=\"$GenericName\""
 msgid "%1 - all devices"
-msgstr ""
+msgstr "%1 - ყველა მოწყობილობა"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbMainSection)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:25
-#, fuzzy, kde-format
+#, kde-format
 msgid "Main section"
-msgstr "ფანჯარა"
+msgstr "მთავარი სექცია"
 
 #. i18n: ectx: property (text), widget (QToolButton, buttonMoveDown)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:58
-#, fuzzy, kde-format
-#| msgid "Move &Down"
+#, kde-format
 msgid "Move down"
-msgstr "&ქვემოთ გადატანა"
+msgstr "ქვემოთ ჩამოწევა"
 
 #. i18n: ectx: property (text), widget (QToolButton, buttonMoveUp)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:78
-#, fuzzy, kde-format
-#| msgid "Move &Up"
+#, kde-format
 msgid "Move up"
-msgstr "&ზემოთ გადატანა"
+msgstr "აწევა"
 
 #. i18n: ectx: property (text), widget (QToolButton, buttonMoveToMain)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:98
 #, kde-format
 msgid "Move to Main section"
-msgstr ""
+msgstr "მთავარ სექციაში"
 
 #. i18n: ectx: property (text), widget (QToolButton, buttonMoveToMore)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:118
-#, fuzzy, kde-format
-#| msgid "Action"
+#, kde-format
 msgid "Move to More section"
-msgstr "ქმედება"
+msgstr "დამატებით სექციაში"
 
 #. i18n: ectx: property (text), widget (QToolButton, buttonReset)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:138
 #, kde-format
 msgid "Reset"
-msgstr "აღდგენა"
+msgstr "თავიდან ჩართვა"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbMoreSection)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:159
-#, fuzzy, kde-format
-#| msgid "Action"
+#, kde-format
 msgid "More section"
-msgstr "ქმედება"
+msgstr "დამატებითი სექცია"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:211
@@ -799,31 +734,27 @@ msgstr "ქმედება"
 msgid ""
 "For this menu there are some more tools suggested which are currently not "
 "installed:"
-msgstr ""
+msgstr "ამ მენიუსთვის საჭიროა მეტი პროგრამა, რომელიც ამჟამად დაყენებული არაა:"
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonNotInstalledTools)
 #: kmoretools/ui/kmoretoolsconfigwidget.ui:221
-#, fuzzy, kde-format
-#| msgid "Choose..."
+#, kde-format
 msgid "More tools..."
-msgstr "არჩევა..."
+msgstr "მეტი ხელსაწყო..."
 
 #: qtquick/categoriesmodel.cpp:63
-#, fuzzy, kde-format
-#| msgid "PageUp"
+#, kde-format
 msgctxt ""
 "The first entry in the category selection list (also the default value)"
 msgid "All Categories"
-msgstr "PageUp"
+msgstr "ყველა კატეგორია"
 
 #: qtquick/categoriesmodel.cpp:92
-#, fuzzy, kde-format
-#| msgctxt "QFile"
-#| msgid "Unknown error"
+#, kde-format
 msgctxt ""
 "The string passed back in the case the requested category is not known"
 msgid "Unknown Category"
-msgstr "უცნობი შეცდომა"
+msgstr "უცნობი კატეგორია"
 
 #. i18nd("knewstuff5", "Download New %1...").
 #. *
@@ -835,40 +766,31 @@ msgctxt ""
 "Used to construct the button's label (which will become Download New 'this "
 "value'...)"
 msgid "Stuff"
-msgstr ""
+msgstr "მატერიალები"
 
 #: qtquick/qml/Button.qml:44
-#, fuzzy, kde-format
-#| msgid "Download New %1"
+#, kde-format
 msgid "Download New %1..."
-msgstr "ჩამოტვირთვა - ახალი %1"
+msgstr "ახალი %1-ის გადმოწერა..."
 
-#: qtquick/qml/Dialog.qml:41
-#, fuzzy, kde-format
-#| msgid "Download New %1"
+#: qtquick/qml/Dialog.qml:43
+#, kde-format
 msgctxt "The dialog title when we know which type of stuff is being requested"
 msgid "Download New %1"
-msgstr "ჩამოტვირთვა - ახალი %1"
+msgstr "ახალი %1-ის გადმოწერა"
 
-#: qtquick/qml/Dialog.qml:41
-#, fuzzy, kde-format
-#| msgid "Download New Stuff"
+#: qtquick/qml/Dialog.qml:43
+#, kde-format
 msgctxt ""
 "A placeholder title used in the dialog when there is no better title "
 "available"
 msgid "Download New Stuff"
-msgstr "ახალი მასალის ჩამოტვირთვა"
-
-#: qtquick/qml/Dialog.qml:127
-#, fuzzy, kde-format
-#| msgid "Continue operation"
-msgid "Contribute your own..."
-msgstr "ოპერაციის გაგრძელება"
+msgstr "ახალი მატერიალების გადმოწერა"
 
 #: qtquick/qml/DownloadItemsSheet.qml:30
 #, kde-format
 msgid "Pick Your Installation Option"
-msgstr ""
+msgstr "აირჩიეთ დაყენების ვარიანტი"
 
 #: qtquick/qml/DownloadItemsSheet.qml:40
 #, kde-format
@@ -880,12 +802,11 @@ msgid ""
 msgstr ""
 
 #: qtquick/qml/EntryDetails.qml:49
-#, fuzzy, kde-format
-#| msgid "Installing"
+#, kde-format
 msgctxt ""
 "A passive notification shown when installation of an item is initiated"
 msgid "Installing %1 from %2"
-msgstr "ჩადგმა"
+msgstr "%1-ის დაყენება %2-დან"
 
 #: qtquick/qml/EntryDetails.qml:65
 #, kde-format
@@ -893,14 +814,14 @@ msgctxt ""
 "Status message to be shown when the entry is in the process of being "
 "installed OR uninstalled"
 msgid "Currently working on the item %1 by %2. Please wait..."
-msgstr ""
+msgstr "ამჟამად ვმუშაობ ჩანაწერზე %1, რომელიც %2-მა გამოაგზავნა. მოითმინეთ..."
 
 #: qtquick/qml/EntryDetails.qml:67
 #, kde-format
 msgctxt ""
 "Status message to be shown when the entry is in the process of being updated"
 msgid "Currently updating the item %1 by %2. Please wait..."
-msgstr ""
+msgstr "ამჟამად მიმდინარეობს %2-ის %1 ელემენტის განახლება. მოითმინეთ..."
 
 #: qtquick/qml/EntryDetails.qml:69
 #, kde-format
@@ -919,14 +840,13 @@ msgctxt ""
 "Combined title for the entry details page made of the name of the entry, and "
 "the author's name"
 msgid "%1 by %2"
-msgstr ""
+msgstr "%1 %2-სგან"
 
 #: qtquick/qml/EntryDetails.qml:87
 #: qtquick/qml/private/entrygriddelegates/BigPreviewDelegate.qml:49
 #: qtquick/qml/private/entrygriddelegates/ThumbDelegate.qml:42
 #: qtquick/qml/private/entrygriddelegates/TileDelegate.qml:56
-#, fuzzy, kde-format
-#| msgid "Install"
+#, kde-format
 msgctxt ""
 "Request installation of this item, available when there is exactly one "
 "downloadable item"
@@ -937,56 +857,50 @@ msgstr "ჩადგმა"
 #: qtquick/qml/private/entrygriddelegates/BigPreviewDelegate.qml:49
 #: qtquick/qml/private/entrygriddelegates/ThumbDelegate.qml:42
 #: qtquick/qml/private/entrygriddelegates/TileDelegate.qml:56
-#, fuzzy, kde-format
-#| msgid "Install"
+#, kde-format
 msgctxt ""
 "Show installation options, where there is more than one downloadable item"
 msgid "Install..."
-msgstr "ჩადგმა"
+msgstr "დაყენება..."
 
 #: qtquick/qml/EntryDetails.qml:102 qtquick/qml/NewStuffItem.qml:29
 #: qtquick/qml/private/entrygriddelegates/BigPreviewDelegate.qml:64
 #: qtquick/qml/private/entrygriddelegates/ThumbDelegate.qml:57
 #: qtquick/qml/private/entrygriddelegates/TileDelegate.qml:71
-#, fuzzy, kde-format
-#| msgid "KConf Update"
+#, kde-format
 msgctxt "Request updating of this item"
 msgid "Update"
-msgstr "KConf-ის განახლება"
+msgstr "განახლება"
 
 #: qtquick/qml/EntryDetails.qml:109 qtquick/qml/NewStuffItem.qml:36
 #: qtquick/qml/Page.qml:154
-#, fuzzy, kde-format
-#| msgid "Install"
+#, kde-format
 msgctxt "Request uninstallation of this item"
 msgid "Uninstall"
-msgstr "ჩადგმა"
+msgstr "ამოშლა"
 
 #: qtquick/qml/EntryDetails.qml:153
 #, kde-format
 msgid "Comments and Reviews:"
-msgstr ""
+msgstr "კომენტარები და მიმოხილვები:"
 
 #: qtquick/qml/EntryDetails.qml:155
-#, fuzzy, kde-format
-#| msgid "View Comments"
+#, kde-format
 msgctxt ""
 "A link which, when clicked, opens a new sub page with comments (comments "
 "with or without ratings) for this entry"
 msgid "%1 Reviews and Comments"
-msgstr "კომენტარების ჩვენება"
+msgstr "%1 მიმოხილვა და კომენტარი"
 
 #: qtquick/qml/EntryDetails.qml:160
-#, fuzzy, kde-format
-#| msgid "Rating"
+#, kde-format
 msgid "Rating:"
-msgstr "რეიტინგი"
+msgstr "შეფასება:"
 
 #: qtquick/qml/EntryDetails.qml:164
-#, fuzzy, kde-format
-#| msgid "Homepage"
+#, kde-format
 msgid "Homepage:"
-msgstr "ვებსაიტი"
+msgstr "საწყისი გვერდი:"
 
 #: qtquick/qml/EntryDetails.qml:165
 #, kde-format
@@ -995,12 +909,12 @@ msgctxt ""
 "(this could be either one specific to the project, the author's homepage, or "
 "any other website they have chosen for the purpose)"
 msgid "Open the homepage for %1"
-msgstr ""
+msgstr "%1-ის საწყისი გვერდის გახსნა"
 
 #: qtquick/qml/EntryDetails.qml:170
 #, kde-format
 msgid "How To Donate:"
-msgstr ""
+msgstr "როგორ შემოგწიროთ:"
 
 #: qtquick/qml/EntryDetails.qml:171
 #, kde-format
@@ -1008,11 +922,10 @@ msgctxt ""
 "A link which, when clicked, opens a website with information on donation in "
 "support of the entry"
 msgid "Find out how to donate to this project"
-msgstr ""
+msgstr "გარკვევა, როგორ შევწიროთ ამ პროექტს"
 
 #: qtquick/qml/NewStuffItem.qml:22
-#, fuzzy, kde-format
-#| msgid "Install"
+#, kde-format
 msgctxt "Request installation of this item"
 msgid "Install"
 msgstr "ჩადგმა"
@@ -1021,16 +934,14 @@ msgstr "ჩადგმა"
 #, kde-format
 msgctxt "List option which will set the filter to show everything"
 msgid "Show Everything"
-msgstr ""
+msgstr "ყველაფრის ჩვენება"
 
 #: qtquick/qml/NewStuffList.qml:69
-#, fuzzy, kde-format
-#| msgctxt "Sorting order of the list of items in get hot new stuff"
-#| msgid "Installed only"
+#, kde-format
 msgctxt ""
 "List option which will set the filter so only installed items are shown"
 msgid "Installed Only"
-msgstr "ჩადგმა"
+msgstr "მხოლოდ დაყენებული"
 
 #: qtquick/qml/NewStuffList.qml:70
 #, kde-format
@@ -1038,7 +949,7 @@ msgctxt ""
 "List option which will set the filter so only installed items with updates "
 "available are shown"
 msgid "Updateable Only"
-msgstr ""
+msgstr "მხოლოდ განახლებადი"
 
 #: qtquick/qml/NewStuffList.qml:82
 #, kde-format
@@ -1046,7 +957,7 @@ msgctxt ""
 "List option which will set the sort order to based on when items were most "
 "recently updated"
 msgid "Show most recent first"
-msgstr ""
+msgstr "ჯერ უახლესები"
 
 #: qtquick/qml/NewStuffList.qml:83
 #, kde-format
@@ -1054,21 +965,20 @@ msgctxt ""
 "List option which will set the sort order to be alphabetical based on the "
 "name"
 msgid "Sort alphabetically"
-msgstr ""
+msgstr "ანბანის მიხედვით დალაგება"
 
 #: qtquick/qml/NewStuffList.qml:84
 #, kde-format
 msgctxt "List option which will set the sort order to based on user ratings"
 msgid "Show highest rated first"
-msgstr ""
+msgstr "რეიტინგის მიხედვით დალაგება"
 
 #: qtquick/qml/NewStuffList.qml:85
-#, fuzzy, kde-format
-#| msgid "Most downloads"
+#, kde-format
 msgctxt ""
 "List option which will set the sort order to based on number of downloads"
 msgid "Show most downloaded first"
-msgstr "ყველაზე პოპულარული"
+msgstr "ჯერ ხშირად გადმოწერილები"
 
 #: qtquick/qml/Page.qml:132
 #, kde-format
@@ -1079,6 +989,7 @@ msgid ""
 "The entry you attempted to display, identified by the unique ID %1, could "
 "not be found."
 msgstr ""
+"ჩანაწერი, რომლის ჩვენებაც გნებავდათ და რომლის უნიკალური ID %1-ა, ვერ ვიპოვე."
 
 #: qtquick/qml/Page.qml:179
 #, kde-format
@@ -1088,101 +999,88 @@ msgid ""
 msgstr ""
 
 #: qtquick/qml/Page.qml:214
-#, fuzzy, kde-format
-#| msgid "File"
+#, kde-format
 msgid "Tiles"
-msgstr "ფაილი"
+msgstr "ნაწილები"
 
 #: qtquick/qml/Page.qml:216
 #, kde-format
 msgid "Icons"
-msgstr "პიქტოგრამები"
+msgstr "ხატულები"
 
 #: qtquick/qml/Page.qml:218
-#, fuzzy, kde-format
-#| msgid "Preview URL:"
+#, kde-format
 msgid "Preview"
-msgstr "ვებ მისამართი:"
+msgstr "გადახედვა"
 
 #: qtquick/qml/Page.qml:233
-#, fuzzy, kde-format
-#| msgid "Detailed Tree View"
+#, kde-format
 msgid "Detailed Tiles View Mode"
-msgstr "დეტალები"
+msgstr "დეტალური ფილების ხედის რეჟიმი"
 
 #: qtquick/qml/Page.qml:241
-#, fuzzy, kde-format
-#| msgid "Icon View"
+#, kde-format
 msgid "Icons Only View Mode"
-msgstr "პიქტოგრამების ზომა"
+msgstr "მხოლოდ ხატულების ხედის რეჟიმი"
 
 #: qtquick/qml/Page.qml:249
-#, fuzzy, kde-format
-#| msgid "Detailed View"
+#, kde-format
 msgid "Large Preview View Mode"
-msgstr "დეტალები"
+msgstr "დიდი მინიატურების ხედის რეჟიმი"
 
 #: qtquick/qml/Page.qml:259
 #, kde-format
 msgid "Everything"
-msgstr ""
+msgstr "ყველაფერი"
 
 #: qtquick/qml/Page.qml:263
-#, fuzzy, kde-format
-#| msgid "KConf Update"
+#, kde-format
 msgid "Updateable"
-msgstr "KConf-ის განახლება"
+msgstr "განახლებადი"
 
 #: qtquick/qml/Page.qml:282
-#, fuzzy, kde-format
-#| msgid "&Show All Entries"
+#, kde-format
 msgctxt "List option which will set the filter to show everything"
 msgid "Show All Entries"
-msgstr "ყველა პარამეტრის ჩვენება"
+msgstr "ყველა ჩანაწერის ჩვენება"
 
 #: qtquick/qml/Page.qml:290
-#, fuzzy, kde-format
-#| msgid "&Show All Entries"
+#, kde-format
 msgctxt ""
 "List option which will set the filter so only installed items are shown"
 msgid "Show Only Installed Entries"
-msgstr "ყველა პარამეტრის ჩვენება"
+msgstr "მხოლოდ დაყენებულების ჩვენება"
 
 #: qtquick/qml/Page.qml:298
-#, fuzzy, kde-format
-#| msgid "&Show All Entries"
+#, kde-format
 msgctxt ""
 "List option which will set the filter so only installed items with updates "
 "available are shown"
 msgid "Show Only Updateable Entries"
-msgstr "ყველა პარამეტრის ჩვენება"
+msgstr "მხოლოდ განახლებადი ჩანაწერების ჩვენება"
 
 #: qtquick/qml/Page.qml:308
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "OpenRecent"
+#, kde-format
 msgid "Recent"
-msgstr "&ბოლო გახსნილები"
+msgstr "Ბოლო"
 
 #: qtquick/qml/Page.qml:310
 #, kde-format
 msgid "Alphabetical"
-msgstr ""
+msgstr "ანბანით დალაგებული"
 
 #: qtquick/qml/Page.qml:314
-#, fuzzy, kde-format
-#| msgid "Download"
+#, kde-format
 msgid "Downloads"
-msgstr "ჩამოტვირთვა"
+msgstr "გადმოწერები"
 
 #: qtquick/qml/Page.qml:333
-#, fuzzy, kde-format
-#| msgid "Most downloads"
+#, kde-format
 msgctxt ""
 "List option which will set the sort order to based on when items were most "
 "recently updated"
 msgid "Show Most Recent First"
-msgstr "ყველაზე პოპულარული"
+msgstr "ჯერ უახლესები"
 
 #: qtquick/qml/Page.qml:341
 #, kde-format
@@ -1190,62 +1088,54 @@ msgctxt ""
 "List option which will set the sort order to be alphabetical based on the "
 "name"
 msgid "Sort Alphabetically By Name"
-msgstr ""
+msgstr "სახელით, ანბანის მიხედვით დალაგება"
 
 #: qtquick/qml/Page.qml:349
-#, fuzzy, kde-format
-#| msgid "Highest Rated"
+#, kde-format
 msgctxt "List option which will set the sort order to based on user ratings"
 msgid "Show Highest Rated First"
-msgstr "უმაღლესი რეიტინგი"
+msgstr "რეიტინგის მიხედვით დალაგება"
 
 #: qtquick/qml/Page.qml:357
-#, fuzzy, kde-format
-#| msgid "Most downloads"
+#, kde-format
 msgctxt ""
 "List option which will set the sort order to based on number of downloads"
 msgid "Show Most Downloaded First"
-msgstr "ყველაზე პოპულარული"
+msgstr "ჯერ ხშირად გადმოწერილების ჩვენება"
 
 #: qtquick/qml/Page.qml:366
-#, fuzzy, kde-format
-#| msgid "&Replace..."
+#, kde-format
 msgid "Upload..."
-msgstr "&შეცვლა..."
+msgstr "ატვირთვა..."
 
 #: qtquick/qml/Page.qml:367
 #, kde-format
 msgid "Learn how to add your own hot new stuff to this list"
-msgstr ""
+msgstr "ისწავლეთ, როგორ დაამატოთ სიაში თქვენი საკუთარი რამები"
 
 #: qtquick/qml/Page.qml:375
-#, fuzzy, kde-format
-#| msgid "&Go To..."
+#, kde-format
 msgid "Go to..."
-msgstr "&გადასვლა..."
+msgstr "გადასვლა..."
 
-#: qtquick/qml/Page.qml:510
-#, fuzzy, kde-format
-#| msgid "Print Previe&w..."
-msgctxt ""
-"A text shown beside a busy indicator suggesting that data is being fetched"
-msgid "Loading more..."
-msgstr "ბეჭდვის &ესკიზი"
+#: qtquick/qml/Page.qml:442
+#, kde-format
+msgid "Contribute your own…"
+msgstr "თქვენი მასალების შეწირვა…"
 
-#: qtquick/qml/Page.qml:521
+#: qtquick/qml/Page.qml:508
 #, kde-format
 msgctxt ""
-"A message shown when there are no entries in the list, and when it is not "
-"trying to load anything"
-msgid "There is no hot new stuff to get here"
-msgstr ""
+"A text shown beside a busy indicator suggesting that data is being fetched"
+msgid "Loading more…"
+msgstr "მეტის ჩატვირთვა…"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:110
 #, kde-format
 msgctxt ""
 "Placeholder title for when a comment has no subject, but does have a rating"
 msgid "<i>(no title)</i>"
-msgstr ""
+msgstr "<i>(სათაურის გარეშე)</i>"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:142
 #, kde-format
@@ -1253,20 +1143,19 @@ msgctxt ""
 "The author label in case the comment was written by the author of the "
 "content entry the comment is attached to"
 msgid "%1 <i>(author)</i>"
-msgstr ""
+msgstr "%1 <i>(ავტორი)</i>"
 
 #: qtquick/qml/private/EntryCommentsPage.qml:26
 #, kde-format
 msgctxt "Title for the page containing a view of the comments for the entry"
 msgid "Comments and Reviews for %1"
-msgstr ""
+msgstr "%1-ის მიმოხილვა და კომენტარები"
 
 #: qtquick/qml/private/EntryCommentsPage.qml:30
-#, fuzzy, kde-format
-#| msgid "PageUp"
+#, kde-format
 msgctxt "Title for the item which is checked when all comments should be shown"
 msgid "Show All Comments"
-msgstr "PageUp"
+msgstr "ყველა კომენტარის ჩვენება"
 
 #: qtquick/qml/private/EntryCommentsPage.qml:36
 #, kde-format
@@ -1274,7 +1163,7 @@ msgctxt ""
 "Title for the item which is checked when only comments which are reviews "
 "should be shown"
 msgid "Show Reviews Only"
-msgstr ""
+msgstr "მხოლოდ მიმოხილვების ჩვენება"
 
 #: qtquick/qml/private/EntryCommentsPage.qml:42
 #, kde-format
@@ -1282,25 +1171,23 @@ msgctxt ""
 "Title for the item which is checked when comments which are reviews, and "
 "their children should be shown"
 msgid "Show Reviews and Replies"
-msgstr ""
+msgstr "მიმოხილვებისა და გამოხმაურებების ჩვენება"
 
 #: qtquick/qml/private/entrygriddelegates/BigPreviewDelegate.qml:140
 #: qtquick/qml/private/entrygriddelegates/TileDelegate.qml:187
-#, fuzzy, kde-format
-#| msgid "Download"
+#, kde-format
 msgctxt "The number of times the item has been downloaded"
 msgid "%1 downloads"
-msgstr "ჩამოტვირთვა"
+msgstr "%1 გადმოწერა"
 
 #: qtquick/qml/private/entrygriddelegates/BigPreviewDelegate.qml:153
 #: qtquick/qml/private/entrygriddelegates/TileDelegate.qml:166
-#, fuzzy, kde-format
-#| msgid "<b>Error</b>: %1: %2"
+#, kde-format
 msgctxt ""
 "Subheading for the tile view, located immediately underneath the name of the "
 "item"
 msgid "By <i>%1</i>"
-msgstr "<b>შეცდომა</b>: %1: %2"
+msgstr "<i>%1</i>-სგან"
 
 #: qtquick/qml/private/entrygriddelegates/FeedbackOverlay.qml:44
 #, kde-format
@@ -1308,16 +1195,15 @@ msgctxt ""
 "Label for the busy indicator showing an item is being installed OR "
 "uninstalled"
 msgid "Working..."
-msgstr ""
+msgstr "მუშავდება..."
 
 #: qtquick/qml/private/entrygriddelegates/FeedbackOverlay.qml:46
-#, fuzzy, kde-format
-#| msgid "Updating"
+#, kde-format
 msgctxt ""
 "Label for the busy indicator showing an item is in the process of being "
 "updated"
 msgid "Updating..."
-msgstr "განახლება"
+msgstr "მიმდინარეობს განახლება…"
 
 #: qtquick/qml/private/entrygriddelegates/FeedbackOverlay.qml:48
 #, kde-format
@@ -1331,78 +1217,74 @@ msgid ""
 msgstr ""
 
 #: qtquick/qml/private/entrygriddelegates/FeedbackOverlay.qml:61
-#, fuzzy, kde-format
-#| msgid "Installing"
+#, kde-format
 msgctxt "Label for the busy indicator showing an item is installing"
 msgid "Installing..."
-msgstr "ჩადგმა"
+msgstr "დაყენება..."
 
 #: qtquick/qml/private/ErrorDisplayer.qml:13
 #, kde-format
 msgctxt "Title for a dialog box which shows error messages"
 msgid "An Error Occurred"
-msgstr ""
+msgstr "შეცდომა"
+
+#: qtquick/qml/private/ErrorDisplayer.qml:51
+#, kde-format
+msgid "Please try again later."
+msgstr "მოგვიანებით სცადეთ."
 
 #: qtquick/qml/private/GridTileDelegate.qml:113
-#, fuzzy, kde-format
-#| msgid "None"
+#, kde-format
 msgid "None"
-msgstr "არა"
+msgstr "არაფერი"
 
 #: qtquick/qml/private/Rating.qml:80
-#, fuzzy, kde-format
-#| msgid "(%1/s)"
+#, kde-format
 msgctxt ""
 "A text representation of the rating, shown as a fraction of the max value"
 msgid "(%1/%2)"
-msgstr "(%1/с)"
+msgstr "(%1/%2)"
 
 #: qtquick/qml/UploadPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Download New Stuff"
+#, kde-format
 msgctxt "@knewstuff5"
 msgid "Upload New Stuff: %1"
-msgstr "ახალი მასალის ჩამოტვირთვა"
+msgstr "ახალი მასალების ატვირთვა: %1"
 
 #: qtquick/qml/UploadPage.qml:83
-#, fuzzy, kde-format
-#| msgid "Information"
+#, kde-format
 msgctxt ""
 "A text shown beside a busy indicator suggesting that data is being fetched"
 msgid "Updating information..."
-msgstr "ინფორმაცია"
+msgstr "ინფორმაციის განახლება..."
 
 #: qtquick/qml/UploadPage.qml:95
-#, fuzzy, kde-format
-#| msgid "Store"
+#, kde-format
 msgctxt "The name of the KDE Store"
 msgid "KDE Store"
-msgstr "შენახვა"
+msgstr "KDE -ის მაღაზია"
 
 #: qtquick/qml/UploadPage.qml:101
-#, fuzzy, kde-format
-#| msgid "Hide %1"
+#, kde-format
 msgctxt "An unnamed provider"
 msgid "Your Provider"
-msgstr "დამალვა - %1"
+msgstr "თქვენი მომწოდებელი"
 
 #: qtquick/qml/UploadPage.qml:109
-#, fuzzy, kde-format
-#| msgid "&Open with '%1'"
+#, kde-format
 msgctxt ""
 "Text for an action which causes the specified website to be opened using the "
 "user's system default browser"
 msgid "Open Website: %1"
-msgstr "&გახსნა - '%1'"
+msgstr "ვებგვერდის გახსნა: %1"
 
 #: qtquick/qml/UploadPage.qml:114
-#, fuzzy, kde-format
-#| msgid "&Send Email"
+#, kde-format
 msgctxt ""
 "Text for an action which will attempt to send an email using the user's "
 "system default email client"
 msgid "Send Email To: %1"
-msgstr "&ელფოსტის გაგზავნა"
+msgstr "%1-სთვის ელფოსტის გაგზავნა"
 
 #: qtquick/qml/UploadPage.qml:121
 #, kde-format
@@ -1438,8 +1320,7 @@ msgid ""
 msgstr ""
 
 #: qtquick/searchpresetmodel.cpp:55
-#, fuzzy, kde-format
-#| msgid "Back"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "Back"
 msgstr "უკან"
@@ -1448,76 +1329,67 @@ msgstr "უკან"
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Popular"
-msgstr ""
+msgstr "პოპულარული"
 
 #: qtquick/searchpresetmodel.cpp:61
-#, fuzzy, kde-format
-#| msgid "Saturday"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "Featured"
-msgstr "შაბათი"
+msgstr "პოპულარული"
 
 #: qtquick/searchpresetmodel.cpp:64
-#, fuzzy, kde-format
-#| msgid "Restart"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "Restart"
-msgstr "ხელახლა დაწყება"
+msgstr "გადატვრთვა"
 
 #: qtquick/searchpresetmodel.cpp:67
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "New"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "New"
-msgstr "ახალი"
+msgstr "&ახალი"
 
 #: qtquick/searchpresetmodel.cpp:70
-#, fuzzy, kde-format
-#| msgctxt "Opposite to End"
-#| msgid "Home"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "Home"
-msgstr "თავში"
+msgstr "საწყისი"
 
 #: qtquick/searchpresetmodel.cpp:73
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Shelf"
-msgstr ""
+msgstr "Shelf"
 
 #: qtquick/searchpresetmodel.cpp:76
-#, fuzzy, kde-format
-#| msgid "Up"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "Up"
-msgstr "ზემოთ"
+msgstr "მაღლა"
 
 #: qtquick/searchpresetmodel.cpp:79
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Recommended"
-msgstr ""
+msgstr "რეკომენდებულია"
 
 #: qtquick/searchpresetmodel.cpp:82
-#, fuzzy, kde-format
-#| msgid "Submit"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "Subscriptions"
-msgstr "გაგზავნა"
+msgstr "გამოწერები"
 
 #: qtquick/searchpresetmodel.cpp:85
-#, fuzzy, kde-format
-#| msgid "&Show All Entries"
+#, kde-format
 msgctxt "Knewstuff5"
 msgid "All Entries"
-msgstr "ყველა პარამეტრის ჩვენება"
+msgstr "ყველა ჩანაწერი"
 
 #: qtquick/searchpresetmodel.cpp:88
 #, kde-format
 msgctxt "Knewstuff5"
 msgid "Search Preset: %1"
-msgstr ""
+msgstr "ძებნის ნიმუში: %1"
 
 #: tools/knewstuff-dialog/main.cpp:31
 #, kde-format
@@ -1544,87 +1416,80 @@ msgid ""
 msgstr ""
 
 #: ui/entrydetailsdialog.cpp:84
-#, fuzzy, kde-format
-#| msgid "Suggestion List"
+#, kde-format
 msgid "Details for %1"
-msgstr "შემოთავაზებების სია"
+msgstr "%1-ის დეტალები"
 
 #: ui/entrydetailsdialog.cpp:100
-#, fuzzy, kde-format
-#| msgid "Change"
+#, kde-format
 msgid "Changelog:"
-msgstr "შეცვლა"
+msgstr "ცვლილებები:"
 
 #: ui/entrydetailsdialog.cpp:106
-#, fuzzy, kde-format
-#| msgid "Homepage"
+#, kde-format
 msgctxt "A link to the description of this Get Hot New Stuff item"
 msgid "Homepage"
-msgstr "ვებსაიტი"
+msgstr "Homepage"
 
 #: ui/entrydetailsdialog.cpp:110
-#, fuzzy, kde-format
-#| msgid "HTML documentation"
+#, kde-format
 msgctxt ""
 "A link to make a donation for a Get Hot New Stuff item (opens a web browser)"
 msgid "Make a donation"
-msgstr "HTML დოკუმენტაცია"
+msgstr "გააკეთეთ შემოწირულობა"
 
 #: ui/entrydetailsdialog.cpp:115
 #, kde-format
 msgctxt "A link to the knowledgebase (like a forum) (opens a web browser)"
 msgid "Knowledgebase (no entries)"
 msgid_plural "Knowledgebase (%1 entries)"
-msgstr[0] ""
+msgstr[0] "ცოდნის ბაზა (ჩანაწერების გარეშე)"
+msgstr[1] "ცოდნის ბაზა (%1 ჩანაწერი)"
 
 #: ui/entrydetailsdialog.cpp:121
-#, fuzzy, kde-format
-#| msgid "Open in New &Window"
+#, kde-format
 msgctxt "Tooltip for a link in a dialog"
 msgid "Opens in a browser window"
-msgstr "გახსნა ახალ &ფანჯარაში"
+msgstr "ბრაუზერის ფანჯარაში გახსნა"
 
 #: ui/itemsgridviewdelegate.cpp:86 ui/itemsviewdelegate.cpp:284
-#, fuzzy, kde-format
-#| msgid "Rating"
+#, kde-format
 msgid "Rating: %1%"
-msgstr "რეიტინგი"
+msgstr "შეფასება: %1%"
 
 #: ui/itemsgridviewdelegate.cpp:123
-#, fuzzy, kde-format
-#| msgid "Hide %1"
+#, kde-format
 msgctxt "Show the size of the file in a list"
 msgid "<br />Size: %1"
-msgstr "დამალვა - %1"
+msgstr "<br />ზომა: %1"
 
 #: ui/itemsgridviewdelegate.cpp:146 ui/itemsgridviewdelegate.cpp:150
 #: ui/itemsgridviewdelegate.cpp:153 ui/itemsviewdelegate.cpp:241
 #: ui/itemsviewdelegate.cpp:245 ui/itemsviewdelegate.cpp:248
-#, fuzzy, kde-format
-#| msgid "<b>Error</b>: %1: %2"
+#, kde-format
 msgctxt "Show the author of this item in a list"
 msgid "By <i>%1</i>"
-msgstr "<b>შეცდომა</b>: %1: %2"
+msgstr "<i>%1</i>-სგან"
 
 #: ui/itemsgridviewdelegate.cpp:176 ui/itemsviewdelegate.cpp:262
 #, kde-format
 msgctxt "fan as in supporter"
 msgid "1 fan"
 msgid_plural "%1 fans"
-msgstr[0] ""
+msgstr[0] "1 ფანი"
+msgstr[1] "%1 ფანი"
 
 #: ui/itemsgridviewdelegate.cpp:179 ui/itemsviewdelegate.cpp:265
-#, fuzzy, kde-format
-#| msgid "Download"
+#, kde-format
 msgid "1 download"
 msgid_plural "%1 downloads"
-msgstr[0] "ჩამოტვირთვა"
+msgstr[0] "1 გადმოწერა"
+msgstr[1] "%1 გადმოწერა"
 
 #: ui/itemsgridviewdelegate.cpp:245 ui/itemsviewdelegate.cpp:342
-#, fuzzy, kde-format
-#| msgid "Print Previe&w..."
+#, kde-format
 msgid "Loading Preview"
-msgstr "ბეჭდვის &ესკიზი"
+msgstr "მინიატურის ჩატვირთვა"
 
 #: ui/itemsgridviewdelegate.cpp:272 ui/itemsviewdelegate.cpp:184
 #, kde-format
@@ -1637,14 +1502,24 @@ msgid "Updating"
 msgstr "განახლება"
 
 #: ui/itemsgridviewdelegate.cpp:344 ui/itemsviewdelegate.cpp:132
-#, fuzzy, kde-format
-#| msgid "Install"
+#, kde-format
 msgid "Install Again"
-msgstr "ჩადგმა"
+msgstr "თავიდან დაყენება"
 
 #: ui/itemsviewdelegate.cpp:228
-#, fuzzy, kde-format
-#| msgid "Download"
+#, kde-format
 msgctxt "Show the size of the file in a list"
 msgid "<p>Size: %1</p>"
-msgstr "ჩამოტვირთვა"
+msgstr "<p>ზომა: %1</p>"
+
+#: ui/widgetquestionlistener.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Yes"
+msgstr "დიახ"
+
+#: ui/widgetquestionlistener.cpp:90
+#, kde-format
+msgctxt "@action:button"
+msgid "No"
+msgstr "არა"

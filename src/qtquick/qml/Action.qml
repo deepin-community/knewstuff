@@ -14,16 +14,19 @@
  * shows how to make the action push a page to a pageStack rather than opening a dialog:
  *
 \code{.qml}
-import org.kde.newstuff 1.81 as NewStuff
+import org.kde.newstuff 1.91 as NewStuff
 
 NewStuff.Action {
     configFile: "wallpaper.knsrc"
     text: i18n("&Get New Wallpapers...")
     pageStack: applicationWindow().pageStack
-    function() onEntryEvent(entry, event) {
-        // do something depending on the type of event or the entry you are given
-        // such as updating the item in your own model representing that entry,
-        // or adding or removing the item. Try and avoid reloading full models.
+    onEntryEvent: function(entry, event) {
+        if (event === NewStuff.Entry.StatusChangedEvent) {
+            // A entry was installed, updated or removed
+        } else if (event === NewStuff.Entry.AdoptedEvent) {
+            // The "AdoptionCommand" from the knsrc file was run for the given entry.
+            // This should not require refreshing the data for the model
+        }
     }
 }
 \endcode
@@ -74,7 +77,7 @@ Kirigami.Action {
      * The engine which handles the content in this Action
      * This will be null until the action has been triggered the first time
      */
-    readonly property QtObject engine: component._private.pageItem ? component._private.pageItem.engine : null
+    readonly property QtObject engine: component._private.engine
 
     /**
      * Contains the entries which have been changed.

@@ -3,8 +3,8 @@
 
 [Desktop Entry]
 Name=gitk
-Name[ast]=gitk
 Name[az]=gitk
+Name[bg]=gitk
 Name[ca]=gitk
 Name[ca@valencia]=gitk
 Name[cs]=gitk
@@ -23,6 +23,7 @@ Name[hu]=gitk
 Name[ia]=gitk
 Name[id]=gitk
 Name[it]=gitk
+Name[ka]=gitk
 Name[ko]=gitk
 Name[lt]=gitk
 Name[nb]=gitk
@@ -47,8 +48,8 @@ Name[x-test]=xxgitkxx
 Name[zh_CN]=gitk
 Name[zh_TW]=gitk
 GenericName=gitk
-GenericName[ast]=gitk
 GenericName[az]=gitk
+GenericName[bg]=gitk
 GenericName[ca]=gitk
 GenericName[ca@valencia]=gitk
 GenericName[cs]=gitk
@@ -67,6 +68,7 @@ GenericName[hu]=gitk
 GenericName[ia]=gitk
 GenericName[id]=gitk
 GenericName[it]=gitk
+GenericName[ka]=gitk
 GenericName[ko]=gitk
 GenericName[lt]=gitk
 GenericName[nb]=gitk

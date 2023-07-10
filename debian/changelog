@@ -1,10 +1,118 @@
-knewstuff (5.90.0-1) UNRELEASED; urgency=medium
+knewstuff (5.103.0-1) unstable; urgency=medium
 
-  * update
+  [ Aurélien COUDERC ]
+  * New upstream release (5.103.0).
+  * Update build-deps and deps with the info from cmake.
+  * Update the list of installed files from build logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 24 Apr 2022 18:38:23 +0800
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 12 Feb 2023 21:44:31 +0100
 
-knewstuff (5.90.0-1) experimental; urgency=medium
+knewstuff (5.102.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.102.0).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.6.2, no change required.
+  * Update symbols from build for 5.102.0.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 22 Jan 2023 21:35:10 +0100
+
+knewstuff (5.101.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.101.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Tue, 13 Dec 2022 07:40:35 +0100
+
+knewstuff (5.100.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.99.0).
+  * Update build-deps and deps with the info from cmake.
+  * New upstream release (5.100.0).
+  * Update build-deps and deps with the info from cmake.
+  * Update the list of installed files from build logs.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 19 Nov 2022 23:19:05 +0100
+
+knewstuff (5.98.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.98.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 18 Sep 2022 23:12:46 +0200
+
+knewstuff (5.97.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.97.0).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 14 Aug 2022 18:55:40 +0200
+
+knewstuff (5.96.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.96.0).
+  * Drop patch upstream_b634b65d_fix-dialog-not-being-usable-in-
+    konsole.patch, applied upstream.
+  * Update the list of installed files from build logs.
+  * Update symbols from build for 5.96.0.
+  * Refresh lintian overrides.
+  * Add patch for not setting the executable bit on installed desktop files.
+  * Refresh copyright information.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 31 Jul 2022 13:33:09 +0200
+
+knewstuff (5.94.0-2) unstable; urgency=medium
+
+  * Backport upstream commit to fix broken get new themes dialog in Konsole.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 01 Jun 2022 18:10:45 +0200
+
+knewstuff (5.94.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.94.0).
+  * Update symbols from build for 5.94.0.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Thu, 19 May 2022 23:59:07 +0200
+
+knewstuff (5.93.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.6.1, no changes required.
+  * Modernize building:
+    - add the dh-sequence-kf5 build dependency to use the kf5 addon
+      automatically
+    - drop all the manually specified addons and buildsystem for dh
+  * Remove inactive Uploaders.
+  * Fix libkf5newstuffwidgets5.symbols to be managed by pkgkde-symbolshelper.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 15 May 2022 08:23:00 +0200
+
+knewstuff (5.93.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.93.0).
+  * Drop knewstuff backend related patches, applied upstream.
+  * Update symbols from build for 5.93.0.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 11 May 2022 23:22:48 +0200
+
+knewstuff (5.90.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Run again the test suite at build time, as it should work fine.
+  * Mark the xauth, and xvfb build dependencies as !nocheck, as they are needed
+    only during dh_auto_test.
+  * CI: enable again blhc, as it works fine now with blhc 0.13.
+  * Drop patch disable-flaky-test, as it should work fine now.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 19 Feb 2022 10:32:42 +0100
+
+knewstuff (5.90.0-1) unstable; urgency=medium
 
   [ Norbert Preining ]
   * New upstream release (5.89.0).
